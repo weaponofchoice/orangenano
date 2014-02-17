@@ -1,21 +1,44 @@
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
-
 // We use this to control basic type styling
 %base {
-  font-family: 'Inconsolata', sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
-h1 { font-size: rem-calc(36); @extend %base }
-h2 { font-size: rem-calc(28); @extend %base }
-h3 { font-size: rem-calc(20); @extend %base;}
-h4 { font-size: 1em; @extend %base; margin-bottom: 0; }
-h5 { font-size: 1em; @extend %base; margin-bottom: 0;}
+h1{
+	@extend %base;
+	@include source-semibold;
+	font-size: rem-calc(72);
+}
 
-p {
-  @extend %base;
-  color: $text-color;
-  font-size: 1em;
+h2{
+	@extend %base;
+	@include source-semibold;
+	font-size: rem-calc(36);
+	margin-bottom: rem-calc(50);
+}
+
+h3{
+	@extend %base;
+	@include source-semibold;
+	font-size: rem-calc(15);
+	line-height: 3;
+}
+
+h4{
+	@extend %base;
+	@include source-semibold;
+	font-size: rem-calc(20);
+	margin-bottom: 1em;
+}
+
+p, a{
+	@extend %base;
+	@include source-regular;
+	font-size: rem-calc(20);
+	color: $gray-dark;
+	
+	span{
+		font-size: rem-calc(26);
+	}
 }

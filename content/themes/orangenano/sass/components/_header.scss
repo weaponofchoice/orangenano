@@ -1,0 +1,29 @@
+header{
+	width: 100%;
+	max-width: none;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	background: $gray-dark;
+	
+	ul{
+		width: 100%;
+		display: inline;
+		
+		li{
+			display: inline-block;
+			margin-right: 1em;
+			
+			img{
+				margin-right: 2em;
+			}
+			
+			*{
+				color: white;
+			}
+			
+			#login{
+				float: right;
+			}
+		}
+	}
+}

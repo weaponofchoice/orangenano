@@ -1,0 +1,58 @@
+.block{
+	width: 100%;
+	max-width: none;
+	padding-top: rem-calc(80);
+	padding-bottom: rem-calc(80);
+	
+	&:nth-child(odd){
+		background: $gray-light;
+	}
+	
+	article{
+		float: left !important;
+	}
+	
+	.icons{		
+		li{
+			text-align: center;
+			
+			img{
+				margin-top: rem-calc(80);
+				margin-bottom: rem-calc(20);
+			}
+		}
+		
+		&.icons-inside{
+			li{
+				text-align: left;
+				float: left;
+				
+				&:first-child{
+					padding-left: 0;
+				}
+				
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	
+	&.appointment{
+		background: url('../img/background2.jpg');
+		background-size: cover;
+		background-position: center center;
+		
+		div{
+			text-align: center;
+			
+			h1, h2{
+				color: white;
+			}
+			
+			h2{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
