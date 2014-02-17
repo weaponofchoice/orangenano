@@ -1,0 +1,21 @@
+// Frameworks, compass etc. Make sure to configure 'settings' and 'foundation'!
+@import
+  "_normalize",
+  "_settings",
+  "_foundation",
+  "compass/css3";
+
+// General stylesheets, colors, fonts, typography rules, mixins etc.
+@import
+  "components/mixins",
+  "components/colors",
+  "components/fonts",
+  "components/typography";
+
+// Elements
+//@import
+//  "components/_header",
+
+// Pages
+//@import
+//  "components/homepage";

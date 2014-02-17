@@ -1,0 +1,42 @@
+header {
+  padding-bottom: rem-calc(100);
+  nav {
+    ul {
+      display: none;
+    
+      &.visible {
+        display: block;
+      }
+    }
+  }
+}
+
+.project {
+  position: relative;
+  padding-bottom: rem-calc(100);
+  
+  .project-desc {
+
+  }
+  .project-gallery {
+    img { 
+      display: none;
+      &:first-of-type {
+        display: block;
+      }
+    }
+    &.active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vh;
+      height: 100vh;
+      z-index: 999;
+      background: rgba(255, 255, 255, .98);
+      
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
