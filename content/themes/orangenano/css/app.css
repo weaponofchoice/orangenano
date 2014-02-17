@@ -8167,6 +8167,11 @@ th.hide-for-touch {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
+/* line 23, ../sass/components/_general.scss */
+*::selection {
+  background: #f89c1c;
+  color: white;
+}
 
 /* line 2, ../sass/components/_typography.scss */
 h1, h2, h3, h4, p, a {
@@ -8256,22 +8261,28 @@ header ul li #login {
 
 /* line 1, ../sass/components/_footer.scss */
 footer {
-  width: 100%;
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-  background: #333333;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background: black;
 }
-/* line 8, ../sass/components/_footer.scss */
+/* line 6, ../sass/components/_footer.scss */
 footer * {
   color: white;
+  margin-bottom: 0;
 }
-/* line 12, ../sass/components/_footer.scss */
-footer img {
-  margin-bottom: 1em;
+/* line 11, ../sass/components/_footer.scss */
+footer h3 {
+  float: left;
 }
-/* line 16, ../sass/components/_footer.scss */
-footer ul {
-  margin-left: 0;
+/* line 15, ../sass/components/_footer.scss */
+footer a {
+  float: right;
+  line-height: 2.2;
+  -webkit-transition: 1s;
+}
+/* line 21, ../sass/components/_footer.scss */
+footer a span {
+  margin-left: .5em;
 }
 
 /* line 1, ../sass/components/_block.scss */
@@ -8350,6 +8361,25 @@ footer ul {
 /* line 74, ../sass/components/_block.scss */
 .block .collapse p {
   padding: 0 0 1em 0;
+}
+/* line 79, ../sass/components/_block.scss */
+.block.info {
+  width: 100%;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background: #333333;
+}
+/* line 86, ../sass/components/_block.scss */
+.block.info * {
+  color: white;
+}
+/* line 90, ../sass/components/_block.scss */
+.block.info img {
+  margin-bottom: 1em;
+}
+/* line 94, ../sass/components/_block.scss */
+.block.info ul {
+  margin-left: 0;
 }
 
 /* v1.0.5 */
@@ -8676,8 +8706,8 @@ img.rsImg {
 }
 /* line 22, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow .rsArrowIcn {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.125rem;
+  height: 3.125rem;
   top: 50%;
   left: 50%;
   position: absolute;
@@ -8713,7 +8743,7 @@ img.rsImg {
 /* line 59, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowRight {
   right: 0;
-  top: -1.7em;
+  top: -2.2em;
   margin-right: 2em;
   -webkit-transform: rotate(135deg);
 }

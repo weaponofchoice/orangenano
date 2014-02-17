@@ -1,19 +1,25 @@
 footer{
-	width: 100%;
-	padding-top: rem-calc(60);
-	padding-bottom: rem-calc(60);
-	
-	background: $gray-dark;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background: $black;
 	
 	*{
-		color:white;
+		color: $white;
+		margin-bottom: 0;
 	}
 	
-	img{
-		margin-bottom: 1em;
+	h3{
+		float: left;
 	}
 	
-	ul{
-		margin-left: 0;
+	a{
+		float: right;
+		line-height: 2.2;
+		
+		-webkit-transition: 1s;
+		
+		span{
+			margin-left: .5em;
+		}
 	}
 }

@@ -75,4 +75,24 @@
 			padding: 0 0 1em 0;
 		}
 	}
+	
+	&.info{
+		width: 100%;
+		padding-top: rem-calc(60);
+		padding-bottom: rem-calc(60);
+	
+		background: $gray-dark;
+	
+		*{
+			color:white;
+		}
+	
+		img{
+			margin-bottom: 1em;
+		}
+	
+		ul{
+			margin-left: 0;
+		}
+	}
 }
