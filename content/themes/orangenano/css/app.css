@@ -8349,45 +8349,45 @@ footer a span {
   margin-bottom: 0;
 }
 /* line 59, ../sass/components/_block.scss */
-.block .collapse {
-  margin-top: 2em;
-  border-bottom: thin solid black;
-}
-/* line 63, ../sass/components/_block.scss */
-.block .collapse h4 {
-  padding: .5em 0 0 0;
-  border-top: thin solid black;
-}
-/* line 68, ../sass/components/_block.scss */
-.block .collapse a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.25rem;
-  margin-bottom: 1em;
-}
-/* line 74, ../sass/components/_block.scss */
-.block .collapse p {
-  padding: 0 0 1em 0;
-}
-/* line 79, ../sass/components/_block.scss */
 .block.info {
   width: 100%;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
   background: #333333;
 }
-/* line 86, ../sass/components/_block.scss */
+/* line 66, ../sass/components/_block.scss */
 .block.info * {
   color: white;
 }
-/* line 90, ../sass/components/_block.scss */
+/* line 70, ../sass/components/_block.scss */
 .block.info img {
   margin-bottom: 1em;
 }
-/* line 94, ../sass/components/_block.scss */
+/* line 74, ../sass/components/_block.scss */
 .block.info ul {
   margin-left: 0;
+  padding-left: 0;
+  float: left !important;
+}
+
+/* line 1, ../sass/components/_accordion.scss */
+.accordion {
+  margin-top: 2em;
+  border-bottom: thin solid black;
+}
+/* line 5, ../sass/components/_accordion.scss */
+.accordion h4 {
+  cursor: pointer;
+  padding: .5em 0 0 0;
+  border-top: thin solid black;
+}
+/* line 11, ../sass/components/_accordion.scss */
+.accordion a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
 }
 
 /* v1.0.5 */

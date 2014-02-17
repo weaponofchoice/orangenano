@@ -56,26 +56,6 @@
 		}
 	}
 	
-	.collapse{
-		margin-top: 2em;
-		border-bottom: thin solid $black;
-		
-		h4{
-			padding: .5em 0 0 0;
-			border-top: thin solid $black;
-		}
-		
-		a{
-			@include source-semibold;
-			font-size: rem-calc(20);
-			margin-bottom: 1em;
-		}
-		
-		p{
-			padding: 0 0 1em 0;
-		}
-	}
-	
 	&.info{
 		width: 100%;
 		padding-top: rem-calc(60);
@@ -93,6 +73,8 @@
 	
 		ul{
 			margin-left: 0;
+			padding-left: 0;
+			float: left !important;
 		}
 	}
 }
