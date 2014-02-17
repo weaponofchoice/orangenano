@@ -5,25 +5,34 @@ header{
 	padding-bottom: .8em;
 	background: $gray-dark;
 	
+	*{
+		color: white;
+	}
+	
 	ul{
 		width: 100%;
 		display: inline;
+		float:left;
+		margin:0;
 		
 		li{
 			display: inline-block;
 			margin-right: 1em;
+			vertical-align: middle;
 			
 			img{
 				margin-right: 2em;
 			}
-			
-			*{
-				color: white;
-			}
-			
-			#login{
-				float: right;
-			}
 		}
-	}
+		
+		#login{
+			float: right;
+			vertical-align: middle;
+			
+			h3{
+				line-height: 2.5;
+			}
+			
+		}
+	}	
 }
