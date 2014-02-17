@@ -1,0 +1,120 @@
+/* Background */
+.rsDefault,
+.rsOverflow,
+.rsSlide,
+.rsVideoFrameHolder,
+.rsThumbs{
+	background: $white;
+	color: $white;
+}
+
+/* Arrows */
+.rsDefault{
+	
+	.rsArrow{
+		height: 100%;
+		width: rem-calc(44);
+		position: absolute;
+		display: block;
+		cursor: pointer;
+		z-index: 21;
+		
+		.rsArrowIcn{		
+			width: rem-calc(40);
+			height: rem-calc(40);
+			top: 50%;
+			left: 50%;
+
+			position: absolute;
+			cursor: pointer;
+		
+			&:before{
+				width: rem-calc(3);
+				height: 50%;
+				position: absolute;
+				background: $white;
+				content: " ";
+			}
+		
+			&:after{
+				height: rem-calc(3);
+				width: 50%;
+				position: absolute;
+				background: $white;
+				content: " ";
+			}
+		}
+		
+		&.rsArrowLeft{ 
+			left: 0; 
+			top: 0; 
+			margin-left: 2em;
+			-webkit-transform: rotate(-45deg);
+		
+			.rsArrowIcn{ 
+				background-position: -64px -32px; 
+			}
+		}
+		
+		&.rsArrowRight{ 
+			right: 0; 
+			top: -1.7em; 
+			margin-right: 2em;
+			-webkit-transform: rotate(135deg);
+		
+			.rsArrowIcn{
+				background-position: -64px -64px;
+			}
+		}
+		
+		&.rsArrowDisabled{
+			.rsArrowIcn{
+				opacity: .2; 
+				filter: alpha(opacity=20);
+				display: none; 
+			}
+		}
+	}
+}
+
+/* Bullets */
+.rsDefault{
+	
+	.rsBullets {
+		position: absolute;
+		z-index: 35;
+		bottom: 1em;
+		width: 100%;
+
+		background: none;
+		text-align: center;
+		
+		.rsBullet {
+			display: inline-block;
+			*display:inline; 
+			*zoom:1;
+			padding: 0 .2em;
+			
+			span {
+				display: block;
+				width: rem-calc(10);
+				height: rem-calc(10);
+				border-radius: 50%;
+				background: $white;
+				border: 2px solid $white;
+				cursor: pointer;
+			}
+		}
+		
+		.rsNavSelected{
+			span{
+				background-color: $black;
+			}
+		}
+	}
+}
+
+
+
+
+
