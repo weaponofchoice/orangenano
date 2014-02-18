@@ -4,9 +4,17 @@
 .rsSlide,
 .rsVideoFrameHolder,
 .rsThumbs{
-	background: $white;
+	background: $orange;
 	color: $white;
+	overflow: hidden;
 }
+
+.rsSlide{
+	li, div{
+		height: 100%;
+	}
+}
+
 
 /* Arrows */
 .rsDefault{

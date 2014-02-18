@@ -7,13 +7,14 @@
 	background: $orange;
 	
 	.royalSlider{
-		height: 100%;
+		height: rem-calc(600);
 		text-align: center;
 		
 		h1{
 			width: 100%;
 			position: absolute;
-			top: 0;
+			top: rem-calc(300);
+			margin-top: rem-calc(-72);
 			color: $white;
 		}
 	}

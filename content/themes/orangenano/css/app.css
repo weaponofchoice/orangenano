@@ -8761,12 +8761,18 @@ img.rsImg {
 .rsSlide,
 .rsVideoFrameHolder,
 .rsThumbs {
-  background: white;
+  background: #f89c1c;
   color: white;
+  overflow: hidden;
+}
+
+/* line 13, ../sass/components/_rs-default.scss */
+.rsSlide li, .rsSlide div {
+  height: 100%;
 }
 
 /* Arrows */
-/* line 14, ../sass/components/_rs-default.scss */
+/* line 22, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow {
   height: 100%;
   width: 2.75rem;
@@ -8775,7 +8781,7 @@ img.rsImg {
   cursor: pointer;
   z-index: 21;
 }
-/* line 22, ../sass/components/_rs-default.scss */
+/* line 30, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow .rsArrowIcn {
   width: 3.125rem;
   height: 3.125rem;
@@ -8784,7 +8790,7 @@ img.rsImg {
   position: absolute;
   cursor: pointer;
 }
-/* line 31, ../sass/components/_rs-default.scss */
+/* line 39, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow .rsArrowIcn:before {
   width: 0.1875rem;
   height: 50%;
@@ -8792,7 +8798,7 @@ img.rsImg {
   background: white;
   content: " ";
 }
-/* line 39, ../sass/components/_rs-default.scss */
+/* line 47, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow .rsArrowIcn:after {
   height: 0.1875rem;
   width: 50%;
@@ -8800,29 +8806,29 @@ img.rsImg {
   background: white;
   content: " ";
 }
-/* line 48, ../sass/components/_rs-default.scss */
+/* line 56, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowLeft {
   left: 0;
   top: 0;
   margin-left: 2em;
   -webkit-transform: rotate(-45deg);
 }
-/* line 54, ../sass/components/_rs-default.scss */
+/* line 62, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowLeft .rsArrowIcn {
   background-position: -64px -32px;
 }
-/* line 59, ../sass/components/_rs-default.scss */
+/* line 67, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowRight {
   right: 0;
   top: -2.2em;
   margin-right: 2em;
   -webkit-transform: rotate(135deg);
 }
-/* line 65, ../sass/components/_rs-default.scss */
+/* line 73, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowRight .rsArrowIcn {
   background-position: -64px -64px;
 }
-/* line 71, ../sass/components/_rs-default.scss */
+/* line 79, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowDisabled .rsArrowIcn {
   opacity: .2;
   filter: alpha(opacity=20);
@@ -8830,7 +8836,7 @@ img.rsImg {
 }
 
 /* Bullets */
-/* line 83, ../sass/components/_rs-default.scss */
+/* line 91, ../sass/components/_rs-default.scss */
 .rsDefault .rsBullets {
   position: absolute;
   z-index: 35;
@@ -8839,14 +8845,14 @@ img.rsImg {
   background: none;
   text-align: center;
 }
-/* line 92, ../sass/components/_rs-default.scss */
+/* line 100, ../sass/components/_rs-default.scss */
 .rsDefault .rsBullets .rsBullet {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 0 .2em;
 }
-/* line 98, ../sass/components/_rs-default.scss */
+/* line 106, ../sass/components/_rs-default.scss */
 .rsDefault .rsBullets .rsBullet span {
   display: block;
   width: 0.625rem;
@@ -8856,7 +8862,7 @@ img.rsImg {
   border: 2px solid white;
   cursor: pointer;
 }
-/* line 110, ../sass/components/_rs-default.scss */
+/* line 118, ../sass/components/_rs-default.scss */
 .rsDefault .rsBullets .rsNavSelected span {
   background-color: black;
 }
@@ -8872,13 +8878,14 @@ img.rsImg {
 }
 /* line 9, ../sass/components/_gallery.scss */
 #gallery .royalSlider {
-  height: 100%;
+  height: 37.5rem;
   text-align: center;
 }
 /* line 13, ../sass/components/_gallery.scss */
 #gallery .royalSlider h1 {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 18.75rem;
+  margin-top: -4.5rem;
   color: white;
 }
