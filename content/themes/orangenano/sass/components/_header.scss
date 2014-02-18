@@ -23,16 +23,14 @@ header{
 			img{
 				margin-right: 2em;
 			}
-		}
-		
-		#login{
-			float: right;
-			vertical-align: middle;
 			
-			h3{
-				line-height: 2.5;
+			&:last-child{
+				float: right;
+				
+				#login{
+					line-height: 2.5;
+				}
 			}
-			
 		}
 	}	
 }

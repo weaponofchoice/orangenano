@@ -18,7 +18,7 @@ h2{
 	margin-bottom: rem-calc(50);
 }
 
-h3{
+h3, #login{
 	@extend %base;
 	@include source-semibold;
 	font-size: rem-calc(15);

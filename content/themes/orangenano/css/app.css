@@ -8174,7 +8174,7 @@ th.hide-for-touch {
 }
 
 /* line 2, ../sass/components/_typography.scss */
-h1, h2, h3, h4, p, a {
+h1, h2, h3, #login, h4, p, a {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0;
@@ -8198,7 +8198,7 @@ h2 {
 }
 
 /* line 21, ../sass/components/_typography.scss */
-h3 {
+h3, #login {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -8257,13 +8257,12 @@ header ul li {
 header ul li img {
   margin-right: 2em;
 }
-/* line 28, ../sass/components/_header.scss */
-header ul #login {
+/* line 27, ../sass/components/_header.scss */
+header ul li:last-child {
   float: right;
-  vertical-align: middle;
 }
-/* line 32, ../sass/components/_header.scss */
-header ul #login h3 {
+/* line 30, ../sass/components/_header.scss */
+header ul li:last-child #login {
   line-height: 2.5;
 }
 
