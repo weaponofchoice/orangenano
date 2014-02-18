@@ -8291,6 +8291,10 @@ footer a {
 footer a span {
   margin-left: .5em;
 }
+/* line 24, ../sass/components/_footer.scss */
+footer a span img {
+  cursor: pointer;
+}
 
 /* line 1, ../sass/components/_blocks.scss */
 .block {
@@ -8381,7 +8385,7 @@ footer a span {
 /* line 5, ../sass/components/_accordion.scss */
 .accordion h4 {
   cursor: pointer;
-  padding: .5em 0 0 0;
+  padding: .5em 0 0 2em;
   border-top: thin solid black;
 }
 /* line 11, ../sass/components/_accordion.scss */
@@ -8393,6 +8397,75 @@ footer a span {
   margin-bottom: 1em;
 }
 
+/*---------------
+		add button
+---------------*/
+/* line 25, ../sass/components/_accordion.scss */
+.open, .close {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-left: -2em;
+  top: .75em;
+  position: absolute;
+  border: 2px solid black;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  border-radius: 1.25rem;
+}
+/* line 37, ../sass/components/_accordion.scss */
+.open:after, .close:after {
+  content: " ";
+  left: 3px;
+  width: 10px;
+  height: 2px;
+  margin-top: 7px;
+  position: absolute;
+  background: black;
+}
+/* line 47, ../sass/components/_accordion.scss */
+.open:before, .close:before {
+  content: " ";
+  z-index: 999;
+  left: 7px;
+  width: 2px;
+  height: 10px;
+  margin-top: 3px;
+  position: absolute;
+  background: black;
+}
+
+/* line 59, ../sass/components/_accordion.scss */
+.close {
+  -webkit-transform: rotate(45deg);
+}
+
+/* Alternative style 
+
+.open-alt:before {
+	content: " ";
+  left:6px;
+  width:5px;
+  height:15px;
+  margin-top:-7px;
+  background: $black;
+}
+
+.open-alt:after {
+	content: " ";
+  left:1px;
+  width:15px;
+  height:5px;
+  margin-top:-2px;
+  background: $black;
+}
+
+.open-alt:hover:after,
+.open-alt:focus:after,
+.open-alt:active:after {
+	content: " ";
+  background: $gray-dark;
+}*/
 /* v1.0.5 */
 /* Core RS CSS file. 95% of the time you shouldn't change anything here. */
 /* line 3, ../sass/components/_royalslider.scss */

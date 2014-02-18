@@ -4,7 +4,7 @@
 	
 	h4{
 		cursor: pointer;
-		padding: .5em 0 0 0;
+		padding: .5em 0 0 2em;
 		border-top: thin solid $black;
 	}
 	
@@ -18,3 +18,75 @@
 		//margin: 0 0 1em 0;
 	}
 }
+
+/*---------------
+		add button
+---------------*/
+.open {
+	content: " ";
+	width: 20px;
+	height: 20px;
+	margin-left: -2em;
+	top: .75em;
+	position: absolute;
+	border: 2px solid black;
+	-webkit-border-radius: 1.25rem;
+	-moz-border-radius: 1.25rem;
+	border-radius: 1.25rem;
+	
+	&:after {
+		content: " ";
+		left: 3px;
+		width: 10px;
+		height: 2px;
+		margin-top: 7px;
+		position: absolute;
+		background: $black;
+	}
+
+	&:before {
+		content: " ";
+		z-index: 999;
+		left: 7px;
+		width: 2px;
+		height: 10px;
+		margin-top: 3px;
+		position: absolute;
+		background: $black;
+	}
+}
+
+.close{
+	@extend .open;
+	-webkit-transform: rotate(45deg);
+}
+
+
+
+/* Alternative style 
+
+.open-alt:before {
+	content: " ";
+  left:6px;
+  width:5px;
+  height:15px;
+  margin-top:-7px;
+  background: $black;
+}
+
+.open-alt:after {
+	content: " ";
+  left:1px;
+  width:15px;
+  height:5px;
+  margin-top:-2px;
+  background: $black;
+}
+
+.open-alt:hover:after,
+.open-alt:focus:after,
+.open-alt:active:after {
+	content: " ";
+  background: $gray-dark;
+}*/
+
