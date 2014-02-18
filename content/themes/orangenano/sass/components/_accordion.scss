@@ -20,9 +20,7 @@
 	}
 }
 
-/*---------------
-		add button
----------------*/
+//Buttons
 .open {
 	content: " ";
 	width: 20px;
@@ -34,6 +32,10 @@
 	-webkit-border-radius: 1.25rem;
 	-moz-border-radius: 1.25rem;
 	border-radius: 1.25rem;
+	
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	transition: .2s;
 	
 	&:after {
 		content: " ";
@@ -61,33 +63,3 @@
 	@extend .open;
 	-webkit-transform: rotate(45deg);
 }
-
-
-
-/* Alternative style 
-
-.open-alt:before {
-	content: " ";
-  left:6px;
-  width:5px;
-  height:15px;
-  margin-top:-7px;
-  background: $black;
-}
-
-.open-alt:after {
-	content: " ";
-  left:1px;
-  width:15px;
-  height:5px;
-  margin-top:-2px;
-  background: $black;
-}
-
-.open-alt:hover:after,
-.open-alt:focus:after,
-.open-alt:active:after {
-	content: " ";
-  background: $gray-dark;
-}*/
-
