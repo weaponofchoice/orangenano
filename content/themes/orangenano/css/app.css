@@ -8195,8 +8195,14 @@ h2 {
   font-size: 2.25rem;
   margin-bottom: 3.125rem;
 }
+/* line 20, ../sass/components/_typography.scss */
+h2 span {
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-/* line 21, ../sass/components/_typography.scss */
+/* line 25, ../sass/components/_typography.scss */
 h3, #login {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8206,7 +8212,7 @@ h3, #login {
   white-space: nowrap;
 }
 
-/* line 29, ../sass/components/_typography.scss */
+/* line 33, ../sass/components/_typography.scss */
 h4 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8215,7 +8221,7 @@ h4 {
   margin-bottom: 1em;
 }
 
-/* line 36, ../sass/components/_typography.scss */
+/* line 40, ../sass/components/_typography.scss */
 p, a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
@@ -8223,7 +8229,7 @@ p, a {
   font-size: 1.25rem;
   color: #333333;
 }
-/* line 42, ../sass/components/_typography.scss */
+/* line 46, ../sass/components/_typography.scss */
 p span, a span {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
@@ -8337,56 +8343,74 @@ footer a span img {
 .block .icons.icons-inside li:last-child {
   padding-right: 0;
 }
-/* line 41, ../sass/components/_blocks.scss */
-.block.appointment {
-  background: url("../img/background2.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-/* line 46, ../sass/components/_blocks.scss */
-.block.appointment div {
-  text-align: center;
-}
-/* line 49, ../sass/components/_blocks.scss */
-.block.appointment div h1, .block.appointment div h2 {
-  color: white;
-}
-/* line 53, ../sass/components/_blocks.scss */
-.block.appointment div h2 {
-  margin-bottom: 0;
-}
-/* line 59, ../sass/components/_blocks.scss */
-.block.info {
-  width: 100%;
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-  background: #333333;
-}
-/* line 66, ../sass/components/_blocks.scss */
-.block.info * {
-  color: white;
-}
-/* line 70, ../sass/components/_blocks.scss */
-.block.info img {
-  margin-bottom: 1em;
-}
-/* line 74, ../sass/components/_blocks.scss */
-.block.info ul {
-  margin-left: 0;
-  padding-left: 0;
-  float: left !important;
-}
-/* line 83, ../sass/components/_blocks.scss */
+/* line 43, ../sass/components/_blocks.scss */
 .block.block-7 ul.icons li {
   text-align: center;
 }
-/* line 89, ../sass/components/_blocks.scss */
+/* line 49, ../sass/components/_blocks.scss */
 .block.block-9 {
   height: 0;
   padding-bottom: 30%;
   background: url("../img/background.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
+}
+/* line 57, ../sass/components/_blocks.scss */
+.block.block-10 {
+  text-align: center;
+}
+/* line 61, ../sass/components/_blocks.scss */
+.block.block-10 p span {
+  font-size: 2.25rem;
+  margin-bottom: 3.125rem;
+}
+
+/* line 1, ../sass/components/_info-contact.scss */
+.info-contact {
+  width: 100%;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background: #333333;
+  box-shadow: inset 0 20px 23px rgba(0, 0, 0, 0.3);
+}
+/* line 9, ../sass/components/_info-contact.scss */
+.info-contact * {
+  color: white;
+}
+/* line 13, ../sass/components/_info-contact.scss */
+.info-contact img {
+  margin-bottom: 1em;
+}
+/* line 17, ../sass/components/_info-contact.scss */
+.info-contact ul {
+  margin-left: 0;
+  padding-left: 0;
+  float: left !important;
+}
+/* line 22, ../sass/components/_info-contact.scss */
+.info-contact ul:last-child {
+  float: right !important;
+}
+/* line 25, ../sass/components/_info-contact.scss */
+.info-contact ul:last-child .social {
+  margin-left: 1em;
+  top: .5em;
+}
+/* line 30, ../sass/components/_info-contact.scss */
+.info-contact ul:last-child form {
+  width: 100%;
+  height: 2.5rem;
+}
+/* line 35, ../sass/components/_info-contact.scss */
+.info-contact ul:last-child form input[type="text"],
+.info-contact ul:last-child form button {
+  height: 2.5rem;
+  padding: .5em 1em;
+  float: left;
+}
+/* line 41, ../sass/components/_info-contact.scss */
+.info-contact ul:last-child form button {
+  float: right;
 }
 
 /* line 1, ../sass/components/_accordion.scss */
