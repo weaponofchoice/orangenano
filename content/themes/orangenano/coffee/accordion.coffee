@@ -8,6 +8,7 @@ if $('.accordion').length > 0
 		icons: icons,
 		header: 'h4', 
 		animate: 200, 
-		collapsible: true, 
+		collapsible: true,
+		heightStyle: 'auto',
 		active: false,
 	});

@@ -8385,10 +8385,11 @@ footer a span img {
 /* line 5, ../sass/components/_accordion.scss */
 .accordion h4 {
   cursor: pointer;
-  padding: .5em 0 0 2em;
+  padding: .5em 0 .5em 2em;
   border-top: thin solid black;
+  margin-bottom: 0;
 }
-/* line 11, ../sass/components/_accordion.scss */
+/* line 12, ../sass/components/_accordion.scss */
 .accordion a {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -8400,7 +8401,7 @@ footer a span img {
 /*---------------
 		add button
 ---------------*/
-/* line 25, ../sass/components/_accordion.scss */
+/* line 26, ../sass/components/_accordion.scss */
 .open, .close {
   content: " ";
   width: 20px;
@@ -8413,7 +8414,7 @@ footer a span img {
   -moz-border-radius: 1.25rem;
   border-radius: 1.25rem;
 }
-/* line 37, ../sass/components/_accordion.scss */
+/* line 38, ../sass/components/_accordion.scss */
 .open:after, .close:after {
   content: " ";
   left: 3px;
@@ -8423,7 +8424,7 @@ footer a span img {
   position: absolute;
   background: black;
 }
-/* line 47, ../sass/components/_accordion.scss */
+/* line 48, ../sass/components/_accordion.scss */
 .open:before, .close:before {
   content: " ";
   z-index: 999;
@@ -8435,7 +8436,7 @@ footer a span img {
   background: black;
 }
 
-/* line 59, ../sass/components/_accordion.scss */
+/* line 60, ../sass/components/_accordion.scss */
 .close {
   -webkit-transform: rotate(45deg);
 }
