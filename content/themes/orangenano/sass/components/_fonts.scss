@@ -1,20 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
-
-@mixin source-bold{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 700;
-	font-style: normal;
-}
-
-@mixin source-semibold{
-	font-family: 'Source Sans Pro', sans-serif;
+@mixin proxima-semibold{
+	font-family: 'proxima-nova',sans-serif;
 	font-weight: 600;
 	font-style: normal;
 }
 
-@mixin source-regular{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
+@mixin proxima-regular{
+	font-family: 'proxima-nova',sans-serif;
+	font-weight: 400;
 	font-style: normal;
 }
 
+@mixin proxima-light{
+	font-family: 'proxima-nova',sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}

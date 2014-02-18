@@ -7,38 +7,41 @@
 
 h1{
 	@extend %base;
-	@include source-semibold;
+	@include proxima-semibold;
 	font-size: rem-calc(72);
 }
 
 h2{
 	@extend %base;
-	@include source-semibold;
+	@include proxima-semibold;
 	font-size: rem-calc(36);
 	margin-bottom: rem-calc(50);
 }
 
 h3, #login{
 	@extend %base;
-	@include source-semibold;
+	@include proxima-semibold;
 	font-size: rem-calc(15);
 	line-height: 3;
+	white-space: nowrap;
 }
 
 h4{
 	@extend %base;
-	@include source-semibold;
+	@include proxima-semibold;
 	font-size: rem-calc(20);
 	margin-bottom: 1em;
 }
 
 p, a{
 	@extend %base;
-	@include source-regular;
+	@include proxima-regular;
 	font-size: rem-calc(20);
 	color: $gray-dark;
 	
 	span{
+		@include proxima-light;
 		font-size: rem-calc(26);
+		line-height: 1.2;
 	}
 }

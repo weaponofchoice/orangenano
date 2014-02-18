@@ -6,7 +6,6 @@
  * Correct `block` display not defined in IE 8/9.
  */
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 /* line 22, ../sass/_normalize.scss */
 article,
 aside,
@@ -8182,7 +8181,7 @@ h1, h2, h3, #login, h4, p, a {
 
 /* line 8, ../sass/components/_typography.scss */
 h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 4.5rem;
@@ -8190,7 +8189,7 @@ h1 {
 
 /* line 14, ../sass/components/_typography.scss */
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 2.25rem;
@@ -8199,33 +8198,38 @@ h2 {
 
 /* line 21, ../sass/components/_typography.scss */
 h3, #login {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 3;
+  white-space: nowrap;
 }
 
-/* line 28, ../sass/components/_typography.scss */
+/* line 29, ../sass/components/_typography.scss */
 h4 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.25rem;
   margin-bottom: 1em;
 }
 
-/* line 35, ../sass/components/_typography.scss */
+/* line 36, ../sass/components/_typography.scss */
 p, a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.25rem;
   color: #333333;
 }
-/* line 41, ../sass/components/_typography.scss */
+/* line 42, ../sass/components/_typography.scss */
 p span, a span {
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 100;
+  font-style: normal;
   font-size: 1.625rem;
+  line-height: 1.2;
 }
 
 /* line 1, ../sass/components/_header.scss */
@@ -8305,7 +8309,7 @@ footer a span img {
 }
 /* line 7, ../sass/components/_blocks.scss */
 .block:nth-child(odd) {
-  background: #f8f9f9;
+  background: #f1f2f2;
 }
 /* line 11, ../sass/components/_blocks.scss */
 .block article {
@@ -8376,6 +8380,14 @@ footer a span img {
 .block.block-7 ul.icons li {
   text-align: center;
 }
+/* line 89, ../sass/components/_blocks.scss */
+.block.block-9 {
+  height: 0;
+  padding-bottom: 30%;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
 /* line 1, ../sass/components/_accordion.scss */
 .accordion {
@@ -8391,7 +8403,7 @@ footer a span img {
 }
 /* line 12, ../sass/components/_accordion.scss */
 .accordion a {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.25rem;

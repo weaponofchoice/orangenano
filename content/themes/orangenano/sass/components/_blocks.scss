@@ -85,4 +85,12 @@
 			}
 		}
 	}
+	
+	&.block-9{
+		height: 0;
+		padding-bottom: 30%;
+		background: url('../img/background.jpg') no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
 }
