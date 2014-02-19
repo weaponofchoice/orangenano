@@ -8386,11 +8386,21 @@ footer a span img {
 }
 /* line 91, ../sass/components/_blocks.scss */
 .block.block-9 {
-  height: 0;
-  padding-bottom: 30%;
-  background: url("../img/background.jpg") no-repeat;
-  background-size: cover;
+  height: 25rem;
+  padding: 0;
+}
+/* line 95, ../sass/components/_blocks.scss */
+.block.block-9 .row {
+  max-width: none;
+  height: 100%;
+}
+/* line 99, ../sass/components/_blocks.scss */
+.block.block-9 .row .parallax {
+  background-attachment: fixed;
   background-position: center center;
+  height: 25rem;
+  position: relative;
+  background: url("../img/background.jpg");
 }
 
 /* line 1, ../sass/components/_accordion.scss */
