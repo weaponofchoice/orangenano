@@ -16,10 +16,6 @@ h2{
 	@include proxima-semibold;
 	font-size: rem-calc(36);
 	margin-bottom: rem-calc(50);
-	
-	span{
-		@include proxima-light;
-	}
 }
 
 h3, #login{
