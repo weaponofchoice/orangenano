@@ -1,24 +1,32 @@
 // Frameworks, compass etc. Make sure to configure 'settings' and 'foundation'!
 @import
-  "_normalize",
-  "_settings",
-  "_foundation",
-  "compass/css3";
+  	"_normalize",
+  	"_settings",
+  	"_foundation",
+  	"compass/css3";
 
 // General stylesheets, colors, fonts, typography rules, mixins etc.
 @import
-  "components/_mixins",
-  "components/_colors",
+  	"components/_mixins",
+  	"components/_colors",
 	"components/_fonts",
 	"components/_general",
-  "components/_typography";
+	"components/_typography";
 
 // Elements
 @import
 	"components/_header",
 	"components/_footer",
-	"components/_blocks",
-	"components/_accordion",
+	
+	"components/blocks/_block",
+	"components/blocks/_block-accordion",
+	"components/blocks/_block-contact",
+	"components/blocks/_block-icons",
+	"components/blocks/_block-image-left",
+	"components/blocks/_block-image-right",
+	"components/blocks/_block-parallax",
+	"components/blocks/_block-textCentered",
+	
 	"components/_royalslider.scss",
 	"components/_rs-default.scss",
 	"components/_gallery";

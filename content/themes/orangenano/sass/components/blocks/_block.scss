@@ -1,0 +1,14 @@
+.block{
+	width: 100%;
+	max-width: none;
+	padding-top: rem-calc(80);
+	padding-bottom: rem-calc(80);
+	
+	&:nth-child(odd){
+		background: $gray-light;
+	}
+	
+	article{
+		float: left !important;
+	}
+}

@@ -1,0 +1,35 @@
+.block-icons{
+	ul{
+		margin-left: 0;
+			
+		li{
+			text-align: center;
+		
+			img{
+				margin-top: rem-calc(80);
+				margin-bottom: rem-calc(20);
+			}
+		}
+
+		&.icons-inside{		
+			li{
+				text-align: left;
+				float: left;
+		
+				&:first-child{
+					padding-left: 0;
+				}
+		
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+
+		&.icons-insideCentered{
+			li{
+				text-align: center;
+			}
+		}
+	}	
+}

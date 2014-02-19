@@ -1,0 +1,10 @@
+.block-textCentered{
+	text-align: center;
+	
+	p{
+		span{
+			font-size: rem-calc(36);
+			margin-bottom: rem-calc(50);
+		}
+	}
+}

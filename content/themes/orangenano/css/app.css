@@ -8195,8 +8195,14 @@ h2 {
   font-size: 2.25rem;
   margin-bottom: 3.125rem;
 }
+/* line 20, ../sass/components/_typography.scss */
+h2 span {
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
-/* line 21, ../sass/components/_typography.scss */
+/* line 25, ../sass/components/_typography.scss */
 h3, #login {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8206,7 +8212,7 @@ h3, #login {
   white-space: nowrap;
 }
 
-/* line 29, ../sass/components/_typography.scss */
+/* line 33, ../sass/components/_typography.scss */
 h4 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8215,7 +8221,7 @@ h4 {
   margin-bottom: 1em;
 }
 
-/* line 36, ../sass/components/_typography.scss */
+/* line 40, ../sass/components/_typography.scss */
 p, a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
@@ -8223,7 +8229,7 @@ p, a {
   font-size: 1.25rem;
   color: #333333;
 }
-/* line 42, ../sass/components/_typography.scss */
+/* line 46, ../sass/components/_typography.scss */
 p span, a span {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
@@ -8300,129 +8306,48 @@ footer a span img {
   cursor: pointer;
 }
 
-/* line 1, ../sass/components/_blocks.scss */
+/* line 1, ../sass/components/blocks/_block.scss */
 .block {
   width: 100%;
   max-width: none;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-/* line 7, ../sass/components/_blocks.scss */
+/* line 7, ../sass/components/blocks/_block.scss */
 .block:nth-child(odd) {
   background: #f1f2f2;
 }
-/* line 11, ../sass/components/_blocks.scss */
+/* line 11, ../sass/components/blocks/_block.scss */
 .block article {
   float: left !important;
 }
-/* line 15, ../sass/components/_blocks.scss */
-.block .icons {
-  margin-left: 0;
-}
-/* line 18, ../sass/components/_blocks.scss */
-.block .icons li {
-  text-align: center;
-}
-/* line 21, ../sass/components/_blocks.scss */
-.block .icons li img {
-  margin-top: 5rem;
-  margin-bottom: 1.25rem;
-}
-/* line 28, ../sass/components/_blocks.scss */
-.block .icons.icons-inside li {
-  text-align: left;
-  float: left;
-}
-/* line 32, ../sass/components/_blocks.scss */
-.block .icons.icons-inside li:first-child {
-  padding-left: 0;
-}
-/* line 36, ../sass/components/_blocks.scss */
-.block .icons.icons-inside li:last-child {
-  padding-right: 0;
-}
-/* line 43, ../sass/components/_blocks.scss */
-.block.appointment {
-  background: url("../img/background2.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-/* line 48, ../sass/components/_blocks.scss */
-.block.appointment div {
-  text-align: center;
-}
-/* line 51, ../sass/components/_blocks.scss */
-.block.appointment div h1, .block.appointment div h2 {
-  color: white;
-}
-/* line 55, ../sass/components/_blocks.scss */
-.block.appointment div h2 {
-  margin-bottom: 0;
-}
-/* line 61, ../sass/components/_blocks.scss */
-.block.info {
-  width: 100%;
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-  background: #333333;
-}
-/* line 68, ../sass/components/_blocks.scss */
-.block.info * {
-  color: white;
-}
-/* line 72, ../sass/components/_blocks.scss */
-.block.info img {
-  margin-bottom: 1em;
-}
-/* line 76, ../sass/components/_blocks.scss */
-.block.info ul {
-  margin-left: 0;
-  padding-left: 0;
-  float: left !important;
-}
-/* line 85, ../sass/components/_blocks.scss */
-.block.block-7 ul.icons li {
-  text-align: center;
-}
-/* line 91, ../sass/components/_blocks.scss */
-.block.block-9 {
-  height: 25rem;
-  padding: 0;
-}
-/* line 95, ../sass/components/_blocks.scss */
-.block.block-9.parallax {
-  height: 25rem;
-  position: relative;
-  background: url("../img/background.jpg") no-repeat center center;
-  background-size: 120%;
-}
 
-/* line 1, ../sass/components/_accordion.scss */
-.accordion {
+/* line 2, ../sass/components/blocks/_block-accordion.scss */
+.block-accordion .accordion {
   margin-top: 2em;
   border-bottom: thin solid black;
 }
-/* line 5, ../sass/components/_accordion.scss */
-.accordion h4 {
+/* line 6, ../sass/components/blocks/_block-accordion.scss */
+.block-accordion .accordion h4 {
   cursor: pointer;
   padding: .5em 0 .5em 2em;
   border-top: thin solid black;
   margin-bottom: 0;
 }
-/* line 12, ../sass/components/_accordion.scss */
-.accordion a {
+/* line 13, ../sass/components/blocks/_block-accordion.scss */
+.block-accordion .accordion a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.25rem;
   margin-bottom: 1em;
 }
-/* line 18, ../sass/components/_accordion.scss */
-.accordion div {
+/* line 19, ../sass/components/blocks/_block-accordion.scss */
+.block-accordion .accordion div {
   margin: 0 0 1em 0;
 }
 
-/* line 24, ../sass/components/_accordion.scss */
+/* line 26, ../sass/components/blocks/_block-accordion.scss */
 .open, .close {
   content: " ";
   width: 20px;
@@ -8431,14 +8356,16 @@ footer a span img {
   top: .75em;
   position: absolute;
   border: 2px solid black;
-  -webkit-border-radius: 1.25rem;
-  -moz-border-radius: 1.25rem;
-  border-radius: 1.25rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
   -webkit-transition: .2s;
   -moz-transition: .2s;
   transition: .2s;
 }
-/* line 40, ../sass/components/_accordion.scss */
+/* line 40, ../sass/components/blocks/_block-accordion.scss */
 .open:after, .close:after {
   content: " ";
   left: 3px;
@@ -8448,7 +8375,7 @@ footer a span img {
   position: absolute;
   background: black;
 }
-/* line 50, ../sass/components/_accordion.scss */
+/* line 50, ../sass/components/blocks/_block-accordion.scss */
 .open:before, .close:before {
   content: " ";
   z-index: 999;
@@ -8460,9 +8387,115 @@ footer a span img {
   background: black;
 }
 
-/* line 62, ../sass/components/_accordion.scss */
+/* line 62, ../sass/components/blocks/_block-accordion.scss */
 .close {
   -webkit-transform: rotate(45deg);
+}
+
+/* line 1, ../sass/components/blocks/_block-contact.scss */
+.block-contact {
+  width: 100%;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background: #333333;
+  box-shadow: inset 0 20px 23px rgba(0, 0, 0, 0.2);
+}
+/* line 9, ../sass/components/blocks/_block-contact.scss */
+.block-contact * {
+  color: white;
+}
+/* line 13, ../sass/components/blocks/_block-contact.scss */
+.block-contact img {
+  margin-bottom: 1em;
+}
+/* line 17, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul {
+  margin-left: 0;
+  padding-left: 0;
+  float: left !important;
+}
+/* line 22, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child {
+  float: right !important;
+}
+/* line 25, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child h3 {
+  top: -.8em;
+}
+/* line 29, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child .social {
+  margin-left: 1em;
+  top: .5em;
+}
+/* line 34, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child form {
+  width: 100%;
+  height: 2.5rem;
+}
+/* line 39, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child form input[type="text"],
+.block-contact ul:last-child form button {
+  height: 2.5rem;
+  padding: .5em 1em;
+  float: left;
+}
+/* line 45, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child form input[type="text"] {
+  color: black;
+}
+/* line 49, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul:last-child form button {
+  float: right;
+}
+
+/* line 2, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul {
+  margin-left: 0;
+}
+/* line 5, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul li {
+  text-align: center;
+}
+/* line 8, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul li img {
+  margin-top: 5rem;
+  margin-bottom: 1.25rem;
+}
+/* line 15, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul.icons-inside li {
+  text-align: left;
+  float: left;
+}
+/* line 19, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul.icons-inside li:first-child {
+  padding-left: 0;
+}
+/* line 23, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul.icons-inside li:last-child {
+  padding-right: 0;
+}
+/* line 30, ../sass/components/blocks/_block-icons.scss */
+.block-icons ul.icons-insideCentered li {
+  text-align: center;
+}
+
+/* line 1, ../sass/components/blocks/_block-parallax.scss */
+.block-parallax {
+  height: 25rem;
+  position: relative;
+  padding: 0;
+  background: url("../img/background.jpg") no-repeat center center;
+  background-size: 120%;
+}
+
+/* line 1, ../sass/components/blocks/_block-textCentered.scss */
+.block-textCentered {
+  text-align: center;
+}
+/* line 5, ../sass/components/blocks/_block-textCentered.scss */
+.block-textCentered p span {
+  font-size: 2.25rem;
+  margin-bottom: 3.125rem;
 }
 
 /* v1.0.5 */

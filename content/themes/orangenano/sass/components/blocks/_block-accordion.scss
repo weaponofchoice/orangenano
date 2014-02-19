@@ -1,22 +1,24 @@
-.accordion{
-	margin-top: 2em;
-	border-bottom: thin solid $black;
+.block-accordion{
+	.accordion{
+		margin-top: 2em;
+		border-bottom: thin solid $black;
 	
-	h4{
-		cursor: pointer;
-		padding: .5em 0 .5em 2em;
-		border-top: thin solid $black;
-		margin-bottom: 0;
-	}
+		h4{
+			cursor: pointer;
+			padding: .5em 0 .5em 2em;
+			border-top: thin solid $black;
+			margin-bottom: 0;
+		}
 	
-	a{
-		@include proxima-semibold;
-		font-size: rem-calc(20);
-		margin-bottom: 1em;
-	}
+		a{
+			@include proxima-semibold;
+			font-size: rem-calc(20);
+			margin-bottom: 1em;
+		}
 	
-	div{
-		margin: 0 0 1em 0;
+		div{
+			margin: 0 0 1em 0;
+		}
 	}
 }
 
@@ -29,9 +31,7 @@
 	top: .75em;
 	position: absolute;
 	border: 2px solid black;
-	-webkit-border-radius: 1.25rem;
-	-moz-border-radius: 1.25rem;
-	border-radius: 1.25rem;
+	@include border-radius( 100%);
 	
 	-webkit-transition: .2s;
 	-moz-transition: .2s;
