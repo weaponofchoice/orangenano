@@ -8413,6 +8413,10 @@ footer a span img {
   font-size: 1.25rem;
   margin-bottom: 1em;
 }
+/* line 18, ../sass/components/_accordion.scss */
+.accordion div {
+  margin: 0 0 1em 0;
+}
 
 /* line 24, ../sass/components/_accordion.scss */
 .open, .close {
