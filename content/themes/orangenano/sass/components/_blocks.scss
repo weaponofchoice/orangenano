@@ -92,17 +92,11 @@
 		height: rem-calc(400);
 		padding: 0;
 		
-		.row{
-			max-width: none;
-			height: 100%;
-			
-			.parallax{
-				background-attachment: fixed;
-				background-position: center center;
-				height: rem-calc(400);
-				position: relative;
-				background: url('../img/background.jpg');
-			}
+		&.parallax{
+			height: rem-calc(400);
+			position: relative;
+			background: url('../img/background.jpg') no-repeat center center;
+			background-size: 120%;
 		}
 	}
 }
