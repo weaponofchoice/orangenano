@@ -8315,72 +8315,76 @@ footer a span img {
 .block article {
   float: left !important;
 }
-/* line 16, ../sass/components/_blocks.scss */
+/* line 15, ../sass/components/_blocks.scss */
+.block .icons {
+  margin-left: 0;
+}
+/* line 18, ../sass/components/_blocks.scss */
 .block .icons li {
   text-align: center;
 }
-/* line 19, ../sass/components/_blocks.scss */
+/* line 21, ../sass/components/_blocks.scss */
 .block .icons li img {
   margin-top: 5rem;
   margin-bottom: 1.25rem;
 }
-/* line 26, ../sass/components/_blocks.scss */
+/* line 28, ../sass/components/_blocks.scss */
 .block .icons.icons-inside li {
   text-align: left;
   float: left;
 }
-/* line 30, ../sass/components/_blocks.scss */
+/* line 32, ../sass/components/_blocks.scss */
 .block .icons.icons-inside li:first-child {
   padding-left: 0;
 }
-/* line 34, ../sass/components/_blocks.scss */
+/* line 36, ../sass/components/_blocks.scss */
 .block .icons.icons-inside li:last-child {
   padding-right: 0;
 }
-/* line 41, ../sass/components/_blocks.scss */
+/* line 43, ../sass/components/_blocks.scss */
 .block.appointment {
   background: url("../img/background2.jpg");
   background-size: cover;
   background-position: center center;
 }
-/* line 46, ../sass/components/_blocks.scss */
+/* line 48, ../sass/components/_blocks.scss */
 .block.appointment div {
   text-align: center;
 }
-/* line 49, ../sass/components/_blocks.scss */
+/* line 51, ../sass/components/_blocks.scss */
 .block.appointment div h1, .block.appointment div h2 {
   color: white;
 }
-/* line 53, ../sass/components/_blocks.scss */
+/* line 55, ../sass/components/_blocks.scss */
 .block.appointment div h2 {
   margin-bottom: 0;
 }
-/* line 59, ../sass/components/_blocks.scss */
+/* line 61, ../sass/components/_blocks.scss */
 .block.info {
   width: 100%;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
   background: #333333;
 }
-/* line 66, ../sass/components/_blocks.scss */
+/* line 68, ../sass/components/_blocks.scss */
 .block.info * {
   color: white;
 }
-/* line 70, ../sass/components/_blocks.scss */
+/* line 72, ../sass/components/_blocks.scss */
 .block.info img {
   margin-bottom: 1em;
 }
-/* line 74, ../sass/components/_blocks.scss */
+/* line 76, ../sass/components/_blocks.scss */
 .block.info ul {
   margin-left: 0;
   padding-left: 0;
   float: left !important;
 }
-/* line 83, ../sass/components/_blocks.scss */
+/* line 85, ../sass/components/_blocks.scss */
 .block.block-7 ul.icons li {
   text-align: center;
 }
-/* line 89, ../sass/components/_blocks.scss */
+/* line 91, ../sass/components/_blocks.scss */
 .block.block-9 {
   height: 0;
   padding-bottom: 30%;
