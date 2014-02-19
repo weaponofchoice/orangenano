@@ -19,3 +19,32 @@
 		}
 	}
 }
+
+//Media queries
+@media #{$medium-down}{
+	#gallery{
+		height: rem-calc(400);
+		
+		.royalSlider{
+			height: rem-calc(400);
+			
+			h1{
+				top: rem-calc(200);
+			}
+		}
+	}
+}
+
+@media #{$xlarge-up}{
+	#gallery{
+		height: rem-calc(800);
+		
+		.royalSlider{
+			height: rem-calc(800);
+			
+			h1{
+				top: rem-calc(400);
+			}
+		}
+	}
+}

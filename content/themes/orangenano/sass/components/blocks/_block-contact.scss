@@ -1,7 +1,6 @@
 .block-contact{
 	width: 100%;
-	padding-top: rem-calc(60);
-	padding-bottom: rem-calc(60);
+	padding: rem-calc(60) 2em;
 
 	background: $gray-dark;
 	box-shadow: inset 0 20px 23px rgba(0,0,0,.2);
@@ -53,3 +52,15 @@
 		}
 	}
 }
+
+/*Media queries
+@media #{$medium-down}{
+	.block-contact{
+		ul{
+			&:last-child{
+				float: left !important;
+				padding-top: rem-calc(60);
+			}
+		}
+	}
+}*/

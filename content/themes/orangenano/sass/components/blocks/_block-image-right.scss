@@ -1,3 +1,18 @@
 .block-image-right{
 	
 }
+
+//Media queries
+@media #{$medium-down}{
+	.block-image-right{
+		.row{
+			div{
+				text-align: center;
+				
+				img{
+					padding-top: rem-calc(80); //Same as '.block' top and bottom padding
+				}
+			}
+		}
+	}
+}

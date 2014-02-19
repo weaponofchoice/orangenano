@@ -1,5 +1,5 @@
 .block-icons{
-	ul{
+	.icons{
 		margin-left: 0;
 			
 		li{
@@ -11,24 +11,10 @@
 			}
 		}
 
-		&.icons-inside{		
+		&.icons-alignLeft{		
 			li{
 				text-align: left;
 				float: left;
-		
-				&:first-child{
-					padding-left: 0;
-				}
-		
-				&:last-child{
-					padding-right: 0;
-				}
-			}
-		}
-
-		&.icons-insideCentered{
-			li{
-				text-align: center;
 			}
 		}
 	}	

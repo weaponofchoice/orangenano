@@ -12,3 +12,20 @@
 		float: left !important;
 	}
 }
+
+//Media queries
+@media #{$medium-down}{
+	.block{
+		.row{
+			h3{
+				line-height: 1.5;
+			}
+			
+			article{
+				h2{
+					margin-bottom: rem-calc(20);
+				}
+			}
+		}
+	}
+}

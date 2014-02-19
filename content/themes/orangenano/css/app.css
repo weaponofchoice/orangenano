@@ -8242,66 +8242,64 @@ p span, a span {
 header {
   width: 100%;
   max-width: none;
-  padding-top: .8em;
-  padding-bottom: .8em;
+  padding: .8em 2em;
   background: #333333;
 }
-/* line 8, ../sass/components/_header.scss */
+/* line 7, ../sass/components/_header.scss */
 header * {
   color: white;
 }
-/* line 12, ../sass/components/_header.scss */
+/* line 11, ../sass/components/_header.scss */
 header ul {
   width: 100%;
   display: inline;
   float: left;
   margin: 0;
 }
-/* line 18, ../sass/components/_header.scss */
+/* line 17, ../sass/components/_header.scss */
 header ul li {
   display: inline-block;
   margin-right: 1em;
   vertical-align: middle;
 }
-/* line 23, ../sass/components/_header.scss */
+/* line 22, ../sass/components/_header.scss */
 header ul li img {
   margin-right: 2em;
 }
-/* line 27, ../sass/components/_header.scss */
+/* line 26, ../sass/components/_header.scss */
 header ul li:last-child {
   float: right;
 }
-/* line 30, ../sass/components/_header.scss */
+/* line 29, ../sass/components/_header.scss */
 header ul li:last-child #login {
   line-height: 2.5;
 }
 
 /* line 1, ../sass/components/_footer.scss */
 footer {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding: .8em 2em;
   background: black;
 }
-/* line 6, ../sass/components/_footer.scss */
+/* line 5, ../sass/components/_footer.scss */
 footer * {
   color: white;
   margin-bottom: 0;
 }
-/* line 11, ../sass/components/_footer.scss */
+/* line 10, ../sass/components/_footer.scss */
 footer h3 {
   float: left;
 }
-/* line 15, ../sass/components/_footer.scss */
+/* line 14, ../sass/components/_footer.scss */
 footer a {
   float: right;
   line-height: 2.2;
   -webkit-transition: 1s;
 }
-/* line 21, ../sass/components/_footer.scss */
+/* line 20, ../sass/components/_footer.scss */
 footer a span {
   margin-left: .5em;
 }
-/* line 24, ../sass/components/_footer.scss */
+/* line 23, ../sass/components/_footer.scss */
 footer a span img {
   cursor: pointer;
 }
@@ -8322,6 +8320,16 @@ footer a span img {
   float: left !important;
 }
 
+@media only screen and (max-width: 64em) {
+  /* line 20, ../sass/components/blocks/_block.scss */
+  .block .row h3 {
+    line-height: 1.5;
+  }
+  /* line 25, ../sass/components/blocks/_block.scss */
+  .block .row article h2 {
+    margin-bottom: 1.25rem;
+  }
+}
 /* line 2, ../sass/components/blocks/_block-accordion.scss */
 .block-accordion .accordion {
   margin-top: 2em;
@@ -8395,92 +8403,110 @@ footer a span img {
 /* line 1, ../sass/components/blocks/_block-contact.scss */
 .block-contact {
   width: 100%;
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding: 3.75rem 2em;
   background: #333333;
   box-shadow: inset 0 20px 23px rgba(0, 0, 0, 0.2);
 }
-/* line 9, ../sass/components/blocks/_block-contact.scss */
+/* line 8, ../sass/components/blocks/_block-contact.scss */
 .block-contact * {
   color: white;
 }
-/* line 13, ../sass/components/blocks/_block-contact.scss */
+/* line 12, ../sass/components/blocks/_block-contact.scss */
 .block-contact img {
   margin-bottom: 1em;
 }
-/* line 17, ../sass/components/blocks/_block-contact.scss */
+/* line 16, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul {
   margin-left: 0;
   padding-left: 0;
   float: left !important;
 }
-/* line 22, ../sass/components/blocks/_block-contact.scss */
+/* line 21, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child {
   float: right !important;
 }
-/* line 25, ../sass/components/blocks/_block-contact.scss */
+/* line 24, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child h3 {
   top: -.8em;
 }
-/* line 29, ../sass/components/blocks/_block-contact.scss */
+/* line 28, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child .social {
   margin-left: 1em;
   top: .5em;
 }
-/* line 34, ../sass/components/blocks/_block-contact.scss */
+/* line 33, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child form {
   width: 100%;
   height: 2.5rem;
 }
-/* line 39, ../sass/components/blocks/_block-contact.scss */
+/* line 38, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child form input[type="text"],
 .block-contact ul:last-child form button {
   height: 2.5rem;
   padding: .5em 1em;
   float: left;
 }
-/* line 45, ../sass/components/blocks/_block-contact.scss */
+/* line 44, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child form input[type="text"] {
   color: black;
 }
-/* line 49, ../sass/components/blocks/_block-contact.scss */
+/* line 48, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul:last-child form button {
   float: right;
 }
 
+/*Media queries
+@media only screen and (max-width:64em){
+	.block-contact{
+		ul{
+			&:last-child{
+				float: left !important;
+				padding-top: rem-calc(60);
+			}
+		}
+	}
+}*/
 /* line 2, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul {
+.block-icons .icons {
   margin-left: 0;
 }
 /* line 5, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul li {
+.block-icons .icons li {
   text-align: center;
 }
 /* line 8, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul li img {
+.block-icons .icons li img {
   margin-top: 5rem;
   margin-bottom: 1.25rem;
 }
 /* line 15, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul.icons-inside li {
+.block-icons .icons.icons-alignLeft li {
   text-align: left;
   float: left;
 }
-/* line 19, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul.icons-inside li:first-child {
-  padding-left: 0;
-}
-/* line 23, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul.icons-inside li:last-child {
-  padding-right: 0;
-}
-/* line 30, ../sass/components/blocks/_block-icons.scss */
-.block-icons ul.icons-insideCentered li {
-  text-align: center;
-}
 
-/* line 1, ../sass/components/blocks/_block-parallax.scss */
-.block-parallax {
+@media only screen and (max-width: 64em) {
+  /* line 9, ../sass/components/blocks/_block-image-left.scss */
+  .block-image-left .row div {
+    text-align: center;
+  }
+  /* line 12, ../sass/components/blocks/_block-image-left.scss */
+  .block-image-left .row div img {
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  /* line 9, ../sass/components/blocks/_block-image-right.scss */
+  .block-image-right .row div {
+    text-align: center;
+  }
+  /* line 12, ../sass/components/blocks/_block-image-right.scss */
+  .block-image-right .row div img {
+    padding-top: 5rem;
+  }
+}
+/* line 2, ../sass/components/blocks/_block-parallax.scss */
+.block.block-parallax {
   height: 25rem;
   position: relative;
   padding: 0;
@@ -8933,4 +8959,33 @@ img.rsImg {
   top: 18.75rem;
   margin-top: -4.5rem;
   color: white;
+}
+
+@media only screen and (max-width: 64em) {
+  /* line 25, ../sass/components/_gallery.scss */
+  #gallery {
+    height: 25rem;
+  }
+  /* line 28, ../sass/components/_gallery.scss */
+  #gallery .royalSlider {
+    height: 25rem;
+  }
+  /* line 31, ../sass/components/_gallery.scss */
+  #gallery .royalSlider h1 {
+    top: 12.5rem;
+  }
+}
+@media only screen and (min-width: 90.063em) {
+  /* line 39, ../sass/components/_gallery.scss */
+  #gallery {
+    height: 50rem;
+  }
+  /* line 42, ../sass/components/_gallery.scss */
+  #gallery .royalSlider {
+    height: 50rem;
+  }
+  /* line 45, ../sass/components/_gallery.scss */
+  #gallery .royalSlider h1 {
+    top: 25rem;
+  }
 }
