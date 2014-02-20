@@ -15,52 +15,54 @@
 
 	ul{
 		margin-left: 0;
-		padding-left: 0;
-		float: left !important;
-	
-		&:last-child{
-			float: right !important;
-			
-			h3{
-				top: -.8em;
-			}
-			
-			.social{
-				margin-left: 1em;
-				top: .5em;
-			}
-	
-			form{
-				width: 100%;
-				height: rem-calc(40);
+		margin-right: 0;
 		
-				input[type="text"],
-				button{
+		li{
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 0;
+			padding-right: 0;
+			float: left !important;
+			
+			p{
+				padding-left: 0;
+				white-space: nowrap;
+			}
+			
+			&:last-child{
+				float: right !important;
+			
+				h3{
+					top: -.8em;
+				}
+			
+				.social{
+					margin-left: 1em;
+					top: .5em;
+				}
+	
+				form{
+					width: 100%;
 					height: rem-calc(40);
-					padding: .5em 1em;
-					float: left;
-				}
+		
+					input[type="text"],
+					button{
+						height: rem-calc(40);
+						padding: .5em 1em;
+						float: left;
+					}
 				
-				input[type="text"]{
-					color: $black;
-				}
+					input[type="text"]{
+						width: 70%;
+						color: $black;
+					}
 				
-				button{
-					float: right;
+					button{
+						width: 30%;
+						float: right;
+					}
 				}
 			}
-		}
+		}	
 	}
 }
-
-/*Media queries
-@media #{$medium-down}{
-	.block-contact{
-		ul{
-			&:last-child{
-				float: left !important;
-				padding-top: rem-calc(60);
-			}
-		}
-	}
-}*/
