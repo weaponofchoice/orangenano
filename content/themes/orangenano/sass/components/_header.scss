@@ -8,11 +8,12 @@ header{
 		color: white;
 	}
 	
-	ul{
+	#menu, #menu-small{
 		width: 100%;
-		display: inline;
 		float:left;
 		margin:0;
+		
+		display: inline;
 		
 		li{
 			display: inline-block;
@@ -31,5 +32,43 @@ header{
 				}
 			}
 		}
+	}
+	
+	#menu-small{
+		display: none;
+		
+		.icon-menu{
+			width: rem-calc(20);
+			height: rem-calc(20);
+			margin-right: 0;
+			top: .6em;
+			
+			background: transparent;
+			
+			a{
+				background: white;
+				width: 100%;
+				height: rem-calc(18);
+				position: absolute;
+				border-top: rem-calc(8) solid $gray-dark;
+				border-bottom: rem-calc(8) solid $gray-dark;
+				box-shadow: 0 rem-calc(2) 0 white, 0 rem-calc(-2) 0 white; //Serves as outer borders
+			}
+			
+			
+		}
 	}	
+}
+
+//Media queries
+@media #{$medium-down}{
+	header{
+		#menu{
+			display: none;
+		}
+	
+		#menu-small{
+			display: inline;
+		}
+	}
 }

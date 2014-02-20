@@ -1,4 +1,4 @@
-if $('.parallax').length > 0
-	parallax = $('.parallax')
+if $('body').length > 0
 	
-	parallax.stellar();
+	$.stellar()
+	return
