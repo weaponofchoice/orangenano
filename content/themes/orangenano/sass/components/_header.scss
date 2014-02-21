@@ -3,6 +3,7 @@ header{
 	max-width: none;
 	padding: .8em 2em;
 	background: $gray-dark;
+	z-index: 999;
 	
 	*{
 		color: white;
@@ -37,7 +38,7 @@ header{
 	#menu-small{
 		display: none;
 		
-		.icon-menu{
+		#icon-menu{
 			width: rem-calc(20);
 			height: rem-calc(20);
 			margin-right: 0;
@@ -54,10 +55,31 @@ header{
 				border-bottom: rem-calc(8) solid $gray-dark;
 				box-shadow: 0 rem-calc(2) 0 white, 0 rem-calc(-2) 0 white; //Serves as outer borders
 			}
-			
-			
 		}
 	}	
+}
+
+#menu-small-nav{
+	-webkit-transform: translateY(-100%);
+	-webkit-transition: .2s;
+	position: absolute;
+	background: #333;
+	z-index: 998;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	
+	li{
+		padding-bottom: .5em;
+		
+		*{
+			color: $white;
+		}
+	}
+	
+	&.active{
+		-webkit-transform: translateY(0);
+	}
 }
 
 //Media queries

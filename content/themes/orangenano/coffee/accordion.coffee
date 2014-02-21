@@ -9,6 +9,6 @@ if $('.accordion').length > 0
 		header: 'h4', 
 		animate: 200, 
 		collapsible: true,
-		heightStyle: 'auto',
+		heightStyle: 'content',
 		active: false,
 	});

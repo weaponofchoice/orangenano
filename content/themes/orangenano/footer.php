@@ -36,6 +36,7 @@
 		<script src="content/themes/orangenano/js/toTop.js"></script>
 		<script src="content/themes/orangenano/js/accordion.js"></script>
 		<script src="content/themes/orangenano/js/text-white.js"></script>
+		<script src="content/themes/orangenano/js/menu-small-nav.js"></script>
 		<!-- <script src="js/app.min.js"></script> -->
 
 		<?php wp_footer(); ?>	

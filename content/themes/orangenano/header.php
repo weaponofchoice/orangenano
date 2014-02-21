@@ -56,7 +56,16 @@
 			</ul>
 			<ul id="menu-small">
 				<li><img src="content/themes/orangenano/img/logo-small.svg" /></li>
-				<li class="icon-menu"><a></a></li>
+				<li id="icon-menu"><a></a></li>
 			</ul>
 		</div>
 	</header>
+	<ul id="menu-small-nav">
+		<li><a>Toepassingen</a></li>
+		<li><a>Producten</a></li>
+		<li><a>Concept</a></li>
+		<li><a>Nanotechnologie</a></li>
+		<li><a>Over Ons</a></li>
+		<li><a>Contact</a></li>
+		<li><a id="login">Login</a></li>
+	</ul>
