@@ -8,7 +8,7 @@
 			</div>
 			<?php the_sub_field('content'); ?>
 		</article>
-		<div class="medium-9 medium-centered large-4 large-uncentered large-offset-1 columns">
+		<div class="image medium-9 medium-offset-2 large-4 large-uncentered columns">
 			<img src="<?php the_sub_field('image_right'); ?>" />
 		</div>
 	</div>

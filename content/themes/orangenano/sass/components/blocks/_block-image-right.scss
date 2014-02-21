@@ -1,22 +1,26 @@
 .block-image-right{
-	
+	.row{
+		.image{
+			margin-left: 8.33333%; //Same as Foundation 'offset-1'
+		}
+	}
 }
 
 //Media queries
 @media #{$medium-down}{
 	.block-image-right{
 		.row{
-			div{
+			.image{
 				text-align: center;
+				float: left;
+				margin-left: 16.66667%;
 				
 				img{
 					padding-top: rem-calc(80); //Same as '.block' top and bottom padding
 				}
 			}
 			
-			.intro{
-				text-align: left;
-			}
+			
 		}
 	}
 }

@@ -8177,7 +8177,7 @@ th.hide-for-touch {
 h1, h2, h3, #login, h4, p, a {
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 /* line 8, ../sass/components/_typography.scss */
@@ -8219,10 +8219,9 @@ h4 {
   font-weight: 600;
   font-style: normal;
   font-size: 1.25rem;
-  margin-bottom: 1em;
 }
 
-/* line 40, ../sass/components/_typography.scss */
+/* line 39, ../sass/components/_typography.scss */
 p, a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
@@ -8230,8 +8229,9 @@ p, a {
   font-size: 1.25rem;
   color: #333333;
 }
-/* line 46, ../sass/components/_typography.scss */
-p span, a span {
+
+/* line 47, ../sass/components/_typography.scss */
+.intro p {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -8514,7 +8514,7 @@ footer a span img {
 /* line 8, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li img {
   margin-top: 5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 /* line 15, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
@@ -8536,18 +8536,21 @@ footer a span img {
     text-align: left;
   }
 }
+/* line 3, ../sass/components/blocks/_block-image-right.scss */
+.block-image-right .row .image {
+  margin-left: 8.33333%;
+}
+
 @media only screen and (max-width: 64em) {
-  /* line 9, ../sass/components/blocks/_block-image-right.scss */
-  .block-image-right .row div {
+  /* line 13, ../sass/components/blocks/_block-image-right.scss */
+  .block-image-right .row .image {
     text-align: center;
+    float: left;
+    margin-left: 16.66667%;
   }
-  /* line 12, ../sass/components/blocks/_block-image-right.scss */
-  .block-image-right .row div img {
+  /* line 18, ../sass/components/blocks/_block-image-right.scss */
+  .block-image-right .row .image img {
     padding-top: 5rem;
-  }
-  /* line 17, ../sass/components/blocks/_block-image-right.scss */
-  .block-image-right .row .intro {
-    text-align: left;
   }
 }
 /* line 2, ../sass/components/blocks/_block-parallax.scss */

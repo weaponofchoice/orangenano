@@ -20,6 +20,8 @@
 				<?php include(locate_template('blocks/block-accordion.php')); ?>
 			<?php elseif( get_row_layout() == 'block_parallax'): ?>
 				<?php include(locate_template('blocks/block-parallax.php')); ?>
+			<?php elseif( get_row_layout() == 'block_icons'): ?>
+				<?php include(locate_template('blocks/block-icons.php')); ?>
 			<?php endif; ?>
 		
 		<?php endwhile; ?>

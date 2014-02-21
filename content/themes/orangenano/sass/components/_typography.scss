@@ -2,7 +2,7 @@
 %base {
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 h1{
@@ -34,7 +34,6 @@ h4{
 	@extend %base;
 	@include proxima-semibold;
 	font-size: rem-calc(20);
-	margin-bottom: 1em;
 }
 
 p, a{
@@ -42,8 +41,10 @@ p, a{
 	@include proxima-regular;
 	font-size: rem-calc(20);
 	color: $gray-dark;
-	
-	span{
+}
+
+.intro{
+	p{
 		@include proxima-light;
 		font-size: rem-calc(26);
 		line-height: 1.2;
