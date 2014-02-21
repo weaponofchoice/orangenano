@@ -4,10 +4,11 @@ jQuery(document).ready(function($) {
 					keyboardNavEnabled: true,
 					imageScaleMode: 'fill',
 					autoScaleSlider: false,
+					imageAlignCenter: true,
 					slidesSpacing: 0,
 					loop: true,
 					transitionSpeed: 200,
 					controlNavigation: 'bullets',
 					arrowsNavHideOnTouch: true
       });  
-  });
+});

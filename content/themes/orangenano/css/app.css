@@ -8516,24 +8516,23 @@ footer a span img {
   margin-top: 5rem;
   margin-bottom: 2.5rem;
 }
-/* line 15, ../sass/components/blocks/_block-icons.scss */
+/* line 13, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li:nth-child(2n+2) {
+  float: right;
+}
+/* line 19, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
   text-align: left;
-  float: left;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 9, ../sass/components/blocks/_block-image-left.scss */
-  .block-image-left .row div {
+  /* line 13, ../sass/components/blocks/_block-image-left.scss */
+  .block-image-left .row .image {
     text-align: center;
   }
-  /* line 12, ../sass/components/blocks/_block-image-left.scss */
-  .block-image-left .row div img {
+  /* line 16, ../sass/components/blocks/_block-image-left.scss */
+  .block-image-left .row .image img {
     padding-bottom: 5rem;
-  }
-  /* line 17, ../sass/components/blocks/_block-image-left.scss */
-  .block-image-left .row .intro {
-    text-align: left;
   }
 }
 /* line 3, ../sass/components/blocks/_block-image-right.scss */

@@ -1,4 +1,4 @@
-<div class="block block-image-right">
+<div class="block block-image-right" style="background-color:<?php the_sub_field('background_color'); ?>">
 	<div class="row">
 		<article class="medium-9 medium-offset-2 large-7 large-offset-0 columns">
 			<h3>Home - 2 - Ons Concept</h3>

@@ -19,6 +19,18 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 			</ul>
+			
+			<?php if( have_rows('icons_alignLeft') ): ?>
+			<ul class="icons icons-alignLeft">
+				<?php while( have_rows('icons_alignLeft') ) : the_row(); ?>
+					<li class="small-6 columns">
+						<img src="<?php the_sub_field('icon_image'); ?>" />
+						<h4><?php the_sub_field('icon_title'); ?></h4>
+						<p><?php the_sub_field('icon_text')?></p>
+					</li>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			</ul>
 		</article>
 	</div>
 </div>

@@ -9,12 +9,16 @@
 				margin-top: rem-calc(80);
 				margin-bottom: rem-calc(40);
 			}
+			
+			&:nth-child(2n+2){
+				float: right;
+			}
 		}
 
 		&.icons-alignLeft{		
 			li{
 				text-align: left;
-				float: left;
+				//float: left;
 			}
 		}
 	}	
