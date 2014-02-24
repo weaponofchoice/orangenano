@@ -1,0 +1,23 @@
+header{
+	.sub-menu{
+		position: absolute;
+		padding: 2em 1em 1em;
+		margin: 0;
+		text-align: center;
+		background: #333;
+	
+		display: none;
+		
+		li{
+			&:last-child{
+				a{
+					@extend %base;
+					@include proxima-regular;
+					font-size: rem-calc(20);
+					line-height: 1.5;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}

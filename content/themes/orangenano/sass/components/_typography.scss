@@ -22,7 +22,7 @@ h2{
 	}
 }
 
-h3, #login{
+h3{
 	@extend %base;
 	@include proxima-semibold;
 	font-size: rem-calc(15);

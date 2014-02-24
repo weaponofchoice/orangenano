@@ -1,0 +1,54 @@
+header{
+	#logo{
+		float: left;
+		margin-right: 3em;
+	}
+	
+	.menu-navigation-container{
+		margin-top: rem-calc(5);
+	}
+	
+	.menu{
+		width: 100%;
+		margin: 0;
+		
+		display: inline;
+		
+		li{
+			display: inline-block;
+			margin-right: 1em;
+			vertical-align: middle;
+			
+			//Login link
+			&:last-child{
+				float: right;
+				
+				a{
+					@extend %base;
+					@include proxima-semibold;
+					font-size: rem-calc(15);
+					line-height: 3;
+					white-space: nowrap;
+					line-height: 2;
+				}
+			}
+			
+			//'.Sub-menu' hover
+			&:hover{
+				.sub-menu{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+//Media queries
+@media #{$medium-down}{
+	header{
+		.menu-navigation-container,
+		#logo{
+			display: none;
+		}
+	}
+}

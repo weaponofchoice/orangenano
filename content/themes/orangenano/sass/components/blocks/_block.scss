@@ -13,6 +13,10 @@
 	}
 }
 
+.white{
+	color: white;
+}
+
 //Media queries
 @media #{$medium-down}{
 	.block{

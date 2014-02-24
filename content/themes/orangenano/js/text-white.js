@@ -4,9 +4,7 @@ var block, text;
 if ($('.block').length > 0) {
   block = $('.block');
   text = $('.row article p');
-  if (block.css("background-color") == "#000000") {
-    text.css("color", "#ffffff");
-  } else {
-    text.css("color", "#333333");
+  if (block.css("background-color") === "#000000") {
+    text.addClass('white');
   }
 }

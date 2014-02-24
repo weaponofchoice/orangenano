@@ -43,11 +43,11 @@
 
 <body <?php body_class(); ?>>
 	<header id="top">
-		<div class="row">
+		<div id="menu" class="row">
 			<div id="logo"><img src="content/themes/orangenano/img/logo-small.svg" /></div>
 			<?php wp_nav_menu( 'main_menu' ); ?>
 			
-			<ul id="menu-small">
+			<ul id="menu-small" class="menu">
 				<div id="logo"><img src="content/themes/orangenano/img/logo-small.svg" /></div>
 				<li id="icon-menu"><a></a></li>
 			</ul>
