@@ -9,10 +9,19 @@ header{
 		color: white;
 	}
 	
-	#menu, #menu-small{
+	#logo{
+		float: left;
+		margin-right: 3em;
+	}
+	
+	.menu-navigation-container{
+		margin-top: rem-calc(5);
+	}
+	
+	#menu-navigation, 
+	#menu-small{
 		width: 100%;
-		float:left;
-		margin:0;
+		margin: 0;
 		
 		display: inline;
 		
@@ -21,27 +30,33 @@ header{
 			margin-right: 1em;
 			vertical-align: middle;
 			
-			img{
-				margin-right: 2em;
-			}
-			
+			//Login link
 			&:last-child{
 				float: right;
 				
-				#login{
-					line-height: 2.5;
+				a{
+					@extend %base;
+					@include proxima-semibold;
+					font-size: rem-calc(15);
+					line-height: 3;
+					white-space: nowrap;
+					line-height: 2;
 				}
 			}
 		}
 	}
 	
+	//This menu appears when browser is under 1024px
 	#menu-small{
 		display: none;
+		float: left;
 		
+		//Menu 'the Hamburger' icon
 		#icon-menu{
 			width: rem-calc(20);
 			height: rem-calc(20);
 			margin-right: 0;
+			float: right;
 			top: .6em;
 			
 			background: transparent;
@@ -59,6 +74,7 @@ header{
 	}	
 }
 
+//List for smaller menu(<1024px)
 #menu-small-nav{
 	-webkit-transform: translateY(-100%);
 	-webkit-transition: .2s;
@@ -75,6 +91,18 @@ header{
 		*{
 			color: $white;
 		}
+		
+		//Login link
+		&:last-child{
+			a{
+				@extend %base;
+				@include proxima-semibold;
+				font-size: rem-calc(15);
+				line-height: 3;
+				white-space: nowrap;
+				line-height: 2;
+			}
+		}
 	}
 	
 	&.active{
@@ -85,7 +113,8 @@ header{
 //Media queries
 @media #{$medium-down}{
 	header{
-		#menu{
+		.menu-navigation-container,
+		#logo{
 			display: none;
 		}
 	

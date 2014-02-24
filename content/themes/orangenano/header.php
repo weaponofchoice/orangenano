@@ -44,28 +44,16 @@
 <body <?php body_class(); ?>>
 	<header id="top">
 		<div class="row">
-			<ul id="menu">
-				<li><img src="content/themes/orangenano/img/logo-small.svg" /></li>
-				<li><a>Toepassingen</a></li>
-				<li><a>Producten</a></li>
-				<li><a>Concept</a></li>
-				<li><a>Nanotechnologie</a></li>
-				<li><a>Over Ons</a></li>
-				<li><a>Contact</a></li>
-				<li><a id="login">Login</a></li>
-			</ul>
+			<div id="logo"><img src="content/themes/orangenano/img/logo-small.svg" /></div>
+			<?php wp_nav_menu( 'main_menu' ); ?>
+			
 			<ul id="menu-small">
-				<li><img src="content/themes/orangenano/img/logo-small.svg" /></li>
+				<div id="logo"><img src="content/themes/orangenano/img/logo-small.svg" /></div>
 				<li id="icon-menu"><a></a></li>
 			</ul>
 		</div>
 	</header>
-	<ul id="menu-small-nav">
-		<li><a>Toepassingen</a></li>
-		<li><a>Producten</a></li>
-		<li><a>Concept</a></li>
-		<li><a>Nanotechnologie</a></li>
-		<li><a>Over Ons</a></li>
-		<li><a>Contact</a></li>
-		<li><a id="login">Login</a></li>
-	</ul>
+	
+	<div id="menu-small-nav">
+		<?php wp_nav_menu( 'main_menu' ); ?>
+	</div>

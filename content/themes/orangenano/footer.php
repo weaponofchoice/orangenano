@@ -32,7 +32,7 @@
 		<script src="content/themes/orangenano/js/vendor/jquery.imageScroll.min.js"></script>
 		<script src="content/themes/orangenano/js/scrollto.js"></script>
 		<script src="content/themes/orangenano/js/init-royalSlider.js"></script>
-		<script src="content/themes/orangenano/js/init-parallax.js"></script>
+		<script src="content/themes/orangenano/js/init-imageScroll.js"></script>
 		<script src="content/themes/orangenano/js/toTop.js"></script>
 		<script src="content/themes/orangenano/js/accordion.js"></script>
 		<script src="content/themes/orangenano/js/text-white.js"></script>

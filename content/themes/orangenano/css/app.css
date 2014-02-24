@@ -8173,7 +8173,8 @@ th.hide-for-touch {
 }
 
 /* line 2, ../sass/components/_typography.scss */
-h1, h2, h3, #login, h4, p, a {
+h1, h2, h3, #login, h4, p, a, header #menu-navigation li:last-child a,
+header #menu-small li:last-child a, #menu-small-nav li:last-child a {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1em;
@@ -8251,43 +8252,59 @@ header * {
   color: white;
 }
 /* line 12, ../sass/components/_header.scss */
-header #menu, header #menu-small {
-  width: 100%;
+header #logo {
   float: left;
+  margin-right: 3em;
+}
+/* line 17, ../sass/components/_header.scss */
+header .menu-navigation-container {
+  margin-top: 0.3125rem;
+}
+/* line 22, ../sass/components/_header.scss */
+header #menu-navigation,
+header #menu-small {
+  width: 100%;
   margin: 0;
   display: inline;
 }
-/* line 19, ../sass/components/_header.scss */
-header #menu li, header #menu-small li {
+/* line 28, ../sass/components/_header.scss */
+header #menu-navigation li,
+header #menu-small li {
   display: inline-block;
   margin-right: 1em;
   vertical-align: middle;
 }
-/* line 24, ../sass/components/_header.scss */
-header #menu li img, header #menu-small li img {
-  margin-right: 2em;
-}
-/* line 28, ../sass/components/_header.scss */
-header #menu li:last-child, header #menu-small li:last-child {
+/* line 34, ../sass/components/_header.scss */
+header #menu-navigation li:last-child,
+header #menu-small li:last-child {
   float: right;
 }
-/* line 31, ../sass/components/_header.scss */
-header #menu li:last-child #login, header #menu-small li:last-child #login {
-  line-height: 2.5;
+/* line 37, ../sass/components/_header.scss */
+header #menu-navigation li:last-child a,
+header #menu-small li:last-child a {
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 3;
+  white-space: nowrap;
+  line-height: 2;
 }
-/* line 38, ../sass/components/_header.scss */
+/* line 50, ../sass/components/_header.scss */
 header #menu-small {
   display: none;
+  float: left;
 }
-/* line 41, ../sass/components/_header.scss */
+/* line 55, ../sass/components/_header.scss */
 header #menu-small #icon-menu {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0;
+  float: right;
   top: .6em;
   background: transparent;
 }
-/* line 49, ../sass/components/_header.scss */
+/* line 64, ../sass/components/_header.scss */
 header #menu-small #icon-menu a {
   background: white;
   width: 100%;
@@ -8298,7 +8315,7 @@ header #menu-small #icon-menu a {
   box-shadow: 0 0.125rem 0 white, 0 -0.125rem 0 white;
 }
 
-/* line 62, ../sass/components/_header.scss */
+/* line 78, ../sass/components/_header.scss */
 #menu-small-nav {
   -webkit-transform: translateY(-100%);
   -webkit-transition: .2s;
@@ -8309,25 +8326,36 @@ header #menu-small #icon-menu a {
   margin: 0;
   text-align: center;
 }
-/* line 72, ../sass/components/_header.scss */
+/* line 88, ../sass/components/_header.scss */
 #menu-small-nav li {
   padding-bottom: .5em;
 }
-/* line 75, ../sass/components/_header.scss */
+/* line 91, ../sass/components/_header.scss */
 #menu-small-nav li * {
   color: white;
 }
-/* line 80, ../sass/components/_header.scss */
+/* line 97, ../sass/components/_header.scss */
+#menu-small-nav li:last-child a {
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 3;
+  white-space: nowrap;
+  line-height: 2;
+}
+/* line 108, ../sass/components/_header.scss */
 #menu-small-nav.active {
   -webkit-transform: translateY(0);
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 88, ../sass/components/_header.scss */
-  header #menu {
+  /* line 117, ../sass/components/_header.scss */
+  header .menu-navigation-container,
+  header #logo {
     display: none;
   }
-  /* line 92, ../sass/components/_header.scss */
+  /* line 121, ../sass/components/_header.scss */
   header #menu-small {
     display: inline;
   }
