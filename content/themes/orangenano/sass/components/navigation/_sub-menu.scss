@@ -9,6 +9,8 @@ header{
 		display: none;
 		
 		li{
+			margin-right: 0;
+			
 			&:last-child{
 				a{
 					@extend %base;

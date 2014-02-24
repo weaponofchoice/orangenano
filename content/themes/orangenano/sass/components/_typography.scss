@@ -43,6 +43,14 @@ p, a{
 	color: $gray-dark;
 }
 
+a{
+    &:focus,
+    &:hover{
+  	  color: $orange;
+	  @include transition-duration(.2s)
+    }
+}
+
 .intro{
 	p{
 		@include proxima-light;

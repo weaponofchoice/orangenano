@@ -29,14 +29,18 @@ header{
 
 //List for smaller menu(<1024px)
 #menu-small-nav{
-	-webkit-transform: translateY(-100%);
-	-webkit-transition: .2s;
+	@include translate(0, -100%);
+	@include transition-duration(.2s);
 	position: absolute;
 	background: #333;
 	z-index: 998;
 	width: 100%;
 	margin: 0;
 	text-align: center;
+	
+	.sub-menu{
+		display: none;
+	}
 	
 	li{
 		padding-bottom: .5em;
@@ -59,7 +63,7 @@ header{
 	}
 	
 	&.active{
-		-webkit-transform: translateY(0);
+		@include translate(0, 0);
 	}
 }
 

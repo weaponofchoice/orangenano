@@ -8229,7 +8229,16 @@ p, a {
   color: #333333;
 }
 
-/* line 47, ../sass/components/_typography.scss */
+/* line 48, ../sass/components/_typography.scss */
+a:focus, a:hover {
+  color: #f89c1c;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+/* line 55, ../sass/components/_typography.scss */
 .intro p {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
@@ -8354,8 +8363,15 @@ header #menu-small #icon-menu a {
 
 /* line 31, ../sass/components/navigation/_menu-small.scss */
 #menu-small-nav {
-  -webkit-transform: translateY(-100%);
-  -webkit-transition: .2s;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   position: absolute;
   background: #333;
   z-index: 998;
@@ -8364,14 +8380,18 @@ header #menu-small #icon-menu a {
   text-align: center;
 }
 /* line 41, ../sass/components/navigation/_menu-small.scss */
+#menu-small-nav .sub-menu {
+  display: none;
+}
+/* line 45, ../sass/components/navigation/_menu-small.scss */
 #menu-small-nav li {
   padding-bottom: .5em;
 }
-/* line 44, ../sass/components/navigation/_menu-small.scss */
+/* line 48, ../sass/components/navigation/_menu-small.scss */
 #menu-small-nav li * {
   color: white;
 }
-/* line 50, ../sass/components/navigation/_menu-small.scss */
+/* line 54, ../sass/components/navigation/_menu-small.scss */
 #menu-small-nav li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8381,17 +8401,21 @@ header #menu-small #icon-menu a {
   white-space: nowrap;
   line-height: 2;
 }
-/* line 61, ../sass/components/navigation/_menu-small.scss */
+/* line 65, ../sass/components/navigation/_menu-small.scss */
 #menu-small-nav.active {
-  -webkit-transform: translateY(0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 69, ../sass/components/navigation/_menu-small.scss */
+  /* line 73, ../sass/components/navigation/_menu-small.scss */
   header #menu-small {
     display: inline;
   }
-  /* line 72, ../sass/components/navigation/_menu-small.scss */
+  /* line 76, ../sass/components/navigation/_menu-small.scss */
   header #menu-small #logo {
     display: block;
   }
@@ -8405,7 +8429,11 @@ header .sub-menu {
   background: #333;
   display: none;
 }
-/* line 13, ../sass/components/navigation/_sub-menu.scss */
+/* line 11, ../sass/components/navigation/_sub-menu.scss */
+header .sub-menu li {
+  margin-right: 0;
+}
+/* line 15, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
