@@ -29,10 +29,10 @@
 		<script src="content/themes/orangenano/js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="content/themes/orangenano/js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
 		<script src="content/themes/orangenano/js/vendor/jquery.royalslider.min.js"></script>
-		<script src="content/themes/orangenano/js/vendor/jquery.stellar.min.js"></script>
+		<script src="content/themes/orangenano/js/vendor/jquery.imageScroll.min.js"></script>
 		<script src="content/themes/orangenano/js/scrollto.js"></script>
 		<script src="content/themes/orangenano/js/init-royalSlider.js"></script>
-		<script src="content/themes/orangenano/js/init-stellar.js"></script>
+		<script src="content/themes/orangenano/js/init-parallax.js"></script>
 		<script src="content/themes/orangenano/js/toTop.js"></script>
 		<script src="content/themes/orangenano/js/accordion.js"></script>
 		<script src="content/themes/orangenano/js/text-white.js"></script>
