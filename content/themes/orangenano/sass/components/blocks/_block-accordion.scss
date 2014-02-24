@@ -33,10 +33,8 @@
 	position: absolute;
 	border: 2px solid black;
 	@include border-radius( 100%);
-	
-	-webkit-transition: .2s;
-	-moz-transition: .2s;
-	transition: .2s;
+	@include transition-duration(.2s);
+	cursor: pointer;
 	
 	&:after {
 		content: " ";
@@ -62,5 +60,6 @@
 
 .close{
 	@extend .open;
-	-webkit-transform: rotate(45deg);
+	@include rotate(45deg);
+	@include transition-duration(.2s);
 }

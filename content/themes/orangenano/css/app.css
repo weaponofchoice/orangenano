@@ -8459,17 +8459,12 @@ header .sub-menu li:last-child a {
   float: left !important;
 }
 
-/* line 16, ../sass/components/blocks/_block.scss */
-.white {
-  color: white;
-}
-
 @media only screen and (max-width: 64em) {
-  /* line 24, ../sass/components/blocks/_block.scss */
+  /* line 20, ../sass/components/blocks/_block.scss */
   .block .row h3 {
     line-height: 1.5;
   }
-  /* line 29, ../sass/components/blocks/_block.scss */
+  /* line 25, ../sass/components/blocks/_block.scss */
   .block .row article h2 {
     margin-bottom: 1.25rem;
   }
@@ -8513,11 +8508,13 @@ header .sub-menu li:last-child a {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  transition: .2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  cursor: pointer;
 }
-/* line 41, ../sass/components/blocks/_block-accordion.scss */
+/* line 39, ../sass/components/blocks/_block-accordion.scss */
 .open:after, .close:after {
   content: " ";
   left: 3px;
@@ -8527,7 +8524,7 @@ header .sub-menu li:last-child a {
   position: absolute;
   background: black;
 }
-/* line 51, ../sass/components/blocks/_block-accordion.scss */
+/* line 49, ../sass/components/blocks/_block-accordion.scss */
 .open:before, .close:before {
   content: " ";
   z-index: 999;
@@ -8539,9 +8536,17 @@ header .sub-menu li:last-child a {
   background: black;
 }
 
-/* line 63, ../sass/components/blocks/_block-accordion.scss */
+/* line 61, ../sass/components/blocks/_block-accordion.scss */
 .close {
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 /* line 1, ../sass/components/blocks/_block-contact.scss */
