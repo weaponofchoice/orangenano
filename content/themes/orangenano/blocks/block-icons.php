@@ -8,14 +8,15 @@
 			</div>
 			<?php the_sub_field('content'); ?>
 			
+			
 			<?php if( have_rows('icons') ): ?>
 			<ul class="icons">
 				<?php while( have_rows('icons') ) : the_row(); ?>
-					<li class="small-6 columns">
-						<img src="<?php the_sub_field('icon_image'); ?>" />
-						<h4><?php the_sub_field('icon_title'); ?></h4>
-						<p><?php the_sub_field('icon_text')?></p>
-					</li>
+				<li class="small-6 columns">
+					<img src="<?php the_sub_field('icon_image'); ?>" />
+					<h4><?php the_sub_field('icon_title'); ?></h4>
+					<p><?php the_sub_field('icon_text')?></p>
+				</li>
 				<?php endwhile; ?>
 			<?php endif; ?>
 			</ul>
@@ -28,7 +29,8 @@
 						<h4><?php the_sub_field('icon_title'); ?></h4>
 						<p><?php the_sub_field('icon_text')?></p>
 					</li>
-				<?php endwhile; ?>
+					<?php endwhile; ?>
+					
 			<?php endif; ?>
 			</ul>
 		</article>

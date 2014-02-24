@@ -8165,9 +8165,8 @@ th.hide-for-touch {
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
-  -webkit-user-select: none;
 }
-/* line 24, ../sass/components/_general.scss */
+/* line 23, ../sass/components/_general.scss */
 *::selection {
   background: #f89c1c;
   color: white;
@@ -8545,7 +8544,16 @@ footer a span img {
 .block-icons .icons li:nth-child(2n+2) {
   float: right;
 }
-/* line 19, ../sass/components/blocks/_block-icons.scss */
+/* line 17, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li:nth-child(odd) {
+  clear: left;
+  padding-left: 0;
+}
+/* line 22, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li:nth-child(even) {
+  padding-right: 0;
+}
+/* line 28, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
   text-align: left;
 }
@@ -9021,10 +9029,12 @@ img.rsImg {
 }
 /* line 9, ../sass/components/_gallery.scss */
 #gallery .royalSlider {
+  width: 100%;
   height: 37.5rem;
+  margin: 0;
   text-align: center;
 }
-/* line 13, ../sass/components/_gallery.scss */
+/* line 15, ../sass/components/_gallery.scss */
 #gallery .royalSlider h1 {
   width: 100%;
   position: absolute;
@@ -9034,29 +9044,29 @@ img.rsImg {
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 25, ../sass/components/_gallery.scss */
+  /* line 27, ../sass/components/_gallery.scss */
   #gallery {
     height: 25rem;
   }
-  /* line 28, ../sass/components/_gallery.scss */
+  /* line 30, ../sass/components/_gallery.scss */
   #gallery .royalSlider {
     height: 25rem;
   }
-  /* line 31, ../sass/components/_gallery.scss */
+  /* line 33, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
     top: 12.5rem;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 39, ../sass/components/_gallery.scss */
+  /* line 41, ../sass/components/_gallery.scss */
   #gallery {
     height: 50rem;
   }
-  /* line 42, ../sass/components/_gallery.scss */
+  /* line 44, ../sass/components/_gallery.scss */
   #gallery .royalSlider {
     height: 50rem;
   }
-  /* line 45, ../sass/components/_gallery.scss */
+  /* line 47, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
     top: 25rem;
   }

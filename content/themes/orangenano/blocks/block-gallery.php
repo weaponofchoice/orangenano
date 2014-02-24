@@ -4,8 +4,8 @@
 			<?php while( have_rows('gallery') ) : the_row(); ?>
 				<li>
 					<div>
-						<img src="<?php the_sub_field('gallery_image'); ?>">
-						<h1><?php get_sub_field('gallery_image_caption'); ?></h1>
+						<img class="rsImg" src="<?php the_sub_field('gallery_image'); ?>">
+						<h1><?php the_sub_field('gallery_image_caption'); ?></h1>
 					</div>
 				</li>
 			<?php endwhile; ?>

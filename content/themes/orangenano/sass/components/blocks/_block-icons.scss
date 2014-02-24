@@ -13,6 +13,15 @@
 			&:nth-child(2n+2){
 				float: right;
 			}
+			
+			&:nth-child(odd){
+				clear: left;
+				padding-left: 0;
+			}
+			
+			&:nth-child(even){
+				padding-right: 0;
+			}
 		}
 
 		&.icons-alignLeft{		
