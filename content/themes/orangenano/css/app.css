@@ -8503,6 +8503,7 @@ header .sub-menu li:last-child a {
   top: .75em;
   position: absolute;
   border: 2px solid black;
+  cursor: pointer;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -8512,9 +8513,8 @@ header .sub-menu li:last-child a {
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  cursor: pointer;
 }
-/* line 39, ../sass/components/blocks/_block-accordion.scss */
+/* line 41, ../sass/components/blocks/_block-accordion.scss */
 .open:after, .close:after {
   content: " ";
   left: 3px;
@@ -8524,7 +8524,7 @@ header .sub-menu li:last-child a {
   position: absolute;
   background: black;
 }
-/* line 49, ../sass/components/blocks/_block-accordion.scss */
+/* line 51, ../sass/components/blocks/_block-accordion.scss */
 .open:before, .close:before {
   content: " ";
   z-index: 999;
@@ -8536,7 +8536,7 @@ header .sub-menu li:last-child a {
   background: black;
 }
 
-/* line 61, ../sass/components/blocks/_block-accordion.scss */
+/* line 63, ../sass/components/blocks/_block-accordion.scss */
 .close {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
