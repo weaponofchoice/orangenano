@@ -39,6 +39,12 @@
 				.social{
 					margin-left: 1em;
 					top: .5em;
+					
+					a{
+						img{
+							cursor: pointer;
+						}
+					}
 				}
 	
 				form{

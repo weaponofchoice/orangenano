@@ -8596,23 +8596,27 @@ header .sub-menu li:last-child a {
   top: .5em;
 }
 /* line 44, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul li:last-child .social a img {
+  cursor: pointer;
+}
+/* line 50, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form {
   width: 100%;
   height: 2.5rem;
 }
-/* line 49, ../sass/components/blocks/_block-contact.scss */
+/* line 55, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"],
 .block-contact ul li:last-child form button {
   height: 2.5rem;
   padding: .5em 1em;
   float: left;
 }
-/* line 55, ../sass/components/blocks/_block-contact.scss */
+/* line 61, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"] {
   width: 70%;
   color: black;
 }
-/* line 60, ../sass/components/blocks/_block-contact.scss */
+/* line 66, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form button {
   width: 30%;
   float: right;
@@ -8629,7 +8633,7 @@ header .sub-menu li:last-child a {
 }
 /* line 8, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li img {
-  margin-top: 5rem;
+  margin-top: 1em;
   margin-bottom: 2.5rem;
 }
 /* line 13, ../sass/components/blocks/_block-icons.scss */
@@ -8651,11 +8655,11 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 13, ../sass/components/blocks/_block-image-left.scss */
+  /* line 5, ../sass/components/blocks/_block-image-left.scss */
   .block-image-left .row .image {
     text-align: center;
   }
-  /* line 16, ../sass/components/blocks/_block-image-left.scss */
+  /* line 8, ../sass/components/blocks/_block-image-left.scss */
   .block-image-left .row .image img {
     padding-bottom: 5rem;
   }
@@ -8670,7 +8674,7 @@ header .sub-menu li:last-child a {
   .block-image-right .row .image {
     text-align: center;
     float: left;
-    margin-left: 16.66667%;
+    margin-left: 25%;
   }
   /* line 18, ../sass/components/blocks/_block-image-right.scss */
   .block-image-right .row .image img {
@@ -8682,8 +8686,12 @@ header .sub-menu li:last-child a {
   height: 25rem;
   position: relative;
   padding: 0;
-  background: url("../img/background.jpg") no-repeat center center;
-  background-size: 120%;
+  background: black;
+}
+
+/* line 13, ../sass/components/blocks/_block-parallax.scss */
+.touch body .block-parallax {
+  display: none;
 }
 
 /* line 1, ../sass/components/blocks/_block-textCentered.scss */
@@ -9146,7 +9154,7 @@ img.rsImg {
   }
   /* line 33, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
-    top: 12.5rem;
+    top: 13.25rem;
   }
 }
 @media only screen and (min-width: 90.063em) {

@@ -4,7 +4,14 @@
 		position: relative;
 		padding: 0;
 	
-		background: url('../img/background.jpg') no-repeat center center;
-		background-size: 120%;
+		background: $black;
+	}
+}
+
+.touch{
+	body{
+		.block-parallax{
+			display: none;
+		}
 	}
 }
