@@ -7,7 +7,7 @@
 		<?php while ( have_rows('page_layout') ) : the_row(); ?>
 	 		
 			<?php if ( get_row_layout() == 'block_text'): ?>
-				<?php include(locate_template('blocks/block-text.php')); ?> 
+				<?php include(locate_template('blocks/block-text.php')); ?>
 			<?php elseif( get_row_layout() == 'gallery'): ?>
 				<?php include(locate_template('blocks/block-gallery.php')); ?>
 			<?php elseif( get_row_layout() == 'block_image_left'): ?>

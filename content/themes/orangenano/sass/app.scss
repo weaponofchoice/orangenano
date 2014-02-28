@@ -7,16 +7,16 @@
 
 // General stylesheets, colors, fonts, typography rules, mixins etc.
 @import
-  	"components/_mixins",
-  	"components/_colors",
-	"components/_fonts",
-	"components/_general",
-	"components/_typography";
+  	"components/master/_mixins",
+  	"components/master/_colors",
+	"components/master/_fonts",
+	"components/master/_typography";
 
 // Elements
 @import
 	"components/_header",
 	"components/_footer",
+	"components/_general",
 	
 	"components/navigation/_menu",
 	"components/navigation/_menu-small",
