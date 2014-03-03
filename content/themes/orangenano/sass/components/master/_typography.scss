@@ -3,6 +3,17 @@
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1em;
+  
+  &:hover,
+  &:focus{
+	  cursor: pointer;
+	  color: $orange;
+	  @include transition-duration(.2s);
+	  
+	  img{
+		  cursor: pointer;
+	  }
+  }
 }
 
 h1{
@@ -44,11 +55,7 @@ p, a{
 }
 
 a{
-    &:focus,
-    &:hover{
-  	  color: $orange;
-	  @include transition-duration(.2s)
-    }
+    @extend %base;
 }
 
 .intro{
@@ -58,30 +65,3 @@ a{
 		line-height: 1.2;
 	}
 }
-
-/*
-//Media queries
-@media #{$medium-down}{
-	h1{
-		font-size: rem-calc(54);
-	}
-	
-	h2{
-		font-size: rem-calc(27);
-	}
-	
-	h3{
-		font-size: rem-calc(11.25);
-	}
-	
-	h4, p, a{
-		font-size: rem-calc(15);
-	}
-	
-	.intro{
-		p{
-			font-size: rem-calc(19.5);
-		}
-	}
-}
-*/

@@ -44,7 +44,7 @@
 <body <?php body_class(); ?>>
 	<header id="top">
 		<div id="menu" class="row">
-			<div id="logo"><img src="content/themes/orangenano/img/logo-small.svg" /></div>
+			<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
 			<?php wp_nav_menu( 'main_menu' ); ?>
 			
 			<ul id="menu-small" class="menu">

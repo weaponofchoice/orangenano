@@ -8152,8 +8152,21 @@ h1, h2, h3, h4, p, a, header .menu li:last-child a, #menu-small-nav ul li:last-c
   margin-top: 0;
   margin-bottom: 1em;
 }
-
 /* line 8, ../sass/components/master/_typography.scss */
+h1:hover, h2:hover, h3:hover, h4:hover, p:hover, a:hover, header .menu li:last-child a:hover, #menu-small-nav ul li:last-child a:hover, header .sub-menu li:last-child a:hover, h1:focus, h2:focus, h3:focus, h4:focus, p:focus, a:focus, header .menu li:last-child a:focus, #menu-small-nav ul li:last-child a:focus, header .sub-menu li:last-child a:focus {
+  cursor: pointer;
+  color: #f89c1c;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 13, ../sass/components/master/_typography.scss */
+h1:hover img, h2:hover img, h3:hover img, h4:hover img, p:hover img, a:hover img, header .menu li:last-child a:hover img, #menu-small-nav ul li:last-child a:hover img, header .sub-menu li:last-child a:hover img, h1:focus img, h2:focus img, h3:focus img, h4:focus img, p:focus img, a:focus img, header .menu li:last-child a:focus img, #menu-small-nav ul li:last-child a:focus img, header .sub-menu li:last-child a:focus img {
+  cursor: pointer;
+}
+
+/* line 19, ../sass/components/master/_typography.scss */
 h1 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8161,7 +8174,7 @@ h1 {
   font-size: 4.5rem;
 }
 
-/* line 14, ../sass/components/master/_typography.scss */
+/* line 25, ../sass/components/master/_typography.scss */
 h2 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8169,14 +8182,14 @@ h2 {
   font-size: 2.25rem;
   margin-bottom: 3.125rem;
 }
-/* line 20, ../sass/components/master/_typography.scss */
+/* line 31, ../sass/components/master/_typography.scss */
 h2 span {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-/* line 25, ../sass/components/master/_typography.scss */
+/* line 36, ../sass/components/master/_typography.scss */
 h3 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8186,7 +8199,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* line 33, ../sass/components/master/_typography.scss */
+/* line 44, ../sass/components/master/_typography.scss */
 h4 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8194,7 +8207,7 @@ h4 {
   font-size: 1.25rem;
 }
 
-/* line 39, ../sass/components/master/_typography.scss */
+/* line 50, ../sass/components/master/_typography.scss */
 p, a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
@@ -8203,16 +8216,7 @@ p, a {
   color: #333333;
 }
 
-/* line 48, ../sass/components/master/_typography.scss */
-a:focus, a:hover {
-  color: #f89c1c;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
-/* line 55, ../sass/components/master/_typography.scss */
+/* line 62, ../sass/components/master/_typography.scss */
 .intro p {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
@@ -8294,27 +8298,31 @@ header #logo {
   float: left;
   margin-right: 3em;
 }
-/* line 7, ../sass/components/navigation/_menu.scss */
+/* line 6, ../sass/components/navigation/_menu.scss */
+header #logo a {
+  z-index: 9999;
+}
+/* line 11, ../sass/components/navigation/_menu.scss */
 header .menu-navigation-container {
   margin-top: 0.3125rem;
 }
-/* line 11, ../sass/components/navigation/_menu.scss */
+/* line 15, ../sass/components/navigation/_menu.scss */
 header .menu {
   width: 100%;
   margin: 0;
   display: inline;
 }
-/* line 17, ../sass/components/navigation/_menu.scss */
+/* line 21, ../sass/components/navigation/_menu.scss */
 header .menu li {
   display: inline-block;
   margin-right: 1em;
   vertical-align: middle;
 }
-/* line 23, ../sass/components/navigation/_menu.scss */
+/* line 27, ../sass/components/navigation/_menu.scss */
 header .menu li:last-child {
   float: right;
 }
-/* line 26, ../sass/components/navigation/_menu.scss */
+/* line 30, ../sass/components/navigation/_menu.scss */
 header .menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8324,13 +8332,13 @@ header .menu li:last-child a {
   white-space: nowrap;
   line-height: 2;
 }
-/* line 38, ../sass/components/navigation/_menu.scss */
+/* line 42, ../sass/components/navigation/_menu.scss */
 header .menu li:hover .sub-menu {
   display: block;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 50, ../sass/components/navigation/_menu.scss */
+  /* line 54, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header #logo {
     display: none;
