@@ -8449,22 +8449,23 @@ header .sub-menu li:last-child a {
   max-width: none;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background: white;
 }
-/* line 7, ../sass/components/blocks/_block.scss */
+/* line 8, ../sass/components/blocks/_block.scss */
 .block:nth-child(odd) {
   background: #f1f2f2;
 }
-/* line 11, ../sass/components/blocks/_block.scss */
+/* line 12, ../sass/components/blocks/_block.scss */
 .block article {
   float: left !important;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 20, ../sass/components/blocks/_block.scss */
+  /* line 21, ../sass/components/blocks/_block.scss */
   .block .row h3 {
     line-height: 1.5;
   }
-  /* line 25, ../sass/components/blocks/_block.scss */
+  /* line 26, ../sass/components/blocks/_block.scss */
   .block .row article h2 {
     margin-bottom: 1.25rem;
   }

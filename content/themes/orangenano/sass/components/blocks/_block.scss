@@ -3,6 +3,7 @@
 	max-width: none;
 	padding-top: rem-calc(80);
 	padding-bottom: rem-calc(80);
+	background: $white;
 	
 	&:nth-child(odd){
 		background: $gray-light;

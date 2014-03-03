@@ -38,6 +38,7 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/scrollto.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/toTop.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/menu-small-nav.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/touch.js"></script>
 		<!-- <script src="js/app.min.js"></script> -->
 
 		<?php wp_footer(); ?>	
