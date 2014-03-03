@@ -3,17 +3,6 @@
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1em;
-  
-  &:hover,
-  &:focus{
-	  cursor: pointer;
-	  color: $orange;
-	  @include transition-duration(.2s);
-	  
-	  img{
-		  cursor: pointer;
-	  }
-  }
 }
 
 h1{
@@ -56,6 +45,17 @@ p, a{
 
 a{
     @extend %base;
+	
+    &:hover,
+    &:focus{
+  	  cursor: pointer;
+  	  color: $orange;
+  	  @include transition-duration(.2s);
+	  
+  	  img{
+  		  cursor: pointer;
+  	  }
+    }
 }
 
 .intro{

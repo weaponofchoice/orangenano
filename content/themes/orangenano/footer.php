@@ -16,7 +16,9 @@
 				</ul>
 			</div>
 		</div>
-		
+			
+	</div><!-- end of 'container'>
+			
 		<footer id="footer">
 			<div class="row">
 				<h3>2014 Orange Nanotech B.V.</h3>
@@ -39,6 +41,7 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/toTop.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/menu-small-nav.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/touch.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/scrollbtn.js"></script>
 		<!-- <script src="js/app.min.js"></script> -->
 
 		<?php wp_footer(); ?>	

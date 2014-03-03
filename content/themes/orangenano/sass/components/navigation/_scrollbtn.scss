@@ -1,0 +1,14 @@
+#scrollbtn{
+	height: rem-calc(50);
+	width: rem-calc(50);
+	position: fixed;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+	left: 5%;
+	bottom: 2.5em;
+	
+	&.hidden{
+		visibility: hidden;
+	}
+}

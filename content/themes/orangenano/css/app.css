@@ -8152,21 +8152,8 @@ h1, h2, h3, h4, p, a, header .menu li:last-child a, #menu-small-nav ul li:last-c
   margin-top: 0;
   margin-bottom: 1em;
 }
-/* line 8, ../sass/components/master/_typography.scss */
-h1:hover, h2:hover, h3:hover, h4:hover, p:hover, a:hover, header .menu li:last-child a:hover, #menu-small-nav ul li:last-child a:hover, header .sub-menu li:last-child a:hover, h1:focus, h2:focus, h3:focus, h4:focus, p:focus, a:focus, header .menu li:last-child a:focus, #menu-small-nav ul li:last-child a:focus, header .sub-menu li:last-child a:focus {
-  cursor: pointer;
-  color: #f89c1c;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-/* line 13, ../sass/components/master/_typography.scss */
-h1:hover img, h2:hover img, h3:hover img, h4:hover img, p:hover img, a:hover img, header .menu li:last-child a:hover img, #menu-small-nav ul li:last-child a:hover img, header .sub-menu li:last-child a:hover img, h1:focus img, h2:focus img, h3:focus img, h4:focus img, p:focus img, a:focus img, header .menu li:last-child a:focus img, #menu-small-nav ul li:last-child a:focus img, header .sub-menu li:last-child a:focus img {
-  cursor: pointer;
-}
 
-/* line 19, ../sass/components/master/_typography.scss */
+/* line 8, ../sass/components/master/_typography.scss */
 h1 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8174,7 +8161,7 @@ h1 {
   font-size: 4.5rem;
 }
 
-/* line 25, ../sass/components/master/_typography.scss */
+/* line 14, ../sass/components/master/_typography.scss */
 h2 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8182,14 +8169,14 @@ h2 {
   font-size: 2.25rem;
   margin-bottom: 3.125rem;
 }
-/* line 31, ../sass/components/master/_typography.scss */
+/* line 20, ../sass/components/master/_typography.scss */
 h2 span {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-/* line 36, ../sass/components/master/_typography.scss */
+/* line 25, ../sass/components/master/_typography.scss */
 h3 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8199,7 +8186,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* line 44, ../sass/components/master/_typography.scss */
+/* line 33, ../sass/components/master/_typography.scss */
 h4 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8207,13 +8194,27 @@ h4 {
   font-size: 1.25rem;
 }
 
-/* line 50, ../sass/components/master/_typography.scss */
+/* line 39, ../sass/components/master/_typography.scss */
 p, a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.25rem;
   color: #333333;
+}
+
+/* line 50, ../sass/components/master/_typography.scss */
+a:hover, a:focus {
+  cursor: pointer;
+  color: #f89c1c;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 55, ../sass/components/master/_typography.scss */
+a:hover img, a:focus img {
+  cursor: pointer;
 }
 
 /* line 62, ../sass/components/master/_typography.scss */
@@ -8455,6 +8456,22 @@ header .sub-menu li:last-child a {
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 1em;
+}
+
+/* line 1, ../sass/components/navigation/_scrollbtn.scss */
+#scrollbtn {
+  height: 3.125rem;
+  width: 3.125rem;
+  position: fixed;
+  display: block;
+  cursor: pointer;
+  z-index: 21;
+  left: 5%;
+  bottom: 2.5em;
+}
+/* line 11, ../sass/components/navigation/_scrollbtn.scss */
+#scrollbtn.hidden {
+  visibility: hidden;
 }
 
 /* line 1, ../sass/components/blocks/_block.scss */
