@@ -21,7 +21,7 @@ define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 // ================================================
 // Custom Uploads Directory
 // ================================================
-define( 'UPLOADS', 'media/uploads' );
+define( 'UPLOADS', '../media/uploads' );
 
 // ================================================
 // You almost certainly do not want to change these
@@ -34,14 +34,14 @@ define( 'DB_COLLATE', '' );
 // Grab these from: https://api.wordpress.org/secret-key/1.1/salt
 // Be sure to change these to your own
 // ==============================================================
-define('AUTH_KEY',         '9zitHS^Sr9]y5(E5Bofu+ZL|_;MmMZS@O#UUAeD,Vmj_]hxt8_ ~Sc6|%mk: :~P');
-define('SECURE_AUTH_KEY',  'F2GozCEE-!VO%neSx/5xXM)LZGlOXIDBIDXt)=S+m>X;v0B}7Mk;|k2w~cKf+;I4');
-define('LOGGED_IN_KEY',    'LjJ$|Hl(K-94G?51)Y%BxcxxO+lrLD]_?~ee`ngZ1FJf9IH=kqBcGImcb7h$4tq<');
-define('NONCE_KEY',        'P(n>$_kKn`XY3d:36,,vJTqFc@Et1Gi~b&%-TR/FNbzoa99DRa4{0ELkHgNbNjS+');
-define('AUTH_SALT',        '_oh9M:7j(Tkb@PV;+w,;HTQyBnriWk@QOA*:S{ir]xee?966<$bxyMx=Xl<46L7@');
-define('SECURE_AUTH_SALT', 'CZ-C|}@_UMtzcB#lCnxM!_p?vV1@$V=UwxH0CwC{W<+%[0Rp@6V}KvDA!>Alr-`t');
-define('LOGGED_IN_SALT',   'OU#ugUYzY.EoHt:K#+RAkHu4d350.X1~d?^,]Ody.)RWxe|!!-|/EG PW(B+$?27');
-define('NONCE_SALT',       ';rV7jS(Q*+eVcZm6=H.U-;%ip=Zn5$SB(je-9D*wo?bF7&-IX&04DC;RtIz)a#u!');
+define('AUTH_KEY',         'VvsV1*Z38zz}Ae+T|SGUE!S|Eo2Ekj#;}7yx]&2nEupK|-u-dx-xJN*fue-~Zu;@');
+define('SECURE_AUTH_KEY',  '`b: 4F pUQ9cmI+N4j~x$|R^LiDrY!VH?7/l6.BE4)J#]0~xhH%`5+o+e8Qc-*r^');
+define('LOGGED_IN_KEY',    'aXKt^CCj@mazD71q(b!FDat5n~klZ;XNk>m0aQnarN|_N,Tf=n|/f<od?`p7F^%h');
+define('NONCE_KEY',        'E&q!cx@mGe4PvZ:>v5]w6^Y!f}s<(n eERcgn)[[#FbHg3iLucFy,+9>45[3g~#h');
+define('AUTH_SALT',        ',_Ny^<GmT/OJg:B*:h`Q4A#S3mg/Uh+wt:S!AaEZ{b/ccldqa|*B A$+dVcw],yx');
+define('SECURE_AUTH_SALT', ']`^^-d;NXW _c|%J@Jd^f5*E9>@3%M?ydly-jC8-yr p4~iHq+Q5;M.IW<8(%Q}v');
+define('LOGGED_IN_SALT',   '~YaIE8zGrii6JjIR)S;C%r#|-U$MSGT_Z@VI-OwfPRa36vOL4M iz7d[Re<|R3e~');
+define('NONCE_SALT',       'DJhcu+6.;yOl sK%IhTY5&5CT=<21;P*U#sk]Mv-As.wdHjeq5^[Z;x_R0-kRm5z');
 
 // ==============================================================
 // Table prefix
