@@ -137,7 +137,7 @@ add_action('pre_get_posts', 'exclude_protected_action');
 function enqueue_theme_scripts() {
   // Unregister standard jQuery and reregister as google code.
   wp_deregister_script('jquery');
-  wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.min.js', null, false, true );
+  wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.min.js', null, '1.10.2', true );
 	wp_enqueue_script( 'jquery' );
 	
 	if( WP_DEBUG ):
