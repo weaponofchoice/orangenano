@@ -9,8 +9,7 @@ if $('#scrollbtn').length > 0
 			scrollTop: '+=' + viewport;
 		return
 	
-	$(window).bind "scroll", ->
-		clearTimeout timeout
-		timeout = setTimeout(->
-			button.fadeIn();
-		,50)
+	#$(window).scroll ->
+	#	console.log "page scrolled"
+	
+	alert "page scrolled" unless $(window).scroll()
