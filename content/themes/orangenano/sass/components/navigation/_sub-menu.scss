@@ -1,13 +1,17 @@
 header{
 	.sub-menu{
 		position: absolute;
-		padding: 2em 1em 1em;
-		margin: 0;
+		padding: 1em;
+		margin: .5em 0 0 -1em;
 		text-align: center;
-		background: #333;
-	
-		display: none;
 		
+		background: $gray-dark;
+		border-radius: 3%;
+		box-shadow: 0 0 6px rgba(0,0,0,.75);;
+	
+		opacity: 0;
+		@include transition(.2s);
+				
 		li{
 			margin-right: 0;
 			

@@ -8335,7 +8335,7 @@ header .menu li:last-child a {
 }
 /* line 42, ../sass/components/navigation/_menu.scss */
 header .menu li:hover .sub-menu {
-  display: block;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 64em) {
@@ -8438,17 +8438,23 @@ header #menu-small #icon-menu a {
 /* line 2, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu {
   position: absolute;
-  padding: 2em 1em 1em;
-  margin: 0;
+  padding: 1em;
+  margin: .5em 0 0 -1em;
   text-align: center;
-  background: #333;
-  display: none;
+  background: #333333;
+  border-radius: 3%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
-/* line 11, ../sass/components/navigation/_sub-menu.scss */
+/* line 15, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li {
   margin-right: 0;
 }
-/* line 15, ../sass/components/navigation/_sub-menu.scss */
+/* line 19, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;

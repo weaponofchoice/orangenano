@@ -17,7 +17,7 @@
 			</div>
 		</div>
 			
-	</div><!-- end of 'container'>
+	</div><!-- end of 'container'-->
 			
 		<footer id="footer">
 			<div class="row">
