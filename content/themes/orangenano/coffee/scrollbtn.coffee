@@ -9,7 +9,7 @@ if $('#scrollbtn').length > 0
 			scrollTop: '+=' + viewport;
 		return
 	
-	#$(window).scroll ->
-	#	console.log "page scrolled"
+	$(window).scroll ->
+		console.log "page scrolled"
 	
 	alert "page scrolled" unless $(window).scroll()

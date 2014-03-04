@@ -26,3 +26,14 @@ footer{
 		}
 	}
 }
+
+//Media queries
+@media #{$small-only}{
+	footer{
+		h3,
+		a{
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
