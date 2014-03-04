@@ -24,3 +24,13 @@
 		}
 	}
 }
+
+@media #{$small-only}{
+	.block-image-right{
+		.row{
+			.image{
+				margin-left: 0;
+			}
+		}
+	}
+}

@@ -12,3 +12,10 @@
 		visibility: hidden;
 	}
 }
+
+//Media queries
+@media #{$small-only}{
+	#scrollbtn{
+		display: none;
+	}
+}

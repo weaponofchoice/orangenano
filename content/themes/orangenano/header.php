@@ -49,7 +49,7 @@
 				<?php wp_nav_menu( 'main_menu' ); ?>
 			
 				<ul id="menu-small" class="menu">
-					<div id="logo"><img src="content/themes/orangenano/img/logo-small.svg" /></div>
+					<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
 					<li id="icon-menu"><a></a></li>
 				</ul>
 			</div>

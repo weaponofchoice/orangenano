@@ -73,3 +73,22 @@
 		}	
 	}
 }
+
+//Media queries
+@media #{$small-only}{
+	.block-contact{
+		ul{
+			li{
+				&:nth-child(2){
+					margin-top: 2em;
+				}
+				
+				form{
+					button{
+						font-size: .9em;
+					}
+				}
+			}
+		}
+	}
+}

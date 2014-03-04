@@ -8268,6 +8268,14 @@ footer a span img {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 40em) {
+  /* line 34, ../sass/components/_footer.scss */
+  footer h3,
+  footer a {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* line 1, ../sass/components/_general.scss */
 .row {
   max-width: 69.6875rem;
@@ -8480,6 +8488,12 @@ header .sub-menu li:last-child a {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 40em) {
+  /* line 18, ../sass/components/navigation/_scrollbtn.scss */
+  #scrollbtn {
+    display: none;
+  }
+}
 /* line 1, ../sass/components/blocks/_block.scss */
 .block {
   width: 100%;
@@ -8661,6 +8675,16 @@ header .sub-menu li:last-child a {
   background: #f89c1c;
 }
 
+@media only screen and (max-width: 40em) {
+  /* line 82, ../sass/components/blocks/_block-contact.scss */
+  .block-contact ul li:nth-child(2) {
+    margin-top: 2em;
+  }
+  /* line 87, ../sass/components/blocks/_block-contact.scss */
+  .block-contact ul li form button {
+    font-size: .9em;
+  }
+}
 /* line 2, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons {
   margin-left: 0;
@@ -8717,6 +8741,12 @@ header .sub-menu li:last-child a {
   /* line 18, ../sass/components/blocks/_block-image-right.scss */
   .block-image-right .row .image img {
     padding-top: 5rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 31, ../sass/components/blocks/_block-image-right.scss */
+  .block-image-right .row .image {
+    margin-left: 0;
   }
 }
 /* line 2, ../sass/components/blocks/_block-parallax.scss */
@@ -9181,31 +9211,46 @@ img.rsImg {
   color: white;
 }
 
-@media only screen and (max-width: 64em) {
+@media only screen and (min-width: 90.063em) {
   /* line 27, ../sass/components/_gallery.scss */
   #gallery {
-    height: 25rem;
+    height: 50rem;
   }
   /* line 30, ../sass/components/_gallery.scss */
   #gallery .royalSlider {
-    height: 25rem;
+    height: 50rem;
   }
   /* line 33, ../sass/components/_gallery.scss */
+  #gallery .royalSlider h1 {
+    top: 25rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  /* line 41, ../sass/components/_gallery.scss */
+  #gallery {
+    height: 25rem;
+  }
+  /* line 44, ../sass/components/_gallery.scss */
+  #gallery .royalSlider {
+    height: 25rem;
+  }
+  /* line 47, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
     top: 13.25rem;
   }
 }
-@media only screen and (min-width: 90.063em) {
-  /* line 41, ../sass/components/_gallery.scss */
+@media only screen and (max-width: 40em) {
+  /* line 55, ../sass/components/_gallery.scss */
   #gallery {
-    height: 50rem;
+    height: 12.5rem;
   }
-  /* line 44, ../sass/components/_gallery.scss */
+  /* line 58, ../sass/components/_gallery.scss */
   #gallery .royalSlider {
-    height: 50rem;
+    height: 12.5rem;
   }
-  /* line 47, ../sass/components/_gallery.scss */
+  /* line 61, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
-    top: 25rem;
+    font-size: 1.75rem;
+    top: 9.6875rem;
   }
 }

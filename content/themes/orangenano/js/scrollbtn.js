@@ -11,6 +11,9 @@ if ($('#scrollbtn').length > 0) {
       scrollTop: '+=' + viewport
     });
   });
+  $(window).scroll(function() {
+    return console.log("page scrolled");
+  });
   if (!$(window).scroll()) {
     alert("page scrolled");
   }
