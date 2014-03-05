@@ -8472,7 +8472,21 @@ header .sub-menu li:last-child a {
   margin-bottom: 1em;
 }
 
-/* line 1, ../sass/components/navigation/_scrollbtn.scss */
+/*#scrollbtn{
+	height: rem-calc(50);
+	width: rem-calc(50);
+	position: fixed;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+	left: 5%;
+	bottom: 2.5em;
+	
+	&.hidden{
+		visibility: hidden;
+	}
+}*/
+/* line 17, ../sass/components/navigation/_scrollbtn.scss */
 #scrollbtn {
   height: 3.125rem;
   width: 3.125rem;
@@ -8480,16 +8494,47 @@ header .sub-menu li:last-child a {
   display: block;
   cursor: pointer;
   z-index: 21;
-  left: 5%;
   bottom: 2.5em;
+  border-radius: 100%;
+  border: 0.125rem solid #333333;
+  background: #333333;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #191919 0%, #3c3c3c 40%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #191919), color-stop(40%, #3c3c3c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #191919 0%, #3c3c3c 40%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #191919 0%, #3c3c3c 40%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #191919 0%, #3c3c3c 40%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #191919 0%, #3c3c3c 40%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#191919', endColorstr='#3c3c3c',GradientType=0 );
+  /* IE6-9 */
 }
-/* line 11, ../sass/components/navigation/_scrollbtn.scss */
-#scrollbtn.hidden {
-  visibility: hidden;
+/* line 40, ../sass/components/navigation/_scrollbtn.scss */
+#scrollbtn span {
+  content: ' ';
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  opacity: 1;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-top: 1rem;
+  background: transparent;
+  border: 0.125rem solid white;
+  border-top: none;
+  border-right: none;
+  -webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
+  -webkit-transform: rotate(314deg);
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 18, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 63, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }

@@ -1,15 +1,20 @@
 if $('#scrollbtn').length > 0
 	button = $('#scrollbtn')
 	body = $('body')
-	timeout = null
 	viewport = window.innerHeight
+	
 	
 	button.click ->
 		body.animate
 			scrollTop: '+=' + viewport;
 		return
-	
-	$(window).scroll ->
-		console.log "page scrolled"
-	
-	alert "page scrolled" unless $(window).scroll()
+		
+	#Fade effect
+	$(window).on "scroll", ->
+	  clearTimeout timer
+	  timer = setTimeout scrollStop, 150
+
+	scrollStop = ->
+  
+	  # do stuff
+	  console.log "scrolling stopped"

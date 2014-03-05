@@ -59,7 +59,7 @@
 			<?php wp_nav_menu( 'main_menu' ); ?>
 		</div>
 	
-		<a id="scrollbtn"> 
-			<img src="<?php bloginfo('template_directory'); ?>/img/scrollbtn.svg" />
+		<a id="scrollbtn" class="medium-offset-1 columns"> 
+			<span></span>
 		</a>
 		
