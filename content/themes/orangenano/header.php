@@ -58,8 +58,10 @@
 		<div id="menu-small-nav">
 			<?php wp_nav_menu( 'main_menu' ); ?>
 		</div>
-	
-		<a id="scrollbtn" class="medium-offset-1 columns"> 
-			<span></span>
-		</a>
+		
+		<div id="wrapper_button" class="medium-11 medium-offset-1 columns">
+			<a id="scrollbtn"> 
+				<span></span>
+			</a>
+		</div>
 		
