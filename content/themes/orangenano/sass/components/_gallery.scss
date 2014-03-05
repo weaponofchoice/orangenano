@@ -23,6 +23,20 @@
 }
 
 //Media queries
+@media #{$xlarge-up}{
+	#gallery{
+		height: rem-calc(800);
+		
+		.royalSlider{
+			height: rem-calc(800);
+			
+			h1{
+				top: rem-calc(400);
+			}
+		}
+	}
+}
+
 @media #{$medium-down}{
 	#gallery{
 		height: rem-calc(400);
@@ -37,15 +51,16 @@
 	}
 }
 
-@media #{$xlarge-up}{
+@media #{$small-only}{
 	#gallery{
-		height: rem-calc(800);
+		height: rem-calc(200);
 		
 		.royalSlider{
-			height: rem-calc(800);
+			height: rem-calc(200);
 			
 			h1{
-				top: rem-calc(400);
+				font-size: rem-calc(28);
+				top: rem-calc(155);
 			}
 		}
 	}

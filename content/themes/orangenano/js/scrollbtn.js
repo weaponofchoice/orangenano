@@ -11,10 +11,10 @@ if ($('#scrollbtn').length > 0) {
       scrollTop: '+=' + viewport
     });
   });
-  $(window).bind("scroll", function() {
-    clearTimeout(timeout);
-    return timeout = setTimeout(function() {
-      return button.fadeIn();
-    }, 50);
+  $(window).scroll(function() {
+    return console.log("page scrolled");
   });
+  if (!$(window).scroll()) {
+    alert("page scrolled");
+  }
 }
