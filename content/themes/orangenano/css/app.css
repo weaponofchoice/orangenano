@@ -8748,7 +8748,28 @@ header .sub-menu li:last-child a {
 .block-icons .icons li:nth-child(even) {
   padding-right: 0;
 }
-/* line 28, ../sass/components/blocks/_block-icons.scss */
+/* line 27, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li.small-4 {
+  width: 33.33333% !important;
+  float: left !important;
+  clear: none !important;
+}
+/* line 32, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li.small-4:nth-child(3n+1) {
+  padding-left: 0;
+  padding-right: 0.46875rem;
+}
+/* line 37, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li.small-4:nth-child(3n+2) {
+  padding-left: 0.46875rem;
+  padding-right: 0.46875rem;
+}
+/* line 42, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li.small-4:nth-child(3n+3) {
+  padding-left: 0.46875rem;
+  padding-right: 0;
+}
+/* line 50, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
   text-align: left;
 }

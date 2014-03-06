@@ -22,6 +22,28 @@
 			&:nth-child(even){
 				padding-right: 0;
 			}
+			
+			//To overwrite default foundation small-6
+			&.small-4{
+				width: 33.33333% !important; //Foundation width
+				float: left !important;
+				clear: none !important;
+				
+				&:nth-child(3n+1){
+					padding-left: 0;
+					padding-right: rem-calc(7.5);
+				}
+				
+				&:nth-child(3n+2){
+					padding-left: rem-calc(7.5);
+					padding-right: rem-calc(7.5);
+				}
+				
+				&:nth-child(3n+3){
+					padding-left: rem-calc(7.5);
+					padding-right: 0;
+				}
+			}
 		}
 
 		&.icons-alignLeft{		
