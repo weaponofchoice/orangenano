@@ -11,16 +11,8 @@
 			
 			<?php if( have_rows('icons') ): ?>
 			<ul class="icons">
-				<?php
-				$dom = new DOMDocument();
-				$dom -> loadHTML("<ul><li></li><li></li></ul>");
-				$li = $dom->getElementsByTagName("li");
-				foreach ($li as $li_c){
-				$i++;
-				}
-				?>
 				<?php while( have_rows('icons') ) : the_row(); ?>
-				<li class="icon small-6 columns<?php if($i == 2): echo ' small-4'; endif; ?>">
+				<li class="icon small-6 columns">
 					<img src="<?php the_sub_field('icon_image'); ?>" />
 					<h4><?php the_sub_field('icon_title'); ?></h4>
 					<p><?php the_sub_field('icon_text')?></p>
