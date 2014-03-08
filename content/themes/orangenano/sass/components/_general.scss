@@ -25,3 +25,27 @@
 		color: $white;
 	}
 }
+
+header,
+body,
+#container{
+	max-width: rem-calc(1920);
+	margin: 0 auto;
+}
+
+body{
+	background: $gray-light;
+}
+
+#container{
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+//Media queries
+@media #{$xxlarge-up}{
+	body > div:nth-child(2){
+		max-width: 1920px;
+		left: 50% !important;
+		margin-left: -960px;
+	}
+}

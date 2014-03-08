@@ -8304,6 +8304,32 @@ footer a span img {
   color: white;
 }
 
+/* line 31, ../sass/components/_general.scss */
+header,
+body,
+#container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* line 36, ../sass/components/_general.scss */
+body {
+  background: #f1f2f2;
+}
+
+/* line 40, ../sass/components/_general.scss */
+#container {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 120.063em) {
+  /* line 46, ../sass/components/_general.scss */
+  body > div:nth-child(2) {
+    max-width: 1920px;
+    left: 50% !important;
+    margin-left: -960px;
+  }
+}
 /* line 2, ../sass/components/navigation/_menu.scss */
 header #logo {
   float: left;
