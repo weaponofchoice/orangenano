@@ -39,10 +39,12 @@ body{
 
 #container{
 	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	top: 3.5em;
 }
 
 //Media queries
 @media #{$xxlarge-up}{
+	//max width for generated parallax div
 	body > div:nth-child(2){
 		max-width: 1920px;
 		left: 50% !important;

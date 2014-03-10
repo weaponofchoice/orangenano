@@ -41,27 +41,26 @@
       
 </head>
 
-<body <?php body_class(); ?>>
-	<div id="container">
-		<header id="top">
-			<div id="menu" class="row">
-				<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
-				<?php wp_nav_menu( 'main_menu' ); ?>
-			
-				<ul id="menu-small" class="menu">
-					<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
-					<li id="icon-menu"><a></a></li>
-				</ul>
-			</div>
-		</header>
-	
-		<div id="menu-small-nav">
+<body <?php body_class(); ?>>	
+	<header id="top">
+		<div id="menu" class="row">
+			<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
 			<?php wp_nav_menu( 'main_menu' ); ?>
-		</div>
 		
-		<div id="wrapper_button" class="medium-11 medium-offset-1 columns">
-			<a id="scrollbtn"> 
-				<span></span>
-			</a>
+			<ul id="menu-small" class="menu">
+				<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
+				<li id="icon-menu"><a></a></li>
+			</ul>
 		</div>
-		
+	</header>
+
+	<div id="menu-small-nav">
+		<?php wp_nav_menu( 'main_menu' ); ?>
+	</div>
+	
+	<div id="wrapper_button" class="medium-11 medium-offset-1 columns">
+		<a id="scrollbtn"> 
+			<span></span>
+		</a>
+	</div>
+	<div id="container">

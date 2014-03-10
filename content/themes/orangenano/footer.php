@@ -32,6 +32,7 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.royalslider.min.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.imageScroll.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/waypoints.min.js"></script>
 		
 		<script src="<?php bloginfo('template_directory'); ?>/js/init-royalSlider.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/init-imageScroll.js"></script>
