@@ -10,14 +10,12 @@ if ($('#scrollbtn').length > 0) {
       scrollTop: '+=' + viewport
     });
   });
-	var timer;
-		$(window).on('scroll',function () {
-		    button.fadeOut();
-		    clearTimeout(timer);
-		    timer = setTimeout( scrollStop , 1000 );
-		});
-		var scrollStop = function () { 
-		    // do stuff
-		    button.fadeIn();
-		};
+  $(window).on("scroll", function() {
+    var timer;
+    clearTimeout(timer);
+    return timer = setTimeout(scrollStop, 150);
+  });
+  scrollStop = function() {
+    return console.log("scrolling stopped");
+  };
 }

@@ -45,9 +45,9 @@ body{
 //Media queries
 @media #{$xxlarge-up}{
 	//max width for generated parallax div
-	body > div:nth-child(2){
+	#container > div:first-child{
 		max-width: 1920px;
-		left: 50% !important;
-		margin-left: -960px;
+		right: 0;
+		margin: auto;
 	}
 }
