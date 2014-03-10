@@ -44,6 +44,12 @@
 <body <?php body_class(); ?>>	
 	<header id="top">
 		<div id="menu" class="row">
+			<div id="wrapper_button">
+				<a id="scrollbtn"> 
+					<span></span>
+				</a>
+			</div>
+			
 			<div id="logo"><a href="<?php echo home_url(); ?>"><img src="content/themes/orangenano/img/logo-small.svg" /></a></div>
 			<?php wp_nav_menu( 'main_menu' ); ?>
 		
@@ -58,9 +64,4 @@
 		<?php wp_nav_menu( 'main_menu' ); ?>
 	</div>
 	
-	<div id="wrapper_button" class="medium-11 medium-offset-1 columns">
-		<a id="scrollbtn"> 
-			<span></span>
-		</a>
-	</div>
 	<div id="container">

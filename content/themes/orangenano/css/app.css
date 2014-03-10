@@ -8226,6 +8226,11 @@ a:hover img, a:focus img {
   line-height: 1.2;
 }
 
+/* line 2, ../sass/components/master/_touch.scss */
+.touch #scrollbtn {
+  display: none;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header {
   width: 100%;
@@ -8509,43 +8514,28 @@ header .sub-menu li:last-child a {
 }
 /* line 6, ../sass/components/navigation/_scrollbtn.scss */
 #wrapper_button #scrollbtn {
-  height: 3.125rem;
-  width: 3.125rem;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
   display: block;
   cursor: pointer;
   z-index: 10;
   bottom: 2.5em;
   border-radius: 100%;
-  border: 0.125rem solid #333333;
-  background: #333333;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #191919 0%, #3c3c3c 40%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #191919), color-stop(40%, #3c3c3c));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #191919 0%, #3c3c3c 40%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #191919 0%, #3c3c3c 40%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #191919 0%, #3c3c3c 40%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #191919 0%, #3c3c3c 40%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#191919', endColorstr='#3c3c3c',GradientType=0 );
-  /* IE6-9 */
+  border: none;
+  background: black;
 }
-/* line 29, ../sass/components/navigation/_scrollbtn.scss */
+/* line 20, ../sass/components/navigation/_scrollbtn.scss */
 #wrapper_button #scrollbtn span {
   content: ' ';
   cursor: pointer;
   position: absolute;
   top: 0;
-  right: 1rem;
+  right: 0.875rem;
   opacity: 1;
-  width: 0.875rem;
-  height: 0.875rem;
-  margin-top: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-top: 0.875rem;
   background: transparent;
   border: 0.125rem solid white;
   border-top: none;
@@ -8555,7 +8545,7 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 51, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 42, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }
@@ -8765,40 +8755,44 @@ header .sub-menu li:last-child a {
   margin-bottom: 2.5rem;
 }
 /* line 13, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons li h4 {
+  margin-bottom: 0;
+}
+/* line 17, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li:nth-child(2n+2) {
   float: right;
 }
-/* line 17, ../sass/components/blocks/_block-icons.scss */
+/* line 21, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li:nth-child(odd) {
   clear: left;
   padding-left: 0;
 }
-/* line 22, ../sass/components/blocks/_block-icons.scss */
+/* line 26, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li:nth-child(even) {
   padding-right: 0;
 }
-/* line 27, ../sass/components/blocks/_block-icons.scss */
+/* line 31, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4 {
   width: 33.33333% !important;
   float: left !important;
   clear: none !important;
 }
-/* line 32, ../sass/components/blocks/_block-icons.scss */
+/* line 36, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4:nth-child(3n+1) {
   padding-left: 0;
   padding-right: 0.46875rem;
 }
-/* line 37, ../sass/components/blocks/_block-icons.scss */
+/* line 41, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4:nth-child(3n+2) {
   padding-left: 0.46875rem;
   padding-right: 0.46875rem;
 }
-/* line 42, ../sass/components/blocks/_block-icons.scss */
+/* line 46, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4:nth-child(3n+3) {
   padding-left: 0.46875rem;
   padding-right: 0;
 }
-/* line 50, ../sass/components/blocks/_block-icons.scss */
+/* line 54, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
   text-align: left;
 }

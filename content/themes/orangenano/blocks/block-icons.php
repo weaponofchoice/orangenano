@@ -15,7 +15,7 @@
 				<li class="icon small-6 columns">
 					<img src="<?php the_sub_field('icon_image'); ?>" />
 					<h4><?php the_sub_field('icon_title'); ?></h4>
-					<p><?php the_sub_field('icon_text')?></p>
+					<?php the_sub_field('icon_text')?>
 				</li>
 				<?php endwhile; ?>
 			<?php endif; ?>
@@ -27,7 +27,7 @@
 					<li class="small-6 columns">
 						<img src="<?php the_sub_field('icon_image'); ?>" />
 						<h4><?php the_sub_field('icon_title'); ?></h4>
-						<p><?php the_sub_field('icon_text')?></p>
+						<?php the_sub_field('icon_text')?>
 					</li>
 					<?php endwhile; ?>
 					

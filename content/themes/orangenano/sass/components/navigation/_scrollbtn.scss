@@ -4,8 +4,8 @@
 	z-index: 10;
 	
 	#scrollbtn{
-		height: rem-calc(50);
-		width: rem-calc(50);
+		height: rem-calc(40);
+		width: rem-calc(40);
 		position: fixed;
 		display: block;
 		cursor: pointer;
@@ -13,29 +13,20 @@
 		bottom: 2.5em;
 	
 		border-radius: 100%;
-		border: rem-calc(2) solid $gray-dark;
+		border: none;
 	
-		//Gradient background
-		background: $gray-dark; /* Old browsers */
-		background: -moz-linear-gradient(top,  #191919 0%, #3c3c3c 40%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#191919), color-stop(40%,#3c3c3c)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #191919 0%,#3c3c3c 40%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  #191919 0%,#3c3c3c 40%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  #191919 0%,#3c3c3c 40%); /* IE10+ */
-		background: linear-gradient(to bottom,  #191919 0%,#3c3c3c 40%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#3c3c3c',GradientType=0 ); /* IE6-9 */
-	
+		background: $black;
 	
 		span{
 			content: ' ';
 			cursor: pointer;
 			position: absolute;
 			top: 0;
-			right: rem-calc(16);
+			right: rem-calc(14);
 			opacity: 1;
-			width: rem-calc(14);
-			height: rem-calc(14);
-			margin-top: rem-calc(16);
+			width: rem-calc(12);
+			height: rem-calc(12);
+			margin-top: rem-calc(14);
 			background: transparent;
 			border: rem-calc(2) solid $white;
 			border-top: none;
