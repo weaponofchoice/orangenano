@@ -26,25 +26,6 @@
 			</div>
 		</footer>
 
-		<!-- Scripts -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.royalslider.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.imageScroll.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/waypoints.min.js"></script>
-		
-		<script src="<?php bloginfo('template_directory'); ?>/js/init-royalSlider.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/init-imageScroll.js"></script>
-		
-		<script src="<?php bloginfo('template_directory'); ?>/js/accordion.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/scrollto.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/toTop.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/menu-small-nav.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/touch.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/scrollbtn.js"></script>
-		<!-- <script src="js/app.min.js"></script> -->
-
 		<?php wp_footer(); ?>	
 	</body>
 </html>

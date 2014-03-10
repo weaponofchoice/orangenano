@@ -137,13 +137,27 @@ add_action('pre_get_posts', 'exclude_protected_action');
 function enqueue_theme_scripts() {
   // Unregister standard jQuery and reregister as google code.
   wp_deregister_script('jquery');
-  wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.min.js', null, '1.10.2', true );
+  wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.min.js', null, false, true );
 	wp_enqueue_script( 'jquery' );
 	
 	if( WP_DEBUG ):
 		// Plugins
 		// For example:
-		// wp_enqueue_script( 'infinitescroll', get_template_directory_uri() . '/js/jquery-infinitescroll.min.js', array('jquery'), false, true );
+		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', 'jquery', false, true );
+		wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/js/vendor/jquery-ui-1.10.4.custom.min.js', 'jquery', false, true );
+		wp_enqueue_script( 'imagescroll', get_template_directory_uri() . '/js/vendor/jquery.imageScroll.js', 'jquery', false, true );
+		wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/vendor/jquery.royalslider.min.js', 'jquery', false, true );
+		wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/vendor/waypoints.min.js', 'jquery', false, true );
+		
+		wp_enqueue_script( 'init-imagescroll', get_template_directory_uri() . '/js/init-imageScroll.js', 'imagescroll', false, true );
+		wp_enqueue_script( 'init-royalslider', get_template_directory_uri() . '/js/init-royalSlider.js', 'royalslider', false, true );
+		
+		wp_enqueue_script( 'accordion', get_template_directory_uri() . '/js/accordion.js', 'jquery-ui', false, true );
+		wp_enqueue_script( 'scrollto', get_template_directory_uri() . '/js/scrollto.js', 'jquery', false, true );
+		wp_enqueue_script( 'totop', get_template_directory_uri() . '/js/toTop.js', 'jquery', false, true );
+		wp_enqueue_script( 'menu', get_template_directory_uri() . '/js/menu-small-nav.js', 'jquery', false, true );
+		wp_enqueue_script( 'touch', get_template_directory_uri() . '/js/touch.js', 'jquery', false, true );
+		wp_enqueue_script( 'scrollbtn', get_template_directory_uri() . '/js/scrollbtn.js', 'jquery', false, true );
 		
 		// Classes
 		// For example:
@@ -154,7 +168,7 @@ function enqueue_theme_scripts() {
 		// wp_enqueue_script( 'application', get_template_directory_uri() . '/js/application.js', array('jquery'), false, true	);
  	else:
 		// All concatenated and compressed JS in one file:
-		// wp_enqueue_script( 'application', get_template_directory_uri() . '/js/application.min.js', array('jquery'), false, true	);
+		wp_enqueue_script( 'application', get_template_directory_uri() . '/js/app.min.js', array('jquery'), false, true	);
  	endif;
 }
 
