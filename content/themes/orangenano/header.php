@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/app.css">
 	
 	<!-- Typekit fonts: 'Proxima Nova' -->
-	<script type="text/javascript" src="http://use.typekit.net/iqd5tvm.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/iqd5tvm.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  
     <!-- TITLE -->  
