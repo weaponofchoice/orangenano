@@ -1,6 +1,8 @@
 footer{
+	margin-top: rem-calc(50);
 	padding: .8em 2em;
 	background: $black;
+	z-index: 999;
 	
 	*{
 		color: $white;
@@ -12,9 +14,11 @@ footer{
 		line-height: 3.2;
 	}
 	
+	//Social
 	a{
 		float: right;
 		line-height: 2.5;
+		right: rem-calc(20);
 		
 		-webkit-transition: 1s;
 		

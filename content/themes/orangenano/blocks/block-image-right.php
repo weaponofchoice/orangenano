@@ -1,7 +1,7 @@
 <div class="block block-image-right" style="background-color:<?php the_sub_field('background_color'); ?>">
 	<div class="row">
 		<article class="medium-9 medium-offset-2 large-7 large-offset-0 columns">
-			<h3>Home - 2 - Ons Concept</h3>
+			<h3><?php the_sub_field('title_reference'); ?></h3>
 			<h2><?php the_sub_field('title'); ?></h2>
 			<div class="intro">
 				<?php the_sub_field('intro'); ?>

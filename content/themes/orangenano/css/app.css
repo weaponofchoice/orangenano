@@ -8237,46 +8237,53 @@ header {
   max-width: none;
   padding: .8em 2em;
   position: fixed;
-  z-index: 999;
+  z-index: 998;
   background: #333333;
 }
-/* line 10, ../sass/components/_header.scss */
+/* line 11, ../sass/components/_header.scss */
+header .current-menu-item a {
+  color: #666;
+}
+/* line 16, ../sass/components/_header.scss */
 header * {
   color: white;
 }
 
 /* line 1, ../sass/components/_footer.scss */
 footer {
+  margin-top: 3.125rem;
   padding: .8em 2em;
   background: black;
+  z-index: 999;
 }
-/* line 5, ../sass/components/_footer.scss */
+/* line 7, ../sass/components/_footer.scss */
 footer * {
   color: white;
   margin-bottom: 0;
 }
-/* line 10, ../sass/components/_footer.scss */
+/* line 12, ../sass/components/_footer.scss */
 footer h3 {
   float: left;
   line-height: 3.2;
 }
-/* line 15, ../sass/components/_footer.scss */
+/* line 18, ../sass/components/_footer.scss */
 footer a {
   float: right;
   line-height: 2.5;
+  right: 1.25rem;
   -webkit-transition: 1s;
 }
-/* line 21, ../sass/components/_footer.scss */
+/* line 25, ../sass/components/_footer.scss */
 footer a span {
   margin-left: .5em;
 }
-/* line 24, ../sass/components/_footer.scss */
+/* line 28, ../sass/components/_footer.scss */
 footer a span img {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 35, ../sass/components/_footer.scss */
+  /* line 39, ../sass/components/_footer.scss */
   footer h3,
   footer a {
     width: 100%;
@@ -8525,8 +8532,9 @@ header .sub-menu li:last-child a {
   border-radius: 100%;
   border: none;
   background: #333333;
+  opacity: .85;
 }
-/* line 21, ../sass/components/navigation/_scrollbtn.scss */
+/* line 22, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn span {
   content: ' ';
   cursor: pointer;
@@ -8536,7 +8544,7 @@ header .sub-menu li:last-child a {
   opacity: 1;
   width: 0.75rem;
   height: 0.75rem;
-  margin-top: 0.875rem;
+  margin-top: 0.8125rem;
   background: transparent;
   border: 0.125rem solid white;
   border-top: none;
@@ -8544,7 +8552,7 @@ header .sub-menu li:last-child a {
   -webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
   -webkit-transform: rotate(314deg);
 }
-/* line 39, ../sass/components/navigation/_scrollbtn.scss */
+/* line 40, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn.scrollup {
   position: relative;
   float: right;
@@ -8553,7 +8561,7 @@ header .sub-menu li:last-child a {
   border: 0.125rem solid white;
   background: transparent;
 }
-/* line 48, ../sass/components/navigation/_scrollbtn.scss */
+/* line 49, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn.scrollup span {
   border: 0.125rem solid white;
   border-bottom: none;
@@ -8563,7 +8571,7 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 60, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 61, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }
@@ -8678,24 +8686,25 @@ header .sub-menu li:last-child a {
 /* line 1, ../sass/components/blocks/_block-contact.scss */
 .block-contact {
   width: 100%;
-  padding: 3.75rem 2em;
+  padding: 5rem 2em;
+  z-index: 999;
   background: #333333 !important;
-  box-shadow: inset 0 20px 23px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 3px 30px rgba(0, 0, 0, 0.5);
 }
-/* line 8, ../sass/components/blocks/_block-contact.scss */
+/* line 9, ../sass/components/blocks/_block-contact.scss */
 .block-contact * {
   color: white;
 }
-/* line 12, ../sass/components/blocks/_block-contact.scss */
+/* line 13, ../sass/components/blocks/_block-contact.scss */
 .block-contact img {
   margin-bottom: 1em;
 }
-/* line 16, ../sass/components/blocks/_block-contact.scss */
+/* line 17, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 20, ../sass/components/blocks/_block-contact.scss */
+/* line 21, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li {
   margin-left: 0;
   margin-right: 0;
@@ -8703,46 +8712,47 @@ header .sub-menu li:last-child a {
   padding-right: 0;
   float: left !important;
 }
-/* line 27, ../sass/components/blocks/_block-contact.scss */
+/* line 28, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li p {
   padding-left: 0;
   white-space: nowrap;
 }
-/* line 32, ../sass/components/blocks/_block-contact.scss */
+/* line 33, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child {
   float: right !important;
+  text-align: right;
 }
-/* line 35, ../sass/components/blocks/_block-contact.scss */
+/* line 37, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child h3 {
   top: -.8em;
 }
-/* line 39, ../sass/components/blocks/_block-contact.scss */
+/* line 41, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child .social {
   margin-left: 1em;
   top: .5em;
 }
-/* line 44, ../sass/components/blocks/_block-contact.scss */
+/* line 46, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child .social a img {
   cursor: pointer;
 }
-/* line 50, ../sass/components/blocks/_block-contact.scss */
+/* line 52, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form {
   width: 100%;
   height: 2.5rem;
 }
-/* line 55, ../sass/components/blocks/_block-contact.scss */
+/* line 57, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"],
 .block-contact ul li:last-child form button {
   height: 2.5rem;
   padding: .5em 1em;
   float: left;
 }
-/* line 61, ../sass/components/blocks/_block-contact.scss */
+/* line 63, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"] {
   width: 70%;
   color: black;
 }
-/* line 66, ../sass/components/blocks/_block-contact.scss */
+/* line 68, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form button {
   width: 30%;
   float: right;
@@ -8750,11 +8760,11 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 82, ../sass/components/blocks/_block-contact.scss */
+  /* line 84, ../sass/components/blocks/_block-contact.scss */
   .block-contact ul li:nth-child(2) {
     margin-top: 2em;
   }
-  /* line 87, ../sass/components/blocks/_block-contact.scss */
+  /* line 89, ../sass/components/blocks/_block-contact.scss */
   .block-contact ul li form button {
     font-size: .9em;
   }

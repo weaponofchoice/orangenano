@@ -9,6 +9,7 @@
  * @depend vendor/waypoints.min.js
  * @depend init-imageScroll.js
  * @depend init-royalSlider.js
+ * @depend init-waypoints.js
  * @depend accordion.js
  * @depend toTop.js
  * @depend menu-small-nav.js

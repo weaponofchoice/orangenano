@@ -8,10 +8,6 @@
 					</li>
 					<li class="medium-6 medium-offset-1 large-5 columns">
 						<h3>Volg ons:<span class="social"><a href=""><img src="content/themes/orangenano/img/facebook.svg" /></a></span><span class="social"><a><img src="content/themes/orangenano/img/twitter.svg"></a></span></h3>
-						<form>
-							<input type="text" placeholder="Nieuwsbrief" />
-							<button type="submit" class="pure-button">Sign up</button>
-						</form>
 					</li>
 				</ul>
 			</div>

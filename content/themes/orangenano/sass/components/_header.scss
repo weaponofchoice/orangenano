@@ -3,9 +3,15 @@ header{
 	max-width: none;
 	padding: .8em 2em;
 	position: fixed;
-	z-index: 999;
+	z-index: 998;
 	
 	background: $gray-dark;
+	
+	.current-menu-item{
+		a{
+			color: #666;
+		}
+	}
 	
 	*{
 		color: white;

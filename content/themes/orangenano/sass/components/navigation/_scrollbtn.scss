@@ -17,6 +17,7 @@
 	border: none;
 
 	background: $gray-dark;
+	opacity: .85;
 
 	span{
 		content: ' ';
@@ -27,7 +28,7 @@
 		opacity: 1;
 		width: rem-calc(12);
 		height: rem-calc(12);
-		margin-top: rem-calc(14);
+		margin-top: rem-calc(13);
 		background: transparent;
 		border: rem-calc(2) solid $white;
 		border-top: none;
