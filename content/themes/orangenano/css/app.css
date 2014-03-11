@@ -8549,10 +8549,13 @@ header .sub-menu li:last-child a {
   border: 0.125rem solid white;
   border-top: none;
   border-right: none;
-  -webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
   -webkit-transform: rotate(314deg);
+  -moz-transform: rotate(314deg);
+  -ms-transform: rotate(314deg);
+  -o-transform: rotate(314deg);
+  transform: rotate(314deg);
 }
-/* line 40, ../sass/components/navigation/_scrollbtn.scss */
+/* line 39, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn.scrollup {
   position: relative;
   float: right;
@@ -8561,7 +8564,7 @@ header .sub-menu li:last-child a {
   border: 0.125rem solid white;
   background: transparent;
 }
-/* line 49, ../sass/components/navigation/_scrollbtn.scss */
+/* line 48, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn.scrollup span {
   border: 0.125rem solid white;
   border-bottom: none;
@@ -8571,7 +8574,7 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 61, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 60, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }
@@ -8779,8 +8782,8 @@ header .sub-menu li:last-child a {
 }
 /* line 8, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li img {
-  margin-top: 1em;
-  margin-bottom: 2.5rem;
+  margin-top: -5rem;
+  margin-bottom: 1em;
   max-height: 15.625rem;
 }
 /* line 14, ../sass/components/blocks/_block-icons.scss */
@@ -8828,6 +8831,12 @@ header .sub-menu li:last-child a {
 /* line 59, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li img {
   max-height: 4.6875rem;
+}
+
+/* line 70, ../sass/components/blocks/_block-icons.scss */
+.home .block-icons li img {
+  max-height: 7.5rem !important;
+  margin-top: 2.5rem;
 }
 
 @media only screen and (max-width: 64em) {
@@ -8903,7 +8912,11 @@ header .sub-menu li:last-child a {
 
 /* line 12, ../sass/components/_royalslider.scss */
 .rsWebkit3d .rsSlide {
-  -webkit-transform: translateZ(0);
+  -webkit-transform: perspective(0) translate(0, 0);
+  -moz-transform: perspective(0) translate(0, 0);
+  -ms-transform: perspective(0) translate(0, 0);
+  -o-transform: perspective(0) translate(0, 0);
+  transform: perspective(0) translate(0, 0);
 }
 
 /* line 26, ../sass/components/_royalslider.scss */
@@ -8925,6 +8938,10 @@ header .sub-menu li:last-child a {
 .rsFade.rsWebkit3d img,
 .rsFade.rsWebkit3d .rsContainer {
   -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 }
 
 /* line 34, ../sass/components/_royalslider.scss */
@@ -9195,7 +9212,7 @@ img.rsImg {
 .rsSlide,
 .rsVideoFrameHolder,
 .rsThumbs {
-  background: #f89c1c;
+  background: #f1f2f2;
   color: white;
   overflow: hidden;
 }
@@ -9246,6 +9263,10 @@ img.rsImg {
   top: 0;
   margin-left: 2em;
   -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 /* line 61, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowLeft .rsArrowIcn {
@@ -9257,6 +9278,10 @@ img.rsImg {
   top: -2.2em;
   margin-right: 2em;
   -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 /* line 72, ../sass/components/_rs-default.scss */
 .rsDefault .rsArrow.rsArrowRight .rsArrowIcn {
@@ -9308,7 +9333,7 @@ img.rsImg {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #f89c1c;
+  background: #f1f2f2;
 }
 /* line 9, ../sass/components/_gallery.scss */
 #gallery .royalSlider {

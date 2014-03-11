@@ -33,8 +33,7 @@
 		border: rem-calc(2) solid $white;
 		border-top: none;
 		border-right: none;
-		-webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
-		-webkit-transform: rotate(314deg);
+		@include rotate(314deg);
 	}
 	
 	&.scrollup{

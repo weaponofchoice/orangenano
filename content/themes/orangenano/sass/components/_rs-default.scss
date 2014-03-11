@@ -4,7 +4,7 @@
 .rsSlide,
 .rsVideoFrameHolder,
 .rsThumbs{
-	background: $orange;
+	background: $gray-light;
 	color: $white;
 	overflow: hidden;
 }
@@ -56,7 +56,7 @@
 			left: 0; 
 			top: 0; 
 			margin-left: 2em;
-			-webkit-transform: rotate(-45deg);
+			@include rotate(-45deg);
 		
 			.rsArrowIcn{ 
 				background-position: -64px -32px; 
@@ -67,7 +67,7 @@
 			right: 0; 
 			top: -2.2em; 
 			margin-right: 2em;
-			-webkit-transform: rotate(135deg);
+			@include rotate(135deg);
 		
 			.rsArrowIcn{
 				background-position: -64px -64px;

@@ -10,7 +10,7 @@
 }
 
 .rsWebkit3d .rsSlide {
-	-webkit-transform: translateZ(0);
+	@include translate(0, 0, 0);
 }
 
 
@@ -29,7 +29,7 @@
 .rsFade.rsWebkit3d .rsSlide,
 .rsFade.rsWebkit3d img,
 .rsFade.rsWebkit3d .rsContainer {
-    -webkit-transform: none;
+    @include transform(none);
 }
 .rsOverflow {
 	width: 100%;
