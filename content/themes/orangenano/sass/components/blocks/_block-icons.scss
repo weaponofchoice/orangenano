@@ -8,7 +8,7 @@
 			img{
 				margin-top: 1em;
 				margin-bottom: rem-calc(40);
-				max-height: rem-calc(75);
+				max-height: rem-calc(250);
 			}
 			
 			h4{
@@ -55,6 +55,10 @@
 			li{
 				text-align: left;
 				//float: left;
+				
+				img{
+					max-height: rem-calc(75);
+				}
 			}
 		}
 	}	

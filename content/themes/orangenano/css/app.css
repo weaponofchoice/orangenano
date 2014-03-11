@@ -8781,7 +8781,7 @@ header .sub-menu li:last-child a {
 .block-icons .icons li img {
   margin-top: 1em;
   margin-bottom: 2.5rem;
-  max-height: 4.6875rem;
+  max-height: 15.625rem;
 }
 /* line 14, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li h4 {
@@ -8824,6 +8824,10 @@ header .sub-menu li:last-child a {
 /* line 55, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
   text-align: left;
+}
+/* line 59, ../sass/components/blocks/_block-icons.scss */
+.block-icons .icons.icons-alignLeft li img {
+  max-height: 4.6875rem;
 }
 
 @media only screen and (max-width: 64em) {
