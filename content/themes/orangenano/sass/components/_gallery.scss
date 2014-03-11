@@ -16,7 +16,7 @@
 			width: 100%;
 			position: absolute;
 			top: rem-calc(300);
-			margin-top: rem-calc(-72);
+			margin-top: rem-calc(-75);
 			color: $white;
 		}
 	}
@@ -25,13 +25,13 @@
 //Media queries
 @media #{$xlarge-up}{
 	#gallery{
-		height: rem-calc(800);
+		height: rem-calc(700);
 		
 		.royalSlider{
-			height: rem-calc(800);
+			height: rem-calc(700);
 			
 			h1{
-				top: rem-calc(400);
+				top: rem-calc(355);
 			}
 		}
 	}

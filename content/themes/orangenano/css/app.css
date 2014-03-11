@@ -9322,22 +9322,22 @@ img.rsImg {
   width: 100%;
   position: absolute;
   top: 18.75rem;
-  margin-top: -4.5rem;
+  margin-top: -4.6875rem;
   color: white;
 }
 
 @media only screen and (min-width: 90.063em) {
   /* line 27, ../sass/components/_gallery.scss */
   #gallery {
-    height: 50rem;
+    height: 43.75rem;
   }
   /* line 30, ../sass/components/_gallery.scss */
   #gallery .royalSlider {
-    height: 50rem;
+    height: 43.75rem;
   }
   /* line 33, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
-    top: 25rem;
+    top: 22.1875rem;
   }
 }
 @media only screen and (max-width: 64em) {

@@ -11,7 +11,8 @@ if ($('#gallery').length > 0) {
     slidesSpacing: 0,
     loop: true,
     transitionSpeed: 200,
-    controlNavigation: 'bullets',
+    controlNavigation: 'none',
+    arrowsNav: true,
     arrowsNavHideOnTouch: true
   });
 }
