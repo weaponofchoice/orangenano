@@ -8781,46 +8781,47 @@ header .sub-menu li:last-child a {
 .block-icons .icons li img {
   margin-top: 1em;
   margin-bottom: 2.5rem;
+  max-height: 4.6875rem;
 }
-/* line 13, ../sass/components/blocks/_block-icons.scss */
+/* line 14, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li h4 {
   margin-bottom: 0;
 }
-/* line 17, ../sass/components/blocks/_block-icons.scss */
+/* line 18, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li:nth-child(2n+2) {
   float: right;
 }
-/* line 21, ../sass/components/blocks/_block-icons.scss */
+/* line 22, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li:nth-child(odd) {
   clear: left;
   padding-left: 0;
 }
-/* line 26, ../sass/components/blocks/_block-icons.scss */
+/* line 27, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li:nth-child(even) {
   padding-right: 0;
 }
-/* line 31, ../sass/components/blocks/_block-icons.scss */
+/* line 32, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4 {
   width: 33.33333% !important;
   float: left !important;
   clear: none !important;
 }
-/* line 36, ../sass/components/blocks/_block-icons.scss */
+/* line 37, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4:nth-child(3n+1) {
   padding-left: 0;
   padding-right: 0.46875rem;
 }
-/* line 41, ../sass/components/blocks/_block-icons.scss */
+/* line 42, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4:nth-child(3n+2) {
   padding-left: 0.46875rem;
   padding-right: 0.46875rem;
 }
-/* line 46, ../sass/components/blocks/_block-icons.scss */
+/* line 47, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons li.small-4:nth-child(3n+3) {
   padding-left: 0.46875rem;
   padding-right: 0;
 }
-/* line 54, ../sass/components/blocks/_block-icons.scss */
+/* line 55, ../sass/components/blocks/_block-icons.scss */
 .block-icons .icons.icons-alignLeft li {
   text-align: left;
 }
