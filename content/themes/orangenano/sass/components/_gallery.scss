@@ -1,6 +1,6 @@
 #gallery{
 	width: 100%;
-	height: rem-calc(600);
+	height: rem-calc(630);
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -8,7 +8,7 @@
 	
 	.royalSlider{
 		width: 100%;
-		height: rem-calc(600);
+		height: 100%;
 		margin: 0;
 		text-align: center;
 		
@@ -25,11 +25,9 @@
 //Media queries
 @media #{$xlarge-up}{
 	#gallery{
-		height: rem-calc(700);
+		height: rem-calc(810);
 		
 		.royalSlider{
-			height: rem-calc(700);
-			
 			h1{
 				top: rem-calc(355);
 			}
@@ -42,8 +40,6 @@
 		height: rem-calc(400);
 		
 		.royalSlider{
-			height: rem-calc(400);
-			
 			h1{
 				top: rem-calc(212);
 			}
@@ -56,8 +52,6 @@
 		height: rem-calc(200);
 		
 		.royalSlider{
-			height: rem-calc(200);
-			
 			h1{
 				font-size: rem-calc(28);
 				top: rem-calc(155);

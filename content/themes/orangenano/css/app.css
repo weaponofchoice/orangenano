@@ -9329,7 +9329,7 @@ img.rsImg {
 /* line 1, ../sass/components/_gallery.scss */
 #gallery {
   width: 100%;
-  height: 37.5rem;
+  height: 39.375rem;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -9338,7 +9338,7 @@ img.rsImg {
 /* line 9, ../sass/components/_gallery.scss */
 #gallery .royalSlider {
   width: 100%;
-  height: 37.5rem;
+  height: 100%;
   margin: 0;
   text-align: center;
 }
@@ -9354,41 +9354,29 @@ img.rsImg {
 @media only screen and (min-width: 90.063em) {
   /* line 27, ../sass/components/_gallery.scss */
   #gallery {
-    height: 43.75rem;
+    height: 50.625rem;
   }
-  /* line 30, ../sass/components/_gallery.scss */
-  #gallery .royalSlider {
-    height: 43.75rem;
-  }
-  /* line 33, ../sass/components/_gallery.scss */
+  /* line 31, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
     top: 22.1875rem;
   }
 }
 @media only screen and (max-width: 64em) {
-  /* line 41, ../sass/components/_gallery.scss */
+  /* line 39, ../sass/components/_gallery.scss */
   #gallery {
     height: 25rem;
   }
-  /* line 44, ../sass/components/_gallery.scss */
-  #gallery .royalSlider {
-    height: 25rem;
-  }
-  /* line 47, ../sass/components/_gallery.scss */
+  /* line 43, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
     top: 13.25rem;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 55, ../sass/components/_gallery.scss */
+  /* line 51, ../sass/components/_gallery.scss */
   #gallery {
     height: 12.5rem;
   }
-  /* line 58, ../sass/components/_gallery.scss */
-  #gallery .royalSlider {
-    height: 12.5rem;
-  }
-  /* line 61, ../sass/components/_gallery.scss */
+  /* line 55, ../sass/components/_gallery.scss */
   #gallery .royalSlider h1 {
     font-size: 1.75rem;
     top: 9.6875rem;
