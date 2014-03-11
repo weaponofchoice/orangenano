@@ -44,8 +44,8 @@
 <body <?php body_class(); ?>>	
 	<header id="top">
 		<div id="menu" class="row">
-			<div id="wrapper_button">
-				<a id="scrollbtn"> 
+			<div class="wrapper_button">
+				<a id="scrolldown" class="scrollbtn"> 
 					<span></span>
 				</a>
 			</div>

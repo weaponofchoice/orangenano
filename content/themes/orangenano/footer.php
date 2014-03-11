@@ -22,7 +22,7 @@
 		<footer id="footer">
 			<div class="row">
 				<h3>2014 Orange Nanotech B.V.</h3>
-				<a id="toTop" href="#">Back to top<span><img src="content/themes/orangenano/img/arrow-up.svg" /></span></a>
+				<a id="toTop" href="#">Back to top<div class="scrollbtn"><span></span></div></a>
 			</div>
 		</footer>
 

@@ -1,7 +1,7 @@
 var body, button, scrollStop, viewport;
 
-if ($('#scrollbtn').length > 0) {
-  button = $('#scrollbtn');
+if ($('.scrollbtn').length > 0) {
+  button = $('.scrolldown');
   body = $('body');
   viewport = window.innerHeight;
   button.click(function() {

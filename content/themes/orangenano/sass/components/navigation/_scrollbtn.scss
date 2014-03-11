@@ -1,39 +1,39 @@
-#wrapper_button{
+.wrapper_button{
 	position: fixed;
 	bottom: 2.5em;
 	z-index: 10;
+}
 	
-	#scrollbtn{
-		height: rem-calc(40);
-		width: rem-calc(40);
-		position: fixed;
-		display: block;
+.scrollbtn{
+	height: rem-calc(40);
+	width: rem-calc(40);
+	position: fixed;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+	bottom: 2.5em;
+
+	border-radius: 100%;
+	border: none;
+
+	background: $black;
+
+	span{
+		content: ' ';
 		cursor: pointer;
-		z-index: 10;
-		bottom: 2.5em;
-	
-		border-radius: 100%;
-		border: none;
-	
-		background: $black;
-	
-		span{
-			content: ' ';
-			cursor: pointer;
-			position: absolute;
-			top: 0;
-			right: rem-calc(14);
-			opacity: 1;
-			width: rem-calc(12);
-			height: rem-calc(12);
-			margin-top: rem-calc(14);
-			background: transparent;
-			border: rem-calc(2) solid $white;
-			border-top: none;
-			border-right: none;
-			-webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
-			-webkit-transform: rotate(314deg);
-		}
+		position: absolute;
+		top: 0;
+		right: rem-calc(14);
+		opacity: 1;
+		width: rem-calc(12);
+		height: rem-calc(12);
+		margin-top: rem-calc(14);
+		background: transparent;
+		border: rem-calc(2) solid $white;
+		border-top: none;
+		border-right: none;
+		-webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
+		-webkit-transform: rotate(314deg);
 	}
 }
 
