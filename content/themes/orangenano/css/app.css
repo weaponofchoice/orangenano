@@ -8263,7 +8263,7 @@ footer h3 {
 /* line 15, ../sass/components/_footer.scss */
 footer a {
   float: right;
-  line-height: 2.2;
+  line-height: 2.5;
   -webkit-transition: 1s;
 }
 /* line 21, ../sass/components/_footer.scss */
@@ -8524,7 +8524,7 @@ header .sub-menu li:last-child a {
   bottom: 2.5em;
   border-radius: 100%;
   border: none;
-  background: black;
+  background: #333333;
 }
 /* line 21, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn span {
@@ -8544,9 +8544,26 @@ header .sub-menu li:last-child a {
   -webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
   -webkit-transform: rotate(314deg);
 }
+/* line 39, ../sass/components/navigation/_scrollbtn.scss */
+.scrollbtn.scrollup {
+  position: relative;
+  float: right;
+  right: -1.25rem;
+  top: 0.3125rem;
+  border: 0.125rem solid white;
+  background: transparent;
+}
+/* line 48, ../sass/components/navigation/_scrollbtn.scss */
+.scrollbtn.scrollup span {
+  border: 0.125rem solid white;
+  border-bottom: none;
+  border-left: none;
+  margin-top: 0.9375rem;
+  right: 0.75rem;
+}
 
 @media only screen and (max-width: 40em) {
-  /* line 42, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 60, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }

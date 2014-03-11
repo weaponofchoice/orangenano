@@ -131,6 +131,13 @@ function exclude_protected_action($query) {
 add_action('pre_get_posts', 'exclude_protected_action');
 
 /**
+ * Custom image sizes
+ * add_image_size( $name, $width, $height, $crop )
+ */
+
+add_image_size( 'homepage_thumbnail', '', '200',  false);
+
+/**
  * External scripts
  */
 

@@ -16,7 +16,7 @@
 	border-radius: 100%;
 	border: none;
 
-	background: $black;
+	background: $gray-dark;
 
 	span{
 		content: ' ';
@@ -34,6 +34,24 @@
 		border-right: none;
 		-webkit-transition: opacity 0.2s, top 0.2s, right 0.2s;
 		-webkit-transform: rotate(314deg);
+	}
+	
+	&.scrollup{
+		position: relative;
+		float: right;
+		right: rem-calc(-20);
+		top: rem-calc(5);
+		border: rem-calc(2) solid $white;
+		
+		background: transparent;
+		
+		span{
+			border: rem-calc(2) solid $white;
+			border-bottom: none;
+			border-left: none;
+			margin-top: rem-calc(15);
+			right: rem-calc(12);
+		}
 	}
 }
 

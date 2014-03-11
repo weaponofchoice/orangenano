@@ -22,7 +22,7 @@
 		<footer id="footer">
 			<div class="row">
 				<h3>2014 Orange Nanotech B.V.</h3>
-				<a id="toTop" href="#">Back to top<div class="scrollbtn"><span></span></div></a>
+				<a id="toTop" href="#">Back to top<div class="scrollbtn scrollup"><span></span></div></a>
 			</div>
 		</footer>
 
