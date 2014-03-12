@@ -1,0 +1,24 @@
+input[type="text"],
+input[type="email"],
+textarea{
+	height: auto;
+	padding: 1em;
+	
+	font-size: rem-calc(20);
+	background: $gray-light;
+	border: none;
+	box-shadow: none;
+	
+	&:focus{
+		background: $gray-light;
+		box-shadow: none;
+	}
+}
+
+input[type="submit"]{
+	float: right;
+	padding: .75em 2em;
+	
+	background: $black;
+	color: $white;
+}

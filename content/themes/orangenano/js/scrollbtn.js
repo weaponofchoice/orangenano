@@ -13,7 +13,7 @@ if ($('.scrollbtn').length > 0) {
 		$(window).on('scroll',function () {
 		    button.fadeOut();
 		    clearTimeout(timer);
-		    timer = setTimeout( scrollStop , 750 );
+		    timer = setTimeout( scrollStop , 250 );
 		});
 		var scrollStop = function () { 
 		    // do stuff
