@@ -4,6 +4,7 @@ textarea{
 	max-width: 100%;
 	height: auto;
 	padding: 1em;
+	cursor: text;
 	
 	font-size: rem-calc(20);
 	background: $gray-light;
@@ -14,6 +15,10 @@ textarea{
 		background: $gray-light;
 		box-shadow: none;
 	}
+}
+
+textarea{
+	line-height: 1.25;
 }
 
 input[type="submit"]{
