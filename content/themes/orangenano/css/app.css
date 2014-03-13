@@ -8348,6 +8348,7 @@ body {
 input[type="text"],
 input[type="email"],
 textarea {
+  max-width: 100%;
   height: auto;
   padding: 1em;
   font-size: 1.25rem;
@@ -8355,7 +8356,7 @@ textarea {
   border: none;
   box-shadow: none;
 }
-/* line 12, ../sass/components/_forms.scss */
+/* line 13, ../sass/components/_forms.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
@@ -8363,7 +8364,7 @@ textarea:focus {
   box-shadow: none;
 }
 
-/* line 18, ../sass/components/_forms.scss */
+/* line 19, ../sass/components/_forms.scss */
 input[type="submit"] {
   float: right;
   padding: .75em 2em;
