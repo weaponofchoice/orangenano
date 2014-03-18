@@ -7,7 +7,7 @@
 						<p class="large-5 medium-12 columns">+31 88 4720180<br /><a href="mailto:info@orangenano.com">info@orangenano.com</a></p>
 					</li>
 					<li class="medium-6 medium-offset-1 large-5 columns">
-						<h3>Volg ons:<span class="social"><a href=""><img src="content/themes/orangenano/img/facebook.svg" /></a></span><span class="social"><a><img src="content/themes/orangenano/img/twitter.svg"></a></span></h3>
+						<h3>Volg ons:<span class="social"><a href=""><img src="content/themes/orangenano/img/facebook.png" /></a></span><span class="social"><a><img src="content/themes/orangenano/img/twitter.svg"></a></span></h3>
 					</li>
 				</ul>
 			</div>
