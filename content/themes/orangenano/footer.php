@@ -1,6 +1,6 @@
 		<div class="block block-contact">
 			<div class="row">
-				<div id="container-logo"><img src="content/themes/orangenano/img/logo.svg" /></div>
+				<div id="container-logo"><img src="content/themes/orangenano/img/logo.png" /></div>
 				<ul>
 					<li class="medium-4 medium-offset-1 large-5 columns">
 						<p class="large-5 medium-12 columns">Vennewatersweg 2b<br />1852 PT Heiloo Nederland</p>
