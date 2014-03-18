@@ -9,26 +9,16 @@
 			<?php the_sub_field('content'); ?>
 			
 			
-			<?php if( have_rows('icons') ): 
-				
-				$count = count( get_sub_field('icon_image') );
-				print_r($count);
-				
-			?>
+			<?php if( have_rows('icons') ): ?>
 			<ul class="icons">
-				<?php while( have_rows('icons') ) : the_row(); 
-					
-				
-					
-				?>
-
+				<?php while( have_rows('icons') ) : the_row(); ?>
 				<li class="icon small-6 columns">
 					<img src="<?php the_sub_field('icon_image'); ?>" />
 					<h4><?php the_sub_field('icon_title'); ?></h4>
 					<?php the_sub_field('icon_text')?>
 				</li>
 				<?php endwhile; ?>
-			<?php $count++; endif; ?>
+			<?php endif; ?>
 			</ul>
 			
 			<?php if( have_rows('icons_alignLeft') ): ?>

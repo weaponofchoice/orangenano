@@ -155,9 +155,11 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'imagescroll', get_template_directory_uri() . '/js/vendor/jquery.imageScroll.min.js', 'jquery', false, true );
 		wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/vendor/jquery.royalslider.min.js', 'jquery', false, true );
 		wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/vendor/waypoints.min.js', 'jquery', false, true );
+		wp_enqueue_script( 'gmaps', get_template_directory_uri() . '/js/vendor/gmaps.0.4.8.js', 'jquery', false, true );
 		
 		wp_enqueue_script( 'init-imagescroll', get_template_directory_uri() . '/js/init-imageScroll.js', 'imagescroll', false, true );
 		wp_enqueue_script( 'init-royalslider', get_template_directory_uri() . '/js/init-royalSlider.js', 'royalslider', false, true );
+		wp_enqueue_script( 'init-gmaps', get_template_directory_uri() . '/js/init-gmaps.js', 'gmaps', false, true );
 		
 		
 		wp_enqueue_script( 'accordionjs', get_template_directory_uri() . '/js/accordion.js', 'jquery-ui', false, true );

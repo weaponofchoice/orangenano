@@ -8910,7 +8910,7 @@ header .sub-menu li:last-child a {
 }
 /* line 2, ../sass/components/blocks/_block-parallax.scss */
 .block.block-parallax {
-  height: 25rem;
+  height: 40%;
   position: relative;
   padding: 0;
   background: black;
@@ -9421,4 +9421,9 @@ img.rsImg {
     font-size: 1.75rem;
     top: 9.6875rem;
   }
+}
+/* line 1, ../sass/components/_map.scss */
+#map {
+  width: 100%;
+  height: 25rem;
 }

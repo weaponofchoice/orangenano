@@ -41,8 +41,9 @@
       
 </head>
 
-<body <?php body_class(); ?>>	
-	<header id="top">
+<body <?php body_class(get_the_title()); ?> id="<?echo get_the_title(); ?>">	
+	
+	<header id="top" class="<?php echo $page_id; ?>">
 		<div id="menu" class="row">
 			<div class="wrapper_button">
 				<a id="scrolldown" class="scrollbtn"> 

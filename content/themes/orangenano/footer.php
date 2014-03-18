@@ -21,6 +21,8 @@
 				<a id="toTop" href="#">Back to top<div class="scrollbtn scrollup"><span></span></div></a>
 			</div>
 		</footer>
+		
+		<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
 
 		<?php wp_footer(); ?>	
 	</body>
