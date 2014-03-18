@@ -42,6 +42,14 @@ body{
 	top: 3.5em;
 }
 
+.imageHolder{
+	max-width: rem-calc(1920) !important;
+	max-height: rem-calc(600);
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
 //Media queries
 @media #{$xxlarge-up}{
 	//max width for generated parallax div

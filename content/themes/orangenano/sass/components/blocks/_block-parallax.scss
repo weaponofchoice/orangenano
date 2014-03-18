@@ -1,6 +1,7 @@
 .block{ //Necessary to overwrite default background
 	&.block-parallax{
 		height: 40%;
+		max-height: rem-calc(600);
 		position: relative;
 		padding: 0;
 	

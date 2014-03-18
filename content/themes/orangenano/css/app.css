@@ -8336,8 +8336,17 @@ body {
   top: 3.5em;
 }
 
+/* line 45, ../sass/components/_general.scss */
+.imageHolder {
+  max-width: 120rem !important;
+  max-height: 37.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 @media only screen and (min-width: 120.063em) {
-  /* line 48, ../sass/components/_general.scss */
+  /* line 56, ../sass/components/_general.scss */
   #container > div:first-child {
     max-width: 1920px;
     right: 0;
@@ -8911,13 +8920,14 @@ header .sub-menu li:last-child a {
 /* line 2, ../sass/components/blocks/_block-parallax.scss */
 .block.block-parallax {
   height: 40%;
+  max-height: 37.5rem;
   position: relative;
   padding: 0;
   background: black;
   max-width: 1920px;
 }
 
-/* line 15, ../sass/components/blocks/_block-parallax.scss */
+/* line 16, ../sass/components/blocks/_block-parallax.scss */
 .touch body .block-parallax {
   display: none;
 }
