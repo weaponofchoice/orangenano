@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 
-	<?php
-	//Checking if this is the contact page (true = 1)
-	$bodyclass = is_page( 'Contact' );
-	?>
-
 <?php if ( have_posts() ): ?>
 <?php while( have_posts() ): the_post(); ?>
 	 
@@ -31,8 +26,6 @@
 		
 		<?php endwhile; ?>
 	<?php endif; ?>
-	
-	<?php if( $bodyclass == 1 ): include(locate_template('gmaps.php')); endif;  ?>
 
 <?php endwhile; ?>
 
