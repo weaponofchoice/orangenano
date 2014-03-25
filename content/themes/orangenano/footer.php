@@ -6,7 +6,7 @@
 						<p class="large-5 medium-12 columns">Vennewatersweg 2b<br />1852 PT Heiloo Nederland</p>
 						<p class="large-5 medium-12 columns">+31 88 4720180<br /><a href="mailto:info@orangenano.com">info@orangenano.com</a></p>
 					</li>
-					<li class="medium-6 medium-offset-1 large-5 columns">
+					<li class="medium-6 medium-offset-1 large-5 columns" style="display: none;">
 						<h3>Volg ons:<span class="social"><a href=""><img src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a></span><span class="social"><a><img src="<?php bloginfo('template_directory'); ?>/img/twitter.png"></a></span></h3>
 					</li>
 				</ul>
