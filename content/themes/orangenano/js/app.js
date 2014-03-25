@@ -7,9 +7,11 @@
  * @depend vendor/jquery.imageScroll.min.js
  * @depend vendor/jquery.royalslider.min.js
  * @depend vendor/waypoints.min.js
+ * @depend vendor/gmaps.0.4.8.js
  * @depend init-imageScroll.js
  * @depend init-royalSlider.js
  * @depend init-waypoints.js
+ * @depend init-gmaps.js
  * @depend accordion.js
  * @depend toTop.js
  * @depend menu-small-nav.js
