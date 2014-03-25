@@ -13,8 +13,8 @@ var map;
 
 		map = new GMaps({
 			el: '#map',
-			lat: 52.591218,
-			lng: 4.688705,
+			lat: 52.588056,
+			lng: 4.700614,
 			mapTypeControlOptions: {
 			          mapTypeIds : ["hybrid", "roadmap", "satellite", "terrain", "osm", "cloudmade"]
 			        }
@@ -23,8 +23,8 @@ var map;
 		
 		
 		map.addMarker({
-			lat: 52.591218,
-			lng: 4.688705,
+			lat: 52.588056,
+			lng: 4.700614,
 			title: 'UFS',
 			icon: image
 			
