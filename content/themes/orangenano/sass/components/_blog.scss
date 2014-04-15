@@ -1,0 +1,15 @@
+.post{
+	height: auto;
+	overflow: hidden;
+	z-index: 1000;
+	
+	h2{
+		margin-bottom: rem-calc(15);
+	}
+	
+	.author{
+		p{
+			margin-bottom: 0;
+		}
+	}
+}

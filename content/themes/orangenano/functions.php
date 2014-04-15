@@ -141,6 +141,26 @@ add_image_size( 'homepage_thumbnail', '', '150',  false);
  * External scripts
  */
 
+// Some custom settings for the_excerpt
+// Adding Foundation classes
+add_filter( "the_excerpt", "add_class_to_excerpt" );
+function add_class_to_excerpt( $excerpt ) {
+    return str_replace('<p', '<p class="medium-12 columns"', $excerpt);
+}
+
+// Controlling the length
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Creating the 'read more' link
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('...', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+
 function enqueue_theme_scripts() {
   // Unregister standard jQuery and reregister as google code.
   wp_deregister_script('jquery');
@@ -161,7 +181,7 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'init-royalslider', get_template_directory_uri() . '/js/init-royalSlider.js', 'royalslider', false, true );
 		wp_enqueue_script( 'init-gmaps', get_template_directory_uri() . '/js/init-gmaps.js', 'gmaps', false, true );
 		
-		
+		wp_enqueue_script( 'height', get_template_directory_uri() . '/js/height.js', 'jquery', false, true );
 		wp_enqueue_script( 'accordionjs', get_template_directory_uri() . '/js/accordion.js', 'jquery-ui', false, true );
 		wp_enqueue_script( 'scrollto', get_template_directory_uri() . '/js/scrollto.js', 'jquery', false, true );
 		wp_enqueue_script( 'totop', get_template_directory_uri() . '/js/toTop.js', 'jquery', false, true );

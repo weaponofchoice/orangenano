@@ -3,6 +3,10 @@
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 1em;
+  
+  &.bold{
+	  @include proxima-semibold;
+  }
 }
 
 h1{
