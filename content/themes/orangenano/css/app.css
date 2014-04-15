@@ -8159,8 +8159,12 @@ h1.bold, h2.bold, h3.bold, h4.bold, p.bold, a.bold, #menu-small-nav ul li:last-c
   font-weight: 600;
   font-style: normal;
 }
+/* line 11, ../sass/components/master/_typography.scss */
+h1.italic, h2.italic, h3.italic, h4.italic, p.italic, a.italic, #menu-small-nav ul li:last-child a.italic, header .sub-menu li:last-child a.italic {
+  font-style: italic;
+}
 
-/* line 12, ../sass/components/master/_typography.scss */
+/* line 16, ../sass/components/master/_typography.scss */
 h1 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8168,7 +8172,7 @@ h1 {
   font-size: 4.5rem;
 }
 
-/* line 18, ../sass/components/master/_typography.scss */
+/* line 22, ../sass/components/master/_typography.scss */
 h2 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8176,14 +8180,14 @@ h2 {
   font-size: 2.25rem;
   margin-bottom: 3.125rem;
 }
-/* line 24, ../sass/components/master/_typography.scss */
+/* line 28, ../sass/components/master/_typography.scss */
 h2 span {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-/* line 29, ../sass/components/master/_typography.scss */
+/* line 33, ../sass/components/master/_typography.scss */
 h3 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8193,7 +8197,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* line 37, ../sass/components/master/_typography.scss */
+/* line 41, ../sass/components/master/_typography.scss */
 h4 {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8201,7 +8205,7 @@ h4 {
   font-size: 1.25rem;
 }
 
-/* line 43, ../sass/components/master/_typography.scss */
+/* line 47, ../sass/components/master/_typography.scss */
 p, a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
@@ -8210,7 +8214,7 @@ p, a {
   color: #333333;
 }
 
-/* line 54, ../sass/components/master/_typography.scss */
+/* line 58, ../sass/components/master/_typography.scss */
 a:hover, a:focus {
   cursor: pointer;
   color: #f89c1c;
@@ -8219,12 +8223,12 @@ a:hover, a:focus {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 59, ../sass/components/master/_typography.scss */
+/* line 63, ../sass/components/master/_typography.scss */
 a:hover img, a:focus img {
   cursor: pointer;
 }
 
-/* line 66, ../sass/components/master/_typography.scss */
+/* line 70, ../sass/components/master/_typography.scss */
 .intro p {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
@@ -8340,9 +8344,10 @@ body {
 #container {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   top: 3.5em;
+  background: white;
 }
 
-/* line 45, ../sass/components/_general.scss */
+/* line 46, ../sass/components/_general.scss */
 .imageHolder {
   max-width: 120rem !important;
   max-height: 37.5rem;
@@ -8352,7 +8357,7 @@ body {
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 56, ../sass/components/_general.scss */
+  /* line 57, ../sass/components/_general.scss */
   #container > div:first-child {
     max-width: 1920px;
     right: 0;
@@ -9456,15 +9461,44 @@ img.rsImg {
 
 /* line 1, ../sass/components/_blog.scss */
 .post {
+  width: 100%;
   height: auto;
   overflow: hidden;
-  z-index: 1000;
+  padding-left: 5em;
+  padding-right: 5em;
 }
-/* line 6, ../sass/components/_blog.scss */
+/* line 8, ../sass/components/_blog.scss */
 .post h2 {
   margin-bottom: 0.9375rem;
 }
-/* line 11, ../sass/components/_blog.scss */
+/* line 13, ../sass/components/_blog.scss */
 .post .author p {
   margin-bottom: 0;
+}
+
+/* line 21, ../sass/components/_blog.scss */
+.single-post #post_intro {
+  width: 100%;
+  height: 15.625rem;
+  margin-bottom: 4em;
+  background: #f1f2f2;
+}
+/* line 28, ../sass/components/_blog.scss */
+.single-post #post_intro #intro_text {
+  position: absolute;
+  bottom: -3em;
+  margin-left: 5em;
+  background: white;
+}
+/* line 35, ../sass/components/_blog.scss */
+.single-post #post_intro #intro_text h2 {
+  margin-bottom: .5em;
+}
+/* line 41, ../sass/components/_blog.scss */
+.single-post .post {
+  padding-bottom: 5rem;
+}
+/* line 44, ../sass/components/_blog.scss */
+.single-post .post .image_holder {
+  margin-bottom: 3.125rem;
 }

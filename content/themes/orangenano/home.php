@@ -4,7 +4,7 @@
 		<?php while( have_posts() ): the_post(); ?>
 	
 		<div class="post block">
-			<p class="medium-12 columns"><?php the_date(); ?></p>
+			<p class="medium-12 columns italic"><?php the_time('F j, Y'); ?></p>
 			<div class="image_holder medium-3 columns"><?php the_post_thumbnail(); ?></div>
 			<div class="post_content medium-9 columns">
 				<!-- post title -->

@@ -1,7 +1,9 @@
 .post{
+	width: 100%;
 	height: auto;
 	overflow: hidden;
-	z-index: 1000;
+	padding-left: 5em;
+	padding-right: 5em;
 	
 	h2{
 		margin-bottom: rem-calc(15);
@@ -10,6 +12,37 @@
 	.author{
 		p{
 			margin-bottom: 0;
+		}
+	}
+}
+
+// Exceptions
+.single-post{
+	#post_intro{
+		width: 100%;
+		height: rem-calc(250);
+		margin-bottom: 4em;
+		
+		background: $gray-light;
+		
+		#intro_text{
+			position: absolute;
+			bottom: -3em;
+			margin-left: 5em;
+			
+			background: $white;
+			
+			h2{
+				margin-bottom: .5em;
+			}
+		}
+	}
+	
+	.post{
+		padding-bottom: rem-calc(80);
+		
+		.image_holder{
+			margin-bottom: rem-calc(50);
 		}
 	}
 }

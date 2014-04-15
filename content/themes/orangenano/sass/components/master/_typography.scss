@@ -7,6 +7,10 @@
   &.bold{
 	  @include proxima-semibold;
   }
+  
+  &.italic{
+	  font-style: italic;
+  }
 }
 
 h1{

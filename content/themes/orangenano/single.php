@@ -4,15 +4,18 @@
 		<?php while( have_posts() ): the_post(); ?>
 		
 		<div id="post_intro">
-			<img src="" />
-			<h2>Orange Nano blog</h2>
-			<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
+			<div id="intro_text" class="medium-5 columns">
+				<h2>Orange Nano blog</h2>
+				<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
+			</div>
 		</div>
 		
-		<a href="<?php echo home_url(); ?>/blog">< terug naar overzicht</a>
-		
 		<div class="post">
-			<p class="columns"><?php the_date(); ?></p>
+			<a href="<?php echo home_url(); ?>/blog" class="columns link_back">< terug naar overzicht</a>
+			
+			<!-- the date of posting -->
+			<p class="columns italic"><?php the_time('F j, Y'); ?></p>
+			
 			<!-- post title -->
 			<h2 class="medium-7 columns"><?php the_title(); ?></h2>
 			
@@ -28,10 +31,11 @@
 				<p class="bold"><?php the_author(); ?></p>
 			</div>
 			
+			<!-- text/content -->
 			<div class="medium-12 columns"><?php the_content(); ?></div>
+			
+			<a href="<?php echo home_url(); ?>/blog" class="columns link_back">< terug naar overzicht</a>
 		</div>
-		
-		<a href="<?php echo home_url(); ?>/blog">< terug naar overzicht</a>
 		
 	<?php endwhile; ?>
 
