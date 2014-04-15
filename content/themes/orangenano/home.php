@@ -2,7 +2,7 @@
 
 	<?php if( have_posts() ): ?> 
 		<?php while( have_posts() ): the_post(); ?>
-	
+		
 		<div class="post block">
 			<p class="medium-12 columns italic"><?php the_time('F j, Y'); ?></p>
 			<div class="image_holder medium-3 columns"><?php the_post_thumbnail(); ?></div>
@@ -28,7 +28,19 @@
 		</div>
 	
 	<?php endwhile; ?>
+	<div class="pagination">
+		<?php
+		global $wp_query;
 
+		echo paginate_links( array(
+			'format' => '/orangenano/blog/page/%#%',
+			'end_size' => 10,
+			'current' => 0,
+			'total' => $wp_query->max_num_pages
+		) );
+		?>
+	</div>
+	
 <?php else : ?>
 	<h3 class="center">Not found</h3>
 	<p class="center">Sorry, but you are looking for something that isn't here.</p>

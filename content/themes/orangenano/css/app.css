@@ -9459,59 +9459,70 @@ img.rsImg {
   display: inline;
 }
 
-/* line 1, ../sass/components/_blog.scss */
-.post {
+/* line 2, ../sass/components/_blog.scss */
+.post.block {
   width: 100%;
   height: auto;
   overflow: hidden;
   padding-left: 5em;
   padding-right: 5em;
 }
-/* line 8, ../sass/components/_blog.scss */
-.post h2 {
+/* line 9, ../sass/components/_blog.scss */
+.post.block h2 {
   margin-bottom: 0.9375rem;
 }
-/* line 13, ../sass/components/_blog.scss */
-.post .author p {
+/* line 14, ../sass/components/_blog.scss */
+.post.block .author p {
   margin-bottom: 0;
 }
 
 /* line 21, ../sass/components/_blog.scss */
+.pagination {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 28, ../sass/components/_blog.scss */
 .single-post #post_intro {
   width: 100%;
   height: 15.625rem;
   margin-bottom: 4em;
   background: #f1f2f2;
 }
-/* line 28, ../sass/components/_blog.scss */
+/* line 35, ../sass/components/_blog.scss */
 .single-post #post_intro #intro_text {
   position: absolute;
   bottom: -3em;
   margin-left: 5em;
   background: white;
 }
-/* line 35, ../sass/components/_blog.scss */
+/* line 42, ../sass/components/_blog.scss */
 .single-post #post_intro #intro_text h2 {
   margin-bottom: .5em;
 }
-/* line 41, ../sass/components/_blog.scss */
+/* line 48, ../sass/components/_blog.scss */
 .single-post .post {
+  height: auto;
+  overflow: hidden;
   padding-bottom: 5rem;
+  padding-left: 5em;
+  padding-right: 5em;
 }
-/* line 44, ../sass/components/_blog.scss */
+/* line 55, ../sass/components/_blog.scss */
 .single-post .post .image_holder {
   margin-bottom: 3.125rem;
 }
-/* line 48, ../sass/components/_blog.scss */
+/* line 59, ../sass/components/_blog.scss */
 .single-post .post .ssba {
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
 }
-/* line 52, ../sass/components/_blog.scss */
+/* line 63, ../sass/components/_blog.scss */
 .single-post .post .ssba #ssba_tooptip {
   margin-right: .5em;
+  color: #f89c1c !important;
 }
-/* line 57, ../sass/components/_blog.scss */
+/* line 69, ../sass/components/_blog.scss */
 .single-post .post .ssba #ssba_twitter_share,
 .single-post .post .ssba #ssba_facebook_share {
   top: .3em;
