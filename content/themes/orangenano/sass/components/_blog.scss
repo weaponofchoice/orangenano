@@ -44,5 +44,19 @@
 		.image_holder{
 			margin-bottom: rem-calc(50);
 		}
+		
+		.ssba{
+			margin-top: rem-calc(20);
+			margin-bottom: rem-calc(40);
+			
+			#ssba_tooptip{
+				margin-right: .5em;
+			}
+			
+			#ssba_twitter_share,
+			#ssba_facebook_share{
+				top: .3em;
+			}
+		}
 	}
 }

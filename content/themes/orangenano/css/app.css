@@ -9502,3 +9502,17 @@ img.rsImg {
 .single-post .post .image_holder {
   margin-bottom: 3.125rem;
 }
+/* line 48, ../sass/components/_blog.scss */
+.single-post .post .ssba {
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+/* line 52, ../sass/components/_blog.scss */
+.single-post .post .ssba #ssba_tooptip {
+  margin-right: .5em;
+}
+/* line 57, ../sass/components/_blog.scss */
+.single-post .post .ssba #ssba_twitter_share,
+.single-post .post .ssba #ssba_facebook_share {
+  top: .3em;
+}
