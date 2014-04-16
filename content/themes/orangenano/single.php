@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
+	<div id="post_intro">
+		<div id="intro_text" class="medium-4 columns">
+			<h2>Orange Nano blog</h2>
+			<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
+		</div>
+	</div>
+
 	<?php if( have_posts() ): ?> 
 		<?php while( have_posts() ): the_post(); ?>
 		
-		<div id="post_intro">
-			<div id="intro_text" class="medium-5 columns">
-				<h2>Orange Nano blog</h2>
-				<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
-			</div>
-		</div>
-		
 		<div class="post">
-			<a href="<?php echo home_url(); ?>/blog" class="columns link_back">< terug naar overzicht</a>
+			<a href="<?php echo home_url(); ?>/blog" class="columns link_back bold italic">< terug naar overzicht</a>
 			
 			<!-- the date of posting -->
 			<p class="columns italic"><?php the_time('F j, Y'); ?></p>
@@ -32,9 +32,9 @@
 			</div>
 			
 			<!-- text/content -->
-			<div class="medium-12 columns"><?php the_content(); ?></div>
+			<div class="content medium-7 columns"><?php the_content(); ?></div>
 			
-			<a href="<?php echo home_url(); ?>/blog" class="columns link_back">< terug naar overzicht</a>
+			<a href="<?php echo home_url(); ?>/blog" class="columns link_back bold italic">< terug naar overzicht</a>
 		</div>
 		
 	<?php endwhile; ?>

@@ -1,0 +1,64 @@
+#post_intro{
+	width: 100%;
+	height: rem-calc(250);
+	margin-bottom: 4em;
+	
+	background: $gray-light;
+	
+	#intro_text{
+		position: absolute;
+		bottom: -3em;
+		margin-left: 4em;
+		padding: 1.5em 1.5em 0 2em;
+		
+		background: $white;
+		
+		h2{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.post{
+	a{
+		color: $orange;
+	}
+	
+	&.block{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		padding-left: 5em;
+		padding-right: 5em;
+		
+		background: $white;
+		
+		h2{
+			margin-bottom: rem-calc(15);
+		}
+	
+		.author{
+			p{
+				margin-bottom: 0;
+			}
+		}
+		
+		.ssba{
+			width: 50%;
+			float: right;
+			text-align: right;
+		}
+	
+		.readmore{
+			width: 50%;
+			float: left;
+			line-height: 2;
+			color: $orange;
+		}
+	}
+}
+
+.pagination{
+	width: 100%;
+	text-align: center;
+}

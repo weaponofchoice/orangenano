@@ -1,5 +1,12 @@
 <?php get_header(); ?>
-
+	
+	<div id="post_intro">
+		<div id="intro_text" class="medium-4 columns">
+			<h2>Orange Nano blog</h2>
+			<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
+		</div>
+	</div>
+	
 	<?php if( have_posts() ): ?> 
 		<?php while( have_posts() ): the_post(); ?>
 		
@@ -23,7 +30,7 @@
 				<?php the_excerpt(); ?><!-- define classes in functions.php -->
 				
 				<!-- 'read more' link -->
-				<a class="columns" href="<?php the_permalink(); ?>">read more</a>
+				<a class="columns readmore bold italic" href="<?php the_permalink(); ?>">read more</a>
 			</div>
 		</div>
 	
