@@ -15,6 +15,16 @@ header{
 				color: #666;
 			}
 		}
+		
+		.sub-menu{
+			a{
+				color: $white;
+				
+				&:hover{
+					color: $orange;
+				}
+			}
+		}
 	}
 	
 	*{

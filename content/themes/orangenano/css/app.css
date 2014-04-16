@@ -8260,6 +8260,14 @@ header .current-menu-item a:hover {
   color: #666;
 }
 /* line 20, ../sass/components/_header.scss */
+header .current-menu-item .sub-menu a {
+  color: white;
+}
+/* line 23, ../sass/components/_header.scss */
+header .current-menu-item .sub-menu a:hover {
+  color: #f89c1c;
+}
+/* line 30, ../sass/components/_header.scss */
 header * {
   color: white;
 }
