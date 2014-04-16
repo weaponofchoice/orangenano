@@ -17,11 +17,15 @@ header{
 		}
 		
 		.sub-menu{
-			a{
-				color: $white;
+			li{
+				width: 100%;
 				
-				&:hover{
-					color: $orange;
+				a{
+					color: $white;
+				
+					&:hover{
+						color: $orange;
+					}
 				}
 			}
 		}

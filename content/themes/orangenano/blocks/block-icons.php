@@ -8,7 +8,6 @@
 			</div>
 			<?php the_sub_field('content'); ?>
 			
-			
 			<?php if( have_rows('icons') ): ?>
 			<ul class="icons">
 				<?php while( have_rows('icons') ) : the_row(); ?>

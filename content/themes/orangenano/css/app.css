@@ -8260,14 +8260,18 @@ header .current-menu-item a:hover {
   color: #666;
 }
 /* line 20, ../sass/components/_header.scss */
-header .current-menu-item .sub-menu a {
-  color: white;
+header .current-menu-item .sub-menu li {
+  width: 100%;
 }
 /* line 23, ../sass/components/_header.scss */
-header .current-menu-item .sub-menu a:hover {
+header .current-menu-item .sub-menu li a {
+  color: white;
+}
+/* line 26, ../sass/components/_header.scss */
+header .current-menu-item .sub-menu li a:hover {
   color: #f89c1c;
 }
-/* line 30, ../sass/components/_header.scss */
+/* line 34, ../sass/components/_header.scss */
 header * {
   color: white;
 }
