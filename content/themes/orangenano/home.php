@@ -35,7 +35,7 @@
 		echo paginate_links( array(
 			'format' => '/orangenano/blog/page/%#%',
 			'end_size' => 10,
-			'current' => 0,
+			'current' => 0,		
 			'total' => $wp_query->max_num_pages
 		) );
 		?>
