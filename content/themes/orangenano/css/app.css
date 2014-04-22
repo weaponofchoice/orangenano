@@ -8588,9 +8588,10 @@ header .sub-menu li:last-child a {
   position: fixed;
   bottom: 2.5em;
   z-index: 10;
+  display: none;
 }
 
-/* line 7, ../sass/components/navigation/_scrollbtn.scss */
+/* line 10, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn {
   height: 2.5rem;
   width: 2.5rem;
@@ -8604,7 +8605,7 @@ header .sub-menu li:last-child a {
   background: #333333;
   opacity: .85;
 }
-/* line 22, ../sass/components/navigation/_scrollbtn.scss */
+/* line 25, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn span {
   content: ' ';
   cursor: pointer;
@@ -8625,7 +8626,7 @@ header .sub-menu li:last-child a {
   -o-transform: rotate(314deg);
   transform: rotate(314deg);
 }
-/* line 39, ../sass/components/navigation/_scrollbtn.scss */
+/* line 42, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn.scrollup {
   position: relative;
   float: right;
@@ -8634,7 +8635,7 @@ header .sub-menu li:last-child a {
   border: 0.125rem solid white;
   background: transparent;
 }
-/* line 48, ../sass/components/navigation/_scrollbtn.scss */
+/* line 51, ../sass/components/navigation/_scrollbtn.scss */
 .scrollbtn.scrollup span {
   border: 0.125rem solid white;
   border-bottom: none;
@@ -8644,7 +8645,7 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 60, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 63, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }
