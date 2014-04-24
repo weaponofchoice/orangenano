@@ -8453,9 +8453,13 @@ header .menu li {
   	}
   }*/
 }
+/* line 42, ../sass/components/navigation/_menu.scss */
+header .menu li:hover .sub-menu {
+  visibility: visible;
+}
 
 @media only screen and (max-width: 64em) {
-  /* line 48, ../sass/components/navigation/_menu.scss */
+  /* line 54, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header #logo {
     display: none;
