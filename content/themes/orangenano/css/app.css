@@ -8560,7 +8560,7 @@ header .sub-menu {
   position: absolute;
   padding: 1em;
   margin-top: .5em;
-  text-align: center;
+  text-align: left;
   background: #333333;
   border-radius: 3%;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
