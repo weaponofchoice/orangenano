@@ -1,10 +1,9 @@
 header{
 	.sub-menu{
-		left: -150%;
-		
 		position: absolute;
 		padding: 1em;
 		margin-top: .5em;
+		margin-left: 0;
 		text-align: left;
 		
 		background: $gray-dark;
