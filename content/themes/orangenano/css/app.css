@@ -8453,13 +8453,9 @@ header .menu li {
   	}
   }*/
 }
-/* line 43, ../sass/components/navigation/_menu.scss */
-header .menu li:hover .sub-menu {
-  opacity: 1;
-}
 
 @media only screen and (max-width: 64em) {
-  /* line 55, ../sass/components/navigation/_menu.scss */
+  /* line 48, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header #logo {
     display: none;
@@ -8565,7 +8561,7 @@ header .sub-menu {
   background: #333333;
   border-radius: 3%;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
-  opacity: 0;
+  display: none;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;

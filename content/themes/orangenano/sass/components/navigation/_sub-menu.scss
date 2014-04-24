@@ -9,8 +9,8 @@ header{
 		background: $gray-dark;
 		border-radius: 3%;
 		box-shadow: 0 0 6px rgba(0,0,0,.75);;
-	
-		opacity: 0;
+		
+		display: none;
 		@include transition(.2s);
 				
 		li{
