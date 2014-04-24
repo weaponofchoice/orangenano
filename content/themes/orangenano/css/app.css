@@ -8556,9 +8556,10 @@ header #menu-small #icon-menu a {
 }
 /* line 2, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu {
+  left: -150%;
   position: absolute;
   padding: 1em;
-  margin: .5em 0 0 -1em;
+  margin-top: .5em;
   text-align: center;
   background: #333333;
   border-radius: 3%;
@@ -8569,11 +8570,15 @@ header .sub-menu {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 15, ../sass/components/navigation/_sub-menu.scss */
+/* line 17, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li {
   margin-right: 0;
 }
-/* line 19, ../sass/components/navigation/_sub-menu.scss */
+/* line 20, ../sass/components/navigation/_sub-menu.scss */
+header .sub-menu li a {
+  white-space: nowrap;
+}
+/* line 25, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;
@@ -8947,7 +8952,7 @@ header .sub-menu li:last-child a {
 /* line 2, ../sass/components/blocks/_block-parallax.scss */
 .block.block-parallax {
   height: 40%;
-  max-height: 31.25rem;
+  max-height: 34.375rem;
   position: relative;
   padding: 0;
   background: black;
