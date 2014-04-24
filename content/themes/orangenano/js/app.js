@@ -15,6 +15,7 @@
  * @depend accordion.js
  * @depend toTop.js
  * @depend menu-small-nav.js
+ * @depend submenu.js
  * @depend touch.js
  * @depend scrollbtn.js
  */
