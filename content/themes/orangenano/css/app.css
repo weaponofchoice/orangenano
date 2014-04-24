@@ -8996,10 +8996,6 @@ header .sub-menu li:last-child a {
 }
 
 /* line 23, ../sass/components/blog/_blog.scss */
-.post a {
-  color: #f89c1c;
-}
-/* line 27, ../sass/components/blog/_blog.scss */
 .post.block {
   width: 100%;
   height: auto;
@@ -9007,6 +9003,10 @@ header .sub-menu li:last-child a {
   padding-left: 5em;
   padding-right: 5em;
   background: white;
+}
+/* line 32, ../sass/components/blog/_blog.scss */
+.post.block a {
+  color: #f89c1c;
 }
 /* line 36, ../sass/components/blog/_blog.scss */
 .post.block h2 {

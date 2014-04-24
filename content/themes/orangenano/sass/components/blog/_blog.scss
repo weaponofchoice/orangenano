@@ -19,11 +19,7 @@
 	}
 }
 
-.post{
-	a{
-		color: $orange;
-	}
-	
+.post{	
 	&.block{
 		width: 100%;
 		height: auto;
@@ -32,6 +28,10 @@
 		padding-right: 5em;
 		
 		background: $white;
+		
+		a{
+			color: $orange;
+		}
 		
 		h2{
 			margin-bottom: rem-calc(15);
