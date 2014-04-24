@@ -1,4 +1,4 @@
-<div class="block block-textCentered" style="background-color:<?php the_sub_field('background_color'); ?>">
+<div class="block block-textCentered" id="<?php echo 'block-'; echo $i; ?>" style="background-color:<?php the_sub_field('background_color'); ?>">
 	<div class="row">
 		<article class="medium-10 small-centered columns">
 			<h2><?php the_sub_field('title'); ?></h2>

@@ -1,4 +1,4 @@
-<div class="block block-image-left" style="background-color:<?php the_sub_field('background_color'); ?>">
+<div class="block block-image-left" id="<?php echo 'block-'; echo $i; ?>" style="background-color:<?php the_sub_field('background_color'); ?>">
 	<div class="row">
 		<div class="image medium-6 medium-offset-3 large-4 large-uncentered columns">
 			<img src="<?php the_sub_field('image_left'); ?>" />

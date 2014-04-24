@@ -4,8 +4,9 @@
 <?php while( have_posts() ): the_post(); ?>
 	 
 	<?php if( have_rows('page_layout') ): ?>
+		<?php $i = 1; ?>
 		<?php while ( have_rows('page_layout') ) : the_row(); ?>
-	 		
+			
 			<?php if ( get_row_layout() == 'block_text'): ?>
 				<?php include(locate_template('blocks/block-text.php')); ?>
 			<?php elseif( get_row_layout() == 'gallery'): ?>
@@ -24,7 +25,7 @@
 				<?php include(locate_template('blocks/block-icons.php')); ?>
 			<?php endif; ?>
 		
-		<?php endwhile; ?>
+		<?php $i++; endwhile; ?>
 	<?php endif; ?>
 
 <?php endwhile; ?>
