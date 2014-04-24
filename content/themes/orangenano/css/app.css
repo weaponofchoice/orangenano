@@ -8561,7 +8561,7 @@ header .sub-menu {
   background: #333333;
   border-radius: 3%;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
-  display: none;
+  visibility: hidden;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;

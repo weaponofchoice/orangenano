@@ -2,12 +2,12 @@
 var link, submenu;
 
 if ($('.menu').length > 0) {
-  link = $('.menu-item-has-children > a');
+  link = $('.menu-item-has-children a');
   submenu = $('.sub-menu');
   link.mouseenter(function() {
-    return submenu.css("display", 'block');
+    return submenu.css("visibility", 'visible');
   });
   link.mouseleave(function() {
-    return submenu.css("display", 'none');
+    return submenu.css("visibility", 'hidden');
   });
 }
