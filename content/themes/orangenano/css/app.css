@@ -8422,18 +8422,19 @@ header #logo {
 /* line 6, ../sass/components/navigation/_menu.scss */
 header #logo a {
   z-index: 9999;
+  color: white !important;
 }
-/* line 11, ../sass/components/navigation/_menu.scss */
+/* line 12, ../sass/components/navigation/_menu.scss */
 header .menu-navigation-container {
   margin-top: 0.3125rem;
 }
-/* line 15, ../sass/components/navigation/_menu.scss */
+/* line 16, ../sass/components/navigation/_menu.scss */
 header .menu {
   width: 100%;
   margin: 0;
   display: inline;
 }
-/* line 21, ../sass/components/navigation/_menu.scss */
+/* line 22, ../sass/components/navigation/_menu.scss */
 header .menu li {
   display: inline-block;
   margin-right: 1em;
@@ -8452,13 +8453,13 @@ header .menu li {
   	}
   }*/
 }
-/* line 42, ../sass/components/navigation/_menu.scss */
+/* line 43, ../sass/components/navigation/_menu.scss */
 header .menu li:hover .sub-menu {
   opacity: 1;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 54, ../sass/components/navigation/_menu.scss */
+  /* line 55, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header #logo {
     display: none;

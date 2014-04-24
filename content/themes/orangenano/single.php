@@ -6,6 +6,8 @@
 			<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
 		</div>
 	</div>
+	
+	test
 
 	<?php if( have_posts() ): ?> 
 		<?php while( have_posts() ): the_post(); ?>
