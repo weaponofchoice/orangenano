@@ -8574,12 +8574,13 @@ header .sub-menu {
 /* line 16, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li {
   margin-right: 0;
+  width: 100%;
 }
-/* line 19, ../sass/components/navigation/_sub-menu.scss */
+/* line 20, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li a {
   white-space: nowrap;
 }
-/* line 24, ../sass/components/navigation/_sub-menu.scss */
+/* line 25, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;

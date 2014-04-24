@@ -15,6 +15,7 @@ header{
 				
 		li{
 			margin-right: 0;
+			width: 100%; //This prevents the li elements from lining up next to each other
 			
 			a{
 				white-space: nowrap;
