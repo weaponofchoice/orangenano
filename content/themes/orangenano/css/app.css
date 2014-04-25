@@ -8269,7 +8269,7 @@ header .current-menu-item .sub-menu li a {
 }
 /* line 26, ../sass/components/_header.scss */
 header .current-menu-item .sub-menu li a:hover {
-  color: #f89c1c;
+  color: #f89c1c !important;
 }
 /* line 34, ../sass/components/_header.scss */
 header * {
