@@ -8,7 +8,7 @@ header{
 	background: $gray-dark;
 	
 	.current-menu-item{
-		> a{
+		a{
 			color: $orange !important;
 			
 			&:hover{
@@ -21,7 +21,7 @@ header{
 				width: 100%;
 				
 				a{
-					color: $white;
+					color: $white !important;
 				
 					&:hover{
 						color: $orange;
