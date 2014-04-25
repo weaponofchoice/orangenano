@@ -8252,11 +8252,11 @@ header {
   background: #333333;
 }
 /* line 11, ../sass/components/_header.scss */
-header .current-menu-item a {
+header .current-menu-item > a {
   color: #f89c1c !important;
 }
 /* line 14, ../sass/components/_header.scss */
-header .current-menu-item a:hover {
+header .current-menu-item > a:hover {
   color: #666;
 }
 /* line 20, ../sass/components/_header.scss */
