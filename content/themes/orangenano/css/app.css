@@ -8982,7 +8982,7 @@ header .sub-menu li:last-child a {
   height: 15.625rem;
   margin-bottom: 4em;
   background: #f1f2f2;
-  background-size: cover;
+  background-size: cover !important;
 }
 /* line 9, ../sass/components/blog/_blog.scss */
 #post_intro #intro_text {
