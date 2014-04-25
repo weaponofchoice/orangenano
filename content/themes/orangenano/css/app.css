@@ -8982,8 +8982,9 @@ header .sub-menu li:last-child a {
   height: 15.625rem;
   margin-bottom: 4em;
   background: #f1f2f2;
+  background-size: cover;
 }
-/* line 8, ../sass/components/blog/_blog.scss */
+/* line 9, ../sass/components/blog/_blog.scss */
 #post_intro #intro_text {
   position: absolute;
   bottom: -3em;
@@ -8991,12 +8992,12 @@ header .sub-menu li:last-child a {
   padding: 1.5em 1.5em 0 2em;
   background: white;
 }
-/* line 16, ../sass/components/blog/_blog.scss */
+/* line 17, ../sass/components/blog/_blog.scss */
 #post_intro #intro_text h2 {
   margin-bottom: 0;
 }
 
-/* line 23, ../sass/components/blog/_blog.scss */
+/* line 24, ../sass/components/blog/_blog.scss */
 .post.block {
   width: 100%;
   height: auto;
@@ -9005,25 +9006,25 @@ header .sub-menu li:last-child a {
   padding-right: 5em;
   background: white;
 }
-/* line 32, ../sass/components/blog/_blog.scss */
+/* line 33, ../sass/components/blog/_blog.scss */
 .post.block a {
   color: #f89c1c;
 }
-/* line 36, ../sass/components/blog/_blog.scss */
+/* line 37, ../sass/components/blog/_blog.scss */
 .post.block h2 {
   margin-bottom: 0.9375rem;
 }
-/* line 41, ../sass/components/blog/_blog.scss */
+/* line 42, ../sass/components/blog/_blog.scss */
 .post.block .author p {
   margin-bottom: 0;
 }
-/* line 46, ../sass/components/blog/_blog.scss */
+/* line 47, ../sass/components/blog/_blog.scss */
 .post.block .ssba {
   width: 50%;
   float: right;
   text-align: right;
 }
-/* line 52, ../sass/components/blog/_blog.scss */
+/* line 53, ../sass/components/blog/_blog.scss */
 .post.block .readmore {
   width: 50%;
   float: left;
@@ -9031,7 +9032,7 @@ header .sub-menu li:last-child a {
   color: #f89c1c;
 }
 
-/* line 61, ../sass/components/blog/_blog.scss */
+/* line 62, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;
