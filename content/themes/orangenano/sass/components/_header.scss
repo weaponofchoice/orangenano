@@ -9,7 +9,7 @@ header{
 	
 	.current-menu-item{
 		a{
-			color: $orange;
+			color: $orange !important;
 			
 			&:hover{
 				color: #666;

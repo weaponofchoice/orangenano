@@ -8253,7 +8253,7 @@ header {
 }
 /* line 11, ../sass/components/_header.scss */
 header .current-menu-item a {
-  color: #f89c1c;
+  color: #f89c1c !important;
 }
 /* line 14, ../sass/components/_header.scss */
 header .current-menu-item a:hover {
@@ -9080,15 +9080,15 @@ header .sub-menu li:last-child a {
   margin-bottom: 2em;
 }
 
-/* line 2, ../sass/components/blog/_ssba.scss */
-.ssba #ssba_tooptip {
-  margin-right: .5em;
+/* line 1, ../sass/components/blog/_ssba.scss */
+.ssba {
   color: #f89c1c !important;
 }
-/* line 8, ../sass/components/blog/_ssba.scss */
+/* line 5, ../sass/components/blog/_ssba.scss */
 .ssba #ssba_twitter_share,
 .ssba #ssba_facebook_share {
   line-height: 2;
+  margin-left: .5em;
 }
 
 /* v1.0.5 */
