@@ -24,6 +24,12 @@ header{
 			margin-right: 1em;
 			vertical-align: middle;
 			
+			&.menu-item-has-children{
+				// Increasing hit area
+				padding-bottom: 1em;
+				bottom: -.5em;
+			}
+			
 			/*Login link
 			&:last-child{
 				float: right;

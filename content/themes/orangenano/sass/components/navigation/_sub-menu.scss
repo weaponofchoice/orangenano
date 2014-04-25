@@ -11,7 +11,7 @@ header{
 		box-shadow: 0 0 6px rgba(0,0,0,.75);;
 		
 		visibility: hidden;
-		@include transition(.2s);
+		@include transition(0s);
 				
 		li{
 			margin-right: 0;

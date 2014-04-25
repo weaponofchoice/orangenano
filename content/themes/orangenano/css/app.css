@@ -8453,13 +8453,18 @@ header .menu li {
   	}
   }*/
 }
-/* line 42, ../sass/components/navigation/_menu.scss */
+/* line 27, ../sass/components/navigation/_menu.scss */
+header .menu li.menu-item-has-children {
+  padding-bottom: 1em;
+  bottom: -.5em;
+}
+/* line 48, ../sass/components/navigation/_menu.scss */
 header .menu li:hover .sub-menu {
   visibility: visible;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 54, ../sass/components/navigation/_menu.scss */
+  /* line 60, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header #logo {
     display: none;
@@ -8566,10 +8571,10 @@ header .sub-menu {
   border-radius: 3%;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
   visibility: hidden;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
 }
 /* line 16, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li {
