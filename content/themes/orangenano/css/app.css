@@ -9088,7 +9088,13 @@ header .sub-menu li:last-child a {
 .ssba #ssba_twitter_share,
 .ssba #ssba_facebook_share {
   line-height: 2;
+}
+/* line 8, ../sass/components/blog/_ssba.scss */
+.ssba #ssba_twitter_share img,
+.ssba #ssba_facebook_share img {
+  width: 40px !important;
   margin-left: .5em;
+  margin-right: -.5em;
 }
 
 /* v1.0.5 */

@@ -4,6 +4,11 @@
 	#ssba_twitter_share,
 	#ssba_facebook_share{
 		line-height: 2;
-		margin-left: .5em;
+		
+		img{
+			width: 40px !important;
+			margin-left: .5em;
+			margin-right: -.5em;
+		}
 	}
 }
