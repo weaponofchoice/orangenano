@@ -57,6 +57,13 @@
 			color: $orange;
 		}
 	}
+	
+	//Video blog posts
+	&.post_video{
+		.post_content{
+			padding-left: 0;
+		}
+	}
 }
 
 .pagination{

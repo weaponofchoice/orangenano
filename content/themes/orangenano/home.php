@@ -7,6 +7,25 @@
 		</div>
 	</div>
 	
+	<?php if( has_post_video() ): ?>
+		
+		<div class="post post_video block">
+			<p class="medium-12 columns italic"><?php the_time('F j, Y'); ?></p>
+			<div class="post_content medium-4 columns">
+				<!-- post title -->
+				<h2 class="medium-12 columns"><?php the_title(); ?></h2>
+				
+				<!-- summary of text -->
+				<?php the_content(); ?><!-- define classes in functions.php -->
+				
+				<!-- 'read more' link -->
+				<a class="columns readmore bold italic" href="<?php the_permalink(); ?>">read more</a>
+			</div>
+			<div class="image_holder medium-8 columns"><?php the_post_thumbnail(); ?></div>
+		</div>
+		
+	<?php endif; ?>
+	
 	<?php if( have_posts() ): ?> 
 		<?php while( have_posts() ): the_post(); ?>
 		

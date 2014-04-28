@@ -9036,8 +9036,12 @@ header .sub-menu li:last-child a {
   line-height: 2;
   color: #f89c1c;
 }
+/* line 63, ../sass/components/blog/_blog.scss */
+.post.post_video .post_content {
+  padding-left: 0;
+}
 
-/* line 62, ../sass/components/blog/_blog.scss */
+/* line 69, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;
