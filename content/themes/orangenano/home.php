@@ -16,7 +16,7 @@
 				<h2 class="medium-12 columns"><?php the_title(); ?></h2>
 				
 				<!-- summary of text -->
-				<?php the_content(); ?><!-- define classes in functions.php -->
+				<?php the_excerpt(); ?><!-- define classes in functions.php -->
 				
 				<!-- 'read more' link -->
 				<a class="columns readmore bold italic" href="<?php the_permalink(); ?>">read more</a>
