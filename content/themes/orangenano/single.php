@@ -6,12 +6,12 @@
 			<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
 		</div>
 	</div>
-
+<?php echo get_previous_posts_link(); ?>
 	<?php if( have_posts() ): ?> 
 		<?php while( have_posts() ): the_post(); ?>
 		
 		<div class="post">
-			<a href="<?php echo home_url(); ?>/blog" class="columns link_back bold italic">< terug naar overzicht</a>
+			<a href="<?php previous_posts_link(); ?>" class="columns link_back bold italic">< terug naar overzicht</a>
 			
 			<!-- the date of posting -->
 			<p class="columns italic"><?php the_time('F j, Y'); ?></p>

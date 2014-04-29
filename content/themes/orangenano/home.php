@@ -59,7 +59,7 @@
 				global $wp_query;
 
 				echo paginate_links( array(
-					'format' => '/blog/page/%#%',
+					'format' => '/orangenano/blog/page/%#%',
 					'end_size' => 10,
 					'current' => 0,		
 					'total' => $wp_query->max_num_pages
