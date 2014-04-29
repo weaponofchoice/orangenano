@@ -19,7 +19,7 @@
 						<h2 class="medium-12 columns"><?php the_title(); ?></h2>
 				
 						<!-- summary of text -->
-						<?php the_excerpt(); ?><!-- define classes in functions.php -->
+						<?php the_content(); ?><!-- define classes in functions.php -->
 					</div>
 					<div class="image_holder medium-8 columns"><?php the_post_thumbnail(); ?></div>
 				</div>
