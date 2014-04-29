@@ -9042,7 +9042,7 @@ header .sub-menu li:last-child a {
 }
 /* line 66, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content p {
-  padding-left: 0.375rem;
+  padding-left: 0.9375rem;
 }
 /* line 70, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba {
