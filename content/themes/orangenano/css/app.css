@@ -9040,8 +9040,12 @@ header .sub-menu li:last-child a {
 .post.post_video .post_content {
   padding-left: 0;
 }
+/* line 66, ../sass/components/blog/_blog.scss */
+.post.post_video .post_content .ssba {
+  float: left;
+}
 
-/* line 69, ../sass/components/blog/_blog.scss */
+/* line 73, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;
