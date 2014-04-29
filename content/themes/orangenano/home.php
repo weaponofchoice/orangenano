@@ -53,7 +53,20 @@
 			<?php endif; ?>
 		
 		<?php endwhile; ?>
-	
+		
+		<div class="pagination">
+			<?php
+				global $wp_query;
+
+				echo paginate_links( array(
+					'format' => '/blog/page/%#%',
+					'end_size' => 10,
+					'current' => 0,		
+					'total' => $wp_query->max_num_pages
+				) );
+			?>
+		</div>
+		
 <?php else : ?>
 	<h3 class="center">Not found</h3>
 	<p class="center">Sorry, but you are looking for something that isn't here.</p>
