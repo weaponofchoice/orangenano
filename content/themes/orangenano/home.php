@@ -44,9 +44,9 @@
 				
 						<!-- summary of text -->
 						<?php the_excerpt(); ?><!-- define classes in functions.php -->
-				
+
 						<!-- 'read more' link -->
-						<a class="columns readmore bold italic" href="<?php the_permalink(); ?>">read more</a>
+						<a class="columns readmore bold italic" href="<?php the_permalink(); ?>">read more</a>						
 					</div>
 				</div>
 				

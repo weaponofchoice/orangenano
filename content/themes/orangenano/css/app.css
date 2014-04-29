@@ -9043,9 +9043,18 @@ header .sub-menu li:last-child a {
 /* line 66, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba {
   float: left;
+  text-align: left;
+  width: auto;
+  padding-left: 0.9375rem;
+}
+/* line 74, ../sass/components/blog/_blog.scss */
+.post.post_video .post_content .ssba #ssba_twitter_share .ssba,
+.post.post_video .post_content .ssba #ssba_facebook_share .ssba {
+  float: right;
+  padding-left: 0.375rem;
 }
 
-/* line 73, ../sass/components/blog/_blog.scss */
+/* line 84, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;

@@ -65,6 +65,17 @@
 			
 			.ssba{
 				float: left;
+				text-align: left;
+				width: auto;
+				padding-left: rem-calc(15);
+				
+				#ssba_twitter_share,
+				#ssba_facebook_share{
+					.ssba{
+						float: right;
+						padding-left: rem-calc(6);
+					}
+				}
 			}
 		}
 	}
