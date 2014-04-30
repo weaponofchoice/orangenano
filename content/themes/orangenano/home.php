@@ -31,7 +31,7 @@
 					<div class="image_holder medium-3 columns"><?php the_post_thumbnail(); ?></div>
 					<div class="post_content medium-9 columns">
 						<!-- post title -->
-						<h2 class="medium-8 columns"><?php the_title(); ?></h2>
+						<a href="<?php the_permalink(); ?>"><h2 class="medium-8 columns"><?php the_title(); ?></h2></a>
 				
 						<!-- author profile picture -->
 						<div class="medium-1 medium-offset-1 columns"><?php the_author_image(); ?></div>
@@ -54,18 +54,7 @@
 		
 		<?php endwhile; ?>
 		
-		<div class="pagination">
-			<?php
-				global $wp_query;
-
-				echo paginate_links( array(
-					'format' => '/blog/page/%#%',
-					'end_size' => 10,
-					'current' => 0,		
-					'total' => $wp_query->max_num_pages
-				) );
-			?>
-		</div>
+		<?php orangenano_paging_nav(); ?>
 		
 <?php else : ?>
 	<h3 class="center">Not found</h3>

@@ -9019,47 +9019,48 @@ header .sub-menu li:last-child a {
 .post.block h2 {
   margin-bottom: 0.9375rem;
   line-height: 1.2;
+  cursor: pointer;
 }
-/* line 43, ../sass/components/blog/_blog.scss */
+/* line 44, ../sass/components/blog/_blog.scss */
 .post.block .author p {
   margin-bottom: 0;
 }
-/* line 48, ../sass/components/blog/_blog.scss */
+/* line 49, ../sass/components/blog/_blog.scss */
 .post.block .ssba {
   width: 50%;
   float: right;
   text-align: right;
 }
-/* line 54, ../sass/components/blog/_blog.scss */
+/* line 55, ../sass/components/blog/_blog.scss */
 .post.block .readmore {
   width: 50%;
   float: left;
   line-height: 2;
   color: #f89c1c;
 }
-/* line 64, ../sass/components/blog/_blog.scss */
+/* line 65, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content {
   padding-left: 0;
 }
-/* line 67, ../sass/components/blog/_blog.scss */
+/* line 68, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content p {
   padding-left: 0.9375rem;
 }
-/* line 71, ../sass/components/blog/_blog.scss */
+/* line 72, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba {
   float: left;
   text-align: left;
   width: auto;
   padding-left: 0.9375rem;
 }
-/* line 79, ../sass/components/blog/_blog.scss */
+/* line 80, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba #ssba_twitter_share .ssba,
 .post.post_video .post_content .ssba #ssba_facebook_share .ssba {
   float: right;
   padding-left: 0.375rem;
 }
 
-/* line 89, ../sass/components/blog/_blog.scss */
+/* line 90, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;
@@ -9123,6 +9124,38 @@ header .sub-menu li:last-child a {
   width: 40px !important;
   margin-left: .5em;
   margin-right: -.5em;
+}
+
+/* =Index pagination
+----------------------------------------------- */
+/* The containing box with a nice white background */
+/* line 5, ../sass/components/blog/_pagination.scss */
+.paging-navigation {
+  padding: 1em;
+  background: #fff;
+  background: white;
+  text-align: center;
+}
+/* line 11, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 16, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul li {
+  display: inline;
+  margin: 0 .3em;
+}
+/* line 20, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul li a, .paging-navigation ul li span {
+  font-size: 100%;
+}
+/* line 24, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul li .current {
+  font-family: 'proxima-nova',sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* v1.0.5 */
