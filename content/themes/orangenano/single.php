@@ -11,7 +11,7 @@
 		<?php while( have_posts() ): the_post(); ?>
 		
 		<div class="post">
-			<a href="<?php home_url(); ?>/blog" class="columns link_back bold italic">< terug naar overzicht</a>
+			<a onclick="history.go(-1);" class="columns link_back bold italic">< terug naar overzicht</a>
 			
 			<!-- the date of posting -->
 			<p class="columns italic"><?php the_time('F j, Y'); ?></p>
