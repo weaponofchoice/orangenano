@@ -9038,29 +9038,33 @@ header .sub-menu li:last-child a {
   line-height: 2;
   color: #f89c1c;
 }
-/* line 65, ../sass/components/blog/_blog.scss */
+/* line 63, ../sass/components/blog/_blog.scss */
+.post.block .read-more {
+  color: black;
+}
+/* line 70, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content {
   padding-left: 0;
 }
-/* line 68, ../sass/components/blog/_blog.scss */
+/* line 73, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content p {
   padding-left: 0.9375rem;
 }
-/* line 72, ../sass/components/blog/_blog.scss */
+/* line 77, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba {
   float: left;
   text-align: left;
   width: auto;
   padding-left: 0.9375rem;
 }
-/* line 80, ../sass/components/blog/_blog.scss */
+/* line 85, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba #ssba_twitter_share .ssba,
 .post.post_video .post_content .ssba #ssba_facebook_share .ssba {
   float: right;
   padding-left: 0.375rem;
 }
 
-/* line 90, ../sass/components/blog/_blog.scss */
+/* line 95, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;
