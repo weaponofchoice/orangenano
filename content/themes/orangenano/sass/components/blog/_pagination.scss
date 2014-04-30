@@ -1,0 +1,29 @@
+/* =Index pagination
+----------------------------------------------- */
+ 
+/* The containing box with a nice white background */
+.paging-navigation{
+  padding: 1em;
+  background: #fff;
+  background: hsl(0, 0%, 100%);
+  text-align: center;
+  
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		li{
+			display: inline;
+			margin: 0 .3em;
+			
+			a,span{
+				font-size: 100%;
+			}
+			
+			.current{
+				@include proxima-semibold;
+			}
+		}
+	}
+}
