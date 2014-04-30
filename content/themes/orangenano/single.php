@@ -34,7 +34,7 @@
 			<!-- text/content -->
 			<div class="content medium-7 columns"><?php the_content(); ?></div>
 			
-			<a href="<?php echo home_url(); ?>/blog" class="columns link_back bold italic">< terug naar overzicht</a>
+			<a onclick="history.go(-1);" class="columns link_back bold italic">< terug naar overzicht</a>
 		</div>
 		
 	<?php endwhile; ?>
