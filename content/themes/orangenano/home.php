@@ -28,7 +28,17 @@
 				
 				<div class="post block">
 					<p class="medium-12 columns italic"><?php the_time('F j, Y'); ?></p>
-					<a href="<?php the_permalink(); ?>"><div class="image_holder medium-3 columns"><?php the_post_thumbnail(); ?></div></a>
+					<a href="<?php the_permalink(); ?>">
+						<div class="image_holder medium-3 columns">
+							<?php
+							if(has_post_thumbnail()) {
+							    the_post_thumbnail();
+							} else {
+							    echo '<img src="'.get_bloginfo("template_url").'/img/placeholder.png" />';
+							}
+							?>
+						</div>
+					</a>
 					<div class="post_content medium-9 columns">
 						<!-- post title -->
 						<a href="<?php the_permalink(); ?>"><h2 class="medium-8 columns"><?php the_title(); ?></h2></a>
