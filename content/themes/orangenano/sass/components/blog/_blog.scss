@@ -67,8 +67,19 @@
 	
 	//Video blog posts
 	&.post_video{
+		.block{
+			.post_content{
+				h2{
+					cursor: normal !important;
+				}
+			}
+			
+		}
+		
 		.post_content{
 			padding-left: 0;
+			
+			
 			
 			p{
 				padding-left: rem-calc(15);
