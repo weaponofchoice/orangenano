@@ -1,0 +1,12 @@
+#Contact,
+#Contact-EN{
+	#container{
+		.block{
+			&:first-child{
+				background-image: url('../img/logo-big.png');
+				background-repeat: no-repeat;
+				background-position: 85% 50%;
+			}
+		}
+	}
+}
