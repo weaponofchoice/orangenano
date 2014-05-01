@@ -8425,16 +8425,12 @@ header #logo a {
   color: white !important;
 }
 /* line 12, ../sass/components/navigation/_menu.scss */
-header .menu-navigation-container {
-  margin-top: 0.3125rem;
-}
-/* line 16, ../sass/components/navigation/_menu.scss */
 header .menu {
   width: 100%;
   margin: 0;
   display: inline;
 }
-/* line 22, ../sass/components/navigation/_menu.scss */
+/* line 18, ../sass/components/navigation/_menu.scss */
 header .menu li {
   display: inline-block;
   margin-right: 1em;
@@ -8453,18 +8449,18 @@ header .menu li {
   	}
   }*/
 }
-/* line 27, ../sass/components/navigation/_menu.scss */
+/* line 23, ../sass/components/navigation/_menu.scss */
 header .menu li.menu-item-has-children {
   padding-bottom: 1em;
   bottom: -.5em;
 }
-/* line 48, ../sass/components/navigation/_menu.scss */
+/* line 44, ../sass/components/navigation/_menu.scss */
 header .menu li:hover .sub-menu {
   visibility: visible;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 60, ../sass/components/navigation/_menu.scss */
+  /* line 56, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header #logo {
     display: none;
