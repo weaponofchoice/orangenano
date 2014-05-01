@@ -9083,36 +9083,40 @@ header .sub-menu li:last-child a {
   padding-right: 5em;
 }
 /* line 9, ../sass/components/blog/_single-post.scss */
+.single-post .post .author {
+  float: right;
+}
+/* line 13, ../sass/components/blog/_single-post.scss */
 .single-post .post a {
   color: #f89c1c;
 }
-/* line 13, ../sass/components/blog/_single-post.scss */
+/* line 17, ../sass/components/blog/_single-post.scss */
 .single-post .post .image_holder {
   margin-bottom: 3.125rem;
 }
-/* line 17, ../sass/components/blog/_single-post.scss */
+/* line 21, ../sass/components/blog/_single-post.scss */
 .single-post .post .ssba {
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
 }
-/* line 22, ../sass/components/blog/_single-post.scss */
+/* line 26, ../sass/components/blog/_single-post.scss */
 .single-post .post .ssba #ssba_twitter_share,
 .single-post .post .ssba #ssba_facebook_share {
   top: .3em;
 }
-/* line 27, ../sass/components/blog/_single-post.scss */
+/* line 31, ../sass/components/blog/_single-post.scss */
 .single-post .post h2 {
   margin-bottom: 0.9375rem;
 }
-/* line 31, ../sass/components/blog/_single-post.scss */
+/* line 35, ../sass/components/blog/_single-post.scss */
 .single-post .post p {
   margin-bottom: 0;
 }
-/* line 36, ../sass/components/blog/_single-post.scss */
+/* line 40, ../sass/components/blog/_single-post.scss */
 .single-post .post .content p {
   margin-bottom: 1em;
 }
-/* line 41, ../sass/components/blog/_single-post.scss */
+/* line 45, ../sass/components/blog/_single-post.scss */
 .single-post .post .link_back {
   margin-bottom: 2em;
 }

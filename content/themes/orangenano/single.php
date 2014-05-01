@@ -20,7 +20,13 @@
 			<h2 class="medium-7 columns"><?php the_title(); ?></h2>
 			
 			<!-- post image -->
-			<div class="image_holder medium-7 columns"><?php the_post_thumbnail(); ?></div>
+				<?php
+				if(has_post_thumbnail()) {
+					echo '<div class="image_holder medium-7 columns">';
+						the_post_thumbnail();
+					echo '</div>';
+				} else {}
+				?>
 			
 			<!-- author profile picture -->
 			<div class="medium-2 medium-offset-1 columns"><?php the_author_image(); ?></div>
