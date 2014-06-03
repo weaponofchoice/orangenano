@@ -26,7 +26,7 @@ header{
 				bottom: -.5em;
 			}
 			
-			/*Login link
+			//Login link
 			&:last-child{
 				float: right;
 				
@@ -36,9 +36,8 @@ header{
 					font-size: rem-calc(15);
 					line-height: 3;
 					white-space: nowrap;
-					line-height: 2;
 				}
-			}*/
+			}
 			
 			&:hover{
 				.sub-menu{
