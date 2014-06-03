@@ -9174,14 +9174,29 @@ a#toTop .scrollbtn.scrollup span {
 /* line 20, ../sass/components/blog/_pagination.scss */
 .paging-navigation ul li a, .paging-navigation ul li span {
   font-size: 100%;
+  color: transparent;
 }
 /* line 24, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul li a:after, .paging-navigation ul li span:after {
+  content: ' ';
+  background: black;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+}
+/* line 35, ../sass/components/blog/_pagination.scss */
 .paging-navigation ul li .current {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: #f89c1c;
-  font-size: 105%;
+  color: transparent;
+  font-size: 100%;
+}
+/* line 40, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul li .current:after {
+  background: #f89c1c;
 }
 
 /* v1.0.5 */

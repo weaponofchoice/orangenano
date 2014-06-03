@@ -15,6 +15,12 @@ add_theme_support( 'post-thumbnails' );
 // Add support for automatic RSS feed links
 add_theme_support( 'automatic-feed-links' );
 
+/*
+ * Includes
+ */
+require_once('includes/pagination.php');
+require_once('includes/excerpt.php');
+
 /**
  * Remove unused items from Admin
  * Add as many items as you like to hide to the $restriced array
@@ -140,79 +146,6 @@ add_image_size( 'homepage_thumbnail', '', '150',  false);
 /**
  * External scripts
  */
-
-// Some custom settings for the_excerpt
-// Adding Foundation classes
-add_filter( "the_excerpt", "add_class_to_excerpt" );
-function add_class_to_excerpt( $excerpt ) {
-    return str_replace('<p', '<p class="medium-9 columns"', $excerpt);
-}
-
-// Controlling the length
-function custom_excerpt_length( $length ) {
-	return 30;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-// Creating the 'read more' link
-function new_excerpt_more( $more ) {
-	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('...', 'your-text-domain') . '</a>';
-}
-add_filter( 'excerpt_more', 'new_excerpt_more' );
-
-
-//Custom pagination
-if ( ! function_exists( 'orangenano_paging_nav' ) ) :
-/**
- * Display navigation to next/previous set of posts when applicable.
- * Based on paging nav function from Twenty Fourteen
- */
- 
-function orangenano_paging_nav() {
-  // Don't print empty markup if there's only one page.
-  if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
-    return;
-  }
- 
-  $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
-  $pagenum_link = html_entity_decode( get_pagenum_link() );
-  $query_args   = array();
-  $url_parts    = explode( '?', $pagenum_link );
- 
-  if ( isset( $url_parts[1] ) ) {
-    wp_parse_str( $url_parts[1], $query_args );
-  }
- 
-  $pagenum_link = remove_query_arg( array_keys( $query_args ), $pagenum_link );
-  $pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
- 
-  $format  = $GLOBALS['wp_rewrite']->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
-  $format .= $GLOBALS['wp_rewrite']->using_permalinks() ? user_trailingslashit( 'page/%#%', 'paged' ) : '?paged=%#%';
- 
-  // Set up paginated links.
-  $links = paginate_links( array(
-    'base'     => $pagenum_link,
-    'format'   => $format,
-    'total'    => $GLOBALS['wp_query']->max_num_pages,
-    'current'  => $paged,
-    'mid_size' => 3,
-    'add_args' => array_map( 'urlencode', $query_args ),
-    'prev_text' => __( '', 'orangenano' ),
-    'next_text' => __( '', 'orangenano' ),
-    'type'      => 'list',
-  ) );
- 
-  if ( $links ) :
- 
-  ?>
-  <nav class="navigation paging-navigation" role="navigation">
-      <?php echo $links; ?>
-  </nav><!-- .navigation -->
-  <?php
-  endif;
-}
-endif;
-
 
 function enqueue_theme_scripts() {
   // Unregister standard jQuery and reregister as google code.

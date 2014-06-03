@@ -19,12 +19,27 @@
 			
 			a,span{
 				font-size: 100%;
+				color: transparent;
+				
+				&:after{
+					content: ' ';
+					background: black;
+					border-radius: 100%;
+					position: absolute;
+					bottom: 0;
+					width: 10px;
+					height: 10px;
+				}
 			}
 			
 			.current{
 				@include proxima-semibold;
-				color: $orange;
-				font-size: 105%;
+				color: transparent;
+				font-size: 100%;
+				
+				&:after{
+					background: $orange;
+				}
 			}
 		}
 	}
