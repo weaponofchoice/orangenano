@@ -1,5 +1,10 @@
 <?php
 // ===================================================
+// Activating multisite
+// ===================================================
+define( 'WP_ALLOW_MULTISITE', true );
+
+// ===================================================
 // Load database info and local development parameters
 // ===================================================
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {

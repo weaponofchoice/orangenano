@@ -1,2 +1,7 @@
-if $('html').length > 0
-	$.localScroll();
+if $('#container').length > 0
+	header = $('#top')
+	window = $(window)
+	
+	header.localScroll()
+		target: window,
+		axis: 'xy'
