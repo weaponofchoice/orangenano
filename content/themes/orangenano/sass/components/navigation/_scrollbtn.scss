@@ -6,57 +6,74 @@
 	// Temporarily(?) deleting it
 	display: none;
 }
-	
-.scrollbtn{
-	height: rem-calc(40);
-	width: rem-calc(40);
-	position: fixed;
-	display: block;
-	cursor: pointer;
-	z-index: 10;
-	bottom: 2.5em;
 
-	border-radius: 100%;
-	border: none;
-
-	background: $gray-dark;
-	opacity: .85;
-
-	span{
-		content: ' ';
-		cursor: pointer;
-		position: absolute;
-		top: 0;
-		right: rem-calc(14);
-		opacity: 1;
-		width: rem-calc(12);
-		height: rem-calc(12);
-		margin-top: rem-calc(13);
-		background: transparent;
-		border: rem-calc(2) solid $white;
-		border-top: none;
-		border-right: none;
-		@include rotate(314deg);
+a#toTop{
+	//This makes sure all the elements(text, circle and arrow) turn orange at once
+	&:hover{
+		.scrollbtn{
+			&.scrollup{
+				border: rem-calc(2) solid $orange;
+		
+				span{
+					border-top: rem-calc(2) solid $orange;
+					border-right: rem-calc(2) solid $orange;
+				}
+			}
+		}
 	}
 	
-	&.scrollup{
-		position: relative;
-		float: right;
-		right: rem-calc(-20);
-		top: rem-calc(5);
-		border: rem-calc(2) solid $white;
-		
-		background: transparent;
-		
+	.scrollbtn{
+		height: rem-calc(40);
+		width: rem-calc(40);
+		position: fixed;
+		display: block;
+		cursor: pointer;
+		z-index: 10;
+		bottom: 2.5em;
+
+		border-radius: 100%;
+		border: none;
+
+		background: $gray-dark;
+		opacity: .85;
+
 		span{
+			content: ' ';
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			right: rem-calc(14);
+			opacity: 1;
+			width: rem-calc(12);
+			height: rem-calc(12);
+			margin-top: rem-calc(13);
+			background: transparent;
 			border: rem-calc(2) solid $white;
-			border-bottom: none;
-			border-left: none;
-			margin-top: rem-calc(15);
-			right: rem-calc(12);
+			border-top: none;
+			border-right: none;
+			@include rotate(314deg);
+		}
+	
+		&.scrollup{
+			position: relative;
+			float: right;
+			right: rem-calc(-20);
+			top: rem-calc(5);
+			border: rem-calc(2) solid $white;
+		
+			background: transparent;
+		
+			span{
+				border: rem-calc(2) solid $white;
+				border-bottom: none;
+				border-left: none;
+				margin-top: rem-calc(15);
+				right: rem-calc(12);
+			}
 		}
 	}
 }
+
 
 //Media queries
 @media #{$small-only}{

@@ -58,7 +58,6 @@ a{
     &:focus{
   	  cursor: pointer;
   	  color: $orange;
-  	  @include transition-duration(.2s);
 	  
   	  img{
   		  cursor: pointer;

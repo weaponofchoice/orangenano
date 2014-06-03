@@ -8218,17 +8218,13 @@ p, a {
 a:hover, a:focus {
   cursor: pointer;
   color: #f89c1c;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
 }
-/* line 63, ../sass/components/master/_typography.scss */
+/* line 62, ../sass/components/master/_typography.scss */
 a:hover img, a:focus img {
   cursor: pointer;
 }
 
-/* line 70, ../sass/components/master/_typography.scss */
+/* line 69, ../sass/components/master/_typography.scss */
 .intro p {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 100;
@@ -8298,19 +8294,18 @@ footer a {
   float: right;
   line-height: 2.5;
   right: 1.25rem;
-  -webkit-transition: 1s;
 }
-/* line 25, ../sass/components/_footer.scss */
+/* line 23, ../sass/components/_footer.scss */
 footer a span {
   margin-left: .5em;
 }
-/* line 28, ../sass/components/_footer.scss */
+/* line 26, ../sass/components/_footer.scss */
 footer a span img {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 39, ../sass/components/_footer.scss */
+  /* line 37, ../sass/components/_footer.scss */
   footer h3,
   footer a {
     width: 100%;
@@ -8599,8 +8594,17 @@ header .sub-menu li:last-child a {
   display: none;
 }
 
-/* line 10, ../sass/components/navigation/_scrollbtn.scss */
-.scrollbtn {
+/* line 14, ../sass/components/navigation/_scrollbtn.scss */
+a#toTop:hover .scrollbtn.scrollup {
+  border: 0.125rem solid #f89c1c;
+}
+/* line 17, ../sass/components/navigation/_scrollbtn.scss */
+a#toTop:hover .scrollbtn.scrollup span {
+  border-top: 0.125rem solid #f89c1c;
+  border-right: 0.125rem solid #f89c1c;
+}
+/* line 25, ../sass/components/navigation/_scrollbtn.scss */
+a#toTop .scrollbtn {
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
@@ -8613,8 +8617,8 @@ header .sub-menu li:last-child a {
   background: #333333;
   opacity: .85;
 }
-/* line 25, ../sass/components/navigation/_scrollbtn.scss */
-.scrollbtn span {
+/* line 40, ../sass/components/navigation/_scrollbtn.scss */
+a#toTop .scrollbtn span {
   content: ' ';
   cursor: pointer;
   position: absolute;
@@ -8634,8 +8638,8 @@ header .sub-menu li:last-child a {
   -o-transform: rotate(314deg);
   transform: rotate(314deg);
 }
-/* line 42, ../sass/components/navigation/_scrollbtn.scss */
-.scrollbtn.scrollup {
+/* line 57, ../sass/components/navigation/_scrollbtn.scss */
+a#toTop .scrollbtn.scrollup {
   position: relative;
   float: right;
   right: -1.25rem;
@@ -8643,8 +8647,8 @@ header .sub-menu li:last-child a {
   border: 0.125rem solid white;
   background: transparent;
 }
-/* line 51, ../sass/components/navigation/_scrollbtn.scss */
-.scrollbtn.scrollup span {
+/* line 66, ../sass/components/navigation/_scrollbtn.scss */
+a#toTop .scrollbtn.scrollup span {
   border: 0.125rem solid white;
   border-bottom: none;
   border-left: none;
@@ -8653,7 +8657,7 @@ header .sub-menu li:last-child a {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 63, ../sass/components/navigation/_scrollbtn.scss */
+  /* line 80, ../sass/components/navigation/_scrollbtn.scss */
   #scrollbtn {
     display: none;
   }
