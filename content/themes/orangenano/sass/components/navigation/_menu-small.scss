@@ -6,10 +6,9 @@ header{
 	
 		//Menu 'the Hamburger' icon
 		//Trigger for '#menu-small-nav'
-		#icon-menu{
+		#hamburger{
 			width: rem-calc(20);
 			height: rem-calc(20);
-			margin-right: 0;
 			float: right;
 			top: .6em;
 		
@@ -17,12 +16,12 @@ header{
 		
 			a{
 				background: white;
-				width: 100%;
-				height: rem-calc(18);
+				width: 150%;
+				height: rem-calc(20);
 				position: absolute;
 				border-top: rem-calc(8) solid $gray-dark;
 				border-bottom: rem-calc(8) solid $gray-dark;
-				box-shadow: 0 rem-calc(2) 0 white, 0 rem-calc(-2) 0 white; //Serves as outer borders
+				box-shadow: 0 rem-calc(4) 0 white, 0 rem-calc(-4) 0 white; //Serves as outer borders
 			}
 		}
 	}	
@@ -37,7 +36,7 @@ header{
 	z-index: 998;
 	width: 100%;
 	margin: 0;
-	margin-top: -1em;
+	margin-top: 1em;
 	text-align: center;
 	
 	.sub-menu{

@@ -10,6 +10,7 @@ if $('body').length > 0
 	
 	$(window).on 'resize', ->
 			viewport = window.innerHeight
+			header_height = header.height() + 25; #the 25px account for the .8em padding
 			
 			header.css "height", header_height
 			container.css "top", header_height

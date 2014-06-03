@@ -52,6 +52,7 @@ header{
 @media #{$medium-down}{
 	header{
 		.menu-navigation-container,
+		.menu-main-menu-container,
 		#logo{
 			display: none;
 		}

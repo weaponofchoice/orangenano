@@ -56,7 +56,7 @@
 		
 			<ul id="menu-small" class="menu">
 				<div id="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" /></a></div>
-				<li id="icon-menu"><a></a></li>
+				<li id="hamburger"><a></a></li>
 			</ul>
 		</div>
 	</header>
