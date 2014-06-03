@@ -9053,40 +9053,56 @@ a#toTop .scrollbtn.scrollup span {
   color: #f89c1c;
 }
 /* line 61, ../sass/components/blog/_blog.scss */
+.post.block .readmore span {
+  font-size: 2em;
+  position: absolute;
+  bottom: .05em;
+  margin-left: .15em;
+}
+/* line 68, ../sass/components/blog/_blog.scss */
 .post.block .readmore:hover {
   color: #333333;
 }
-/* line 67, ../sass/components/blog/_blog.scss */
+/* line 74, ../sass/components/blog/_blog.scss */
 .post.block .read-more {
   color: black;
 }
-/* line 76, ../sass/components/blog/_blog.scss */
+/* line 79, ../sass/components/blog/_blog.scss */
+.post.block:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  width: 88%;
+  margin: 0 6%;
+  border-bottom: thin solid #c9c9c9;
+}
+/* line 93, ../sass/components/blog/_blog.scss */
 .post.post_video .block .post_content h2 {
   cursor: normal !important;
 }
-/* line 83, ../sass/components/blog/_blog.scss */
+/* line 100, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content {
   padding-left: 0;
 }
-/* line 88, ../sass/components/blog/_blog.scss */
+/* line 105, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content p {
   padding-left: 0.9375rem;
 }
-/* line 92, ../sass/components/blog/_blog.scss */
+/* line 109, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba {
   float: left;
   text-align: left;
   width: auto;
   padding-left: 0.9375rem;
 }
-/* line 100, ../sass/components/blog/_blog.scss */
+/* line 117, ../sass/components/blog/_blog.scss */
 .post.post_video .post_content .ssba #ssba_twitter_share .ssba,
 .post.post_video .post_content .ssba #ssba_facebook_share .ssba {
   float: right;
   padding-left: 0.375rem;
 }
 
-/* line 110, ../sass/components/blog/_blog.scss */
+/* line 127, ../sass/components/blog/_blog.scss */
 .pagination {
   width: 100%;
   text-align: center;
@@ -9139,6 +9155,11 @@ a#toTop .scrollbtn.scrollup span {
   margin-bottom: 2em;
 }
 /* line 48, ../sass/components/blog/_single-post.scss */
+.single-post .post .link_back span {
+  font-size: 2em;
+  bottom: -0.08em;
+}
+/* line 53, ../sass/components/blog/_single-post.scss */
 .single-post .post .link_back:hover {
   color: #333333;
 }

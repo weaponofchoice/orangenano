@@ -45,6 +45,11 @@
 		.link_back{
 			margin-bottom: 2em;
 			
+			span{
+				font-size: 2em;
+				bottom: -0.08em;
+			}
+			
 			&:hover{
 				color: $gray-dark;
 			}

@@ -11,7 +11,7 @@
 		<?php while( have_posts() ): the_post(); ?>
 		
 		<div class="post">
-			<a onclick="history.go(-1);" class="columns link_back">&larr; terug naar overzicht</a>
+			<a onclick="history.go(-1);" class="columns link_back"><span>&lsaquo;</span> terug naar overzicht</a>
 			
 			<!-- the date of posting -->
 			<p class="columns italic"><?php the_time('F j, Y'); ?></p>
@@ -40,7 +40,7 @@
 			<!-- text/content -->
 			<div class="content medium-7 columns"><?php the_content(); ?></div>
 			
-			<a onclick="history.go(-1);" class="columns link_back">&larr; terug naar overzicht</a>
+			<a onclick="history.go(-1);" class="columns link_back"><span>&lsaquo;</span> terug naar overzicht</a>
 		</div>
 		
 	<?php endwhile; ?>

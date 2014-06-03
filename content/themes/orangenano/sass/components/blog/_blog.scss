@@ -58,6 +58,13 @@
 			line-height: 2;
 			color: $orange;
 			
+			span{
+				font-size: 2em;
+				position: absolute;
+				bottom: .05em;
+				margin-left: .15em;
+			}
+			
 			&:hover{
 				color: $gray-dark;
 			}
@@ -66,6 +73,16 @@
 		//This is the read more button in the content, displayed as '...'
 		.read-more{
 			color: $black;
+		}
+		
+		//Line that seperates the posts
+		&:after{
+			content: ' ';
+			position: absolute;
+			bottom: 0;
+			width: 88%;
+			margin: 0 6%;
+			border-bottom: thin solid $gray;
 		}
 	}
 	
