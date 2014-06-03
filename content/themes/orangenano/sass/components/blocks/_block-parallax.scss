@@ -11,6 +11,17 @@
 	}
 }
 
+.imageHolder{
+	h1{
+		width: 100%;
+		position: absolute;
+		top: rem-calc(300);
+		margin-top: rem-calc(-75);
+		color: $white;
+		text-align: center;
+	}
+}
+
 .touch{
 	body{
 		.block-parallax{

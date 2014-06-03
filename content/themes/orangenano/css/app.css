@@ -8970,7 +8970,17 @@ a#toTop .scrollbtn.scrollup span {
   max-width: 1920px;
 }
 
-/* line 16, ../sass/components/blocks/_block-parallax.scss */
+/* line 15, ../sass/components/blocks/_block-parallax.scss */
+.imageHolder h1 {
+  width: 100%;
+  position: absolute;
+  top: 18.75rem;
+  margin-top: -4.6875rem;
+  color: white;
+  text-align: center;
+}
+
+/* line 27, ../sass/components/blocks/_block-parallax.scss */
 .touch body .block-parallax {
   display: none;
 }
