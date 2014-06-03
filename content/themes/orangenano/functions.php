@@ -145,7 +145,7 @@ add_image_size( 'homepage_thumbnail', '', '150',  false);
 // Adding Foundation classes
 add_filter( "the_excerpt", "add_class_to_excerpt" );
 function add_class_to_excerpt( $excerpt ) {
-    return str_replace('<p', '<p class="medium-12 columns"', $excerpt);
+    return str_replace('<p', '<p class="medium-9 columns"', $excerpt);
 }
 
 // Controlling the length

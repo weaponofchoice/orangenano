@@ -56,7 +56,7 @@
 						<?php the_excerpt(); ?><!-- define classes in functions.php -->
 
 						<!-- 'read more' link -->
-						<a class="columns readmore bold italic" href="<?php the_permalink(); ?>">read more</a>						
+						<a class="columns readmore" href="<?php the_permalink(); ?>">read more &rarr;</a>						
 					</div>
 				</div>
 				
