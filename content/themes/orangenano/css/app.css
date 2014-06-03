@@ -9179,14 +9179,18 @@ a#toTop .scrollbtn.scrollup span {
 /* line 24, ../sass/components/blog/_pagination.scss */
 .paging-navigation ul li a:after, .paging-navigation ul li span:after {
   content: ' ';
-  background: black;
+  background: #333333;
   border-radius: 100%;
   position: absolute;
   bottom: 0;
   width: 10px;
   height: 10px;
 }
-/* line 35, ../sass/components/blog/_pagination.scss */
+/* line 36, ../sass/components/blog/_pagination.scss */
+.paging-navigation ul li a:hover:after, .paging-navigation ul li span:hover:after {
+  background: #f89c1c;
+}
+/* line 42, ../sass/components/blog/_pagination.scss */
 .paging-navigation ul li .current {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -9194,7 +9198,7 @@ a#toTop .scrollbtn.scrollup span {
   color: transparent;
   font-size: 100%;
 }
-/* line 40, ../sass/components/blog/_pagination.scss */
+/* line 47, ../sass/components/blog/_pagination.scss */
 .paging-navigation ul li .current:after {
   background: #f89c1c;
 }

@@ -23,12 +23,18 @@
 				
 				&:after{
 					content: ' ';
-					background: black;
+					background: $gray-dark;
 					border-radius: 100%;
 					position: absolute;
 					bottom: 0;
 					width: 10px;
 					height: 10px;
+				}
+				
+				&:hover{	
+					&:after{
+						background: $orange;
+					}
 				}
 			}
 			
