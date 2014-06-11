@@ -8558,29 +8558,33 @@ header #menu-small #hamburger a {
 /* line 2, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu {
   position: absolute;
-  padding: 1em;
+  padding: 0;
   margin-top: .5em;
   margin-left: 0;
   text-align: left;
   background: #333333;
-  border-radius: 3%;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+  border-radius: 1%;
+  border: thin solid rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   visibility: hidden;
   -webkit-transition: 0s;
   -moz-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
 }
-/* line 16, ../sass/components/navigation/_sub-menu.scss */
+/* line 18, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li {
   margin-right: 0;
   width: 100%;
+  padding: .75em 1em;
+  border-bottom: thin solid rgba(0, 0, 0, 0.2);
 }
-/* line 20, ../sass/components/navigation/_sub-menu.scss */
+/* line 24, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li a {
   white-space: nowrap;
 }
-/* line 25, ../sass/components/navigation/_sub-menu.scss */
+/* line 29, ../sass/components/navigation/_sub-menu.scss */
 header .sub-menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 400;

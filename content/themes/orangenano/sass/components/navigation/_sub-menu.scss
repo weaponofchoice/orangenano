@@ -1,21 +1,25 @@
 header{
 	.sub-menu{
 		position: absolute;
-		padding: 1em;
+		padding: 0;
 		margin-top: .5em;
 		margin-left: 0;
 		text-align: left;
 		
 		background: $gray-dark;
-		border-radius: 3%;
-		box-shadow: 0 0 6px rgba(0,0,0,.75);;
+		border-radius: 1%;
+		border: thin solid rgba(0,0,0,.2);
+		border-bottom: none;
+		box-shadow: 0 0 2px rgba(0,0,0,.5);
 		
 		visibility: hidden;
 		@include transition(0s);
 				
 		li{
 			margin-right: 0;
-			width: 100%; //This prevents the li elements from lining up next to each other
+			width: 100%;
+			padding: .75em 1em;
+			border-bottom: thin solid rgba(0,0,0,.2);
 			
 			a{
 				white-space: nowrap;
