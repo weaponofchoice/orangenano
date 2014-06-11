@@ -8,7 +8,7 @@
 					</li>
 					<li class="medium-6 medium-offset-1 large-5 columns">
 						<h3>Volg ons:
-							<span class="social"><a href="http://facebook.com/orangenano" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a></span>
+							<span class="social"><a href="http://facebook.com/orangenanotech" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/facebook.png" /></a></span>
 							<span class="social"><a href="http://twitter.com/orangenano" target="blank"><img src="<?php bloginfo('template_directory'); ?>/img/twitter.png"></a></span>
 						</h3>
 					</li>
