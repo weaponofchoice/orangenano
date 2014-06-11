@@ -7,7 +7,8 @@
 	display: none;
 }
 
-a#toTop{
+a#toTop,
+.link_on{
 	//This makes sure all the elements(text, circle and arrow) turn orange at once
 	&:hover{
 		.scrollbtn{
@@ -70,6 +71,13 @@ a#toTop{
 				margin-top: rem-calc(15);
 				right: rem-calc(12);
 			}
+		}
+		
+		&.right{
+			@extend .scrollup;
+			@include rotate(90deg);
+			top: auto;
+			right: auto;
 		}
 	}
 }

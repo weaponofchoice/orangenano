@@ -7,6 +7,18 @@
 				<?php the_sub_field('intro'); ?>
 			</div>
 			<?php the_sub_field('content'); ?>
+			
+			<?php if( have_rows('link_to_ON') ): ?>
+				<?php while( have_rows('link_to_ON') ): the_row(); ?>
+					<a href="<?php the_sub_field('link'); ?>">
+						<div class="link_on small-10">
+							<h2><?php the_sub_field('title')?></h2>
+							<div class="scrollbtn right"><span></span></div>
+							<p><?php the_sub_field('subtitle'); ?></p>
+						</div>
+					</a>
+				<?php endwhile; ?>
+			<?php endif; ?>
 		</article>
 	</div>
 </div>
