@@ -1,5 +1,5 @@
 if $('body').length > 0
-	header = $('#top')
+	header = $('.top')
 	header_height = header.height() + 25; #the 25px account for the .8em padding
 	
 	container = $('#container')

@@ -1,5 +1,5 @@
 if $('#container').length > 0
-	header = $('#top')
+	header = $('.top')
 	window = $(window)
 	
 	header.localScroll()

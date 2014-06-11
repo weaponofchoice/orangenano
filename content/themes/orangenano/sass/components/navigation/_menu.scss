@@ -1,5 +1,5 @@
 header{
-	#logo{
+	.logo{
 		float: left;
 		margin-right: 3em;
 		
@@ -53,7 +53,7 @@ header{
 	header{
 		.menu-navigation-container,
 		.menu-main-menu-container,
-		#logo{
+		.logo{
 			display: none;
 		}
 	}

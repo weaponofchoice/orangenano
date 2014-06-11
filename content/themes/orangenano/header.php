@@ -43,20 +43,29 @@
 
 <body <?php body_class(get_the_title()); ?> id="<?echo get_the_title(); ?>">
 	
-	<header id="top" class="<?php echo $page_id; ?>">
-		<div id="menu" class="row">
+	<?php
+	global $post;
+	
+	if ( is_page( 'reseller' ) ||  $post->post_parent ) {
+	?>
+	
+	<?php
+	} else {
+	?>
+	<header class="<?php echo $page_id; ?> top">
+		<div class="row menu">
 			<div class="wrapper_button">
 				<a id="scrolldown" class="scrollbtn"> 
 					<span></span>
 				</a>
 			</div>
 			
-			<div id="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" /></a></div>
+			<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" /></a></div>
 			<?php wp_nav_menu( 'main_menu' ); ?>
 		
-			<ul id="menu-small" class="menu">
-				<div id="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" /></a></div>
-				<li id="hamburger"><a></a></li>
+			<ul class="menu menu_small">
+				<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" /></a></div>
+				<li class="hamburger"><a></a></li>
 			</ul>
 		</div>
 	</header>
@@ -64,5 +73,6 @@
 	<div id="menu-small-nav">
 		<?php wp_nav_menu( 'main_menu' ); ?>
 	</div>
+	<?php } ?>
 	
 	<div id="container">

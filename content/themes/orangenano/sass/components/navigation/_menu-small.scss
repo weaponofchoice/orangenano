@@ -1,12 +1,12 @@
 header{
 	//This menu appears when browser is under 1024px
-	#menu-small{
+	.menu-small{
 		display: none;
 		float: left;
 	
 		//Menu 'the Hamburger' icon
 		//Trigger for '#menu-small-nav'
-		#hamburger{
+		.hamburger{
 			width: rem-calc(20);
 			height: rem-calc(20);
 			float: right;
@@ -28,7 +28,7 @@ header{
 }
 
 //List for smaller menu(<1024px)
-#menu-small-nav{
+.menu-small-nav{
 	@include translate(0, -100%);
 	@include transition-duration(.2s);
 	position: fixed;
@@ -76,10 +76,10 @@ header{
 //Media queries
 @media #{$medium-down}{
 	header{
-		#menu-small{
+		.menu-small{
 			display: inline;
 			
-			#logo{
+			.logo{
 				display: block;
 			}
 		}
