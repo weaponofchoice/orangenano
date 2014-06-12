@@ -8606,6 +8606,22 @@ header .sub-menu li:last-child a {
   color: #f89c1c;
 }
 
+@media only screen and (max-width: 64em) {
+  /* line 27, ../sass/components/navigation/_menu-reseller.scss */
+  .reseller .menu {
+    text-align: left;
+  }
+  /* line 30, ../sass/components/navigation/_menu-reseller.scss */
+  .reseller .menu li {
+    text-align: left;
+    float: none !important;
+  }
+  /* line 35, ../sass/components/navigation/_menu-reseller.scss */
+  .reseller .menu li p,
+  .reseller .menu li a {
+    line-height: 1.5 !important;
+  }
+}
 /* line 1, ../sass/components/navigation/_arrow.scss */
 .wrapper_button {
   position: fixed;
