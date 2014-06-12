@@ -9052,6 +9052,20 @@ a#toTop .link_on .right.arrow,
   display: none;
 }
 
+@media only screen and (max-width: 64em) {
+  /* line 35, ../sass/components/blocks/_block-parallax.scss */
+  .block-parallax,
+  .imageHolder {
+    height: 37.5rem !important;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 42, ../sass/components/blocks/_block-parallax.scss */
+  .block-parallax,
+  .imageHolder {
+    height: 25rem !important;
+  }
+}
 /* line 1, ../sass/components/blocks/_block-textCentered.scss */
 .block-textCentered {
   text-align: center;

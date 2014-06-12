@@ -29,3 +29,17 @@
 		}
 	}
 }
+
+@media #{$medium-down}{
+	.block-parallax,
+	.imageHolder{
+		height: rem-calc(600) !important;
+	}
+}
+
+@media #{$small-only}{
+	.block-parallax,
+	.imageHolder{
+		height: rem-calc(400) !important;
+	}
+}
