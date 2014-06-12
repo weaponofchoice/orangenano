@@ -4,6 +4,7 @@
  * @subpackage HTML5_Boilerplate
  */
 
+add_filter('show_admin_bar', '__return_false');
 
 /*
  * General theme configuration settings
