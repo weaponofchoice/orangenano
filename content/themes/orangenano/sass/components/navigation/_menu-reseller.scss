@@ -1,0 +1,22 @@
+.reseller{
+	.menu{
+		li{
+//			display: inline;
+			
+			a,
+			&:last-child a,
+			p{
+				font-size: rem-calc(20);
+				font-weight: lighter;
+				line-height: 2;
+				margin-bottom: 0;
+			}
+			
+			&:last-child{
+				a{
+					color: $orange;
+				}
+			}
+		}
+	}
+}

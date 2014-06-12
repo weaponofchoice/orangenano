@@ -48,12 +48,18 @@
 	
 	if ( is_page( 'reseller' ) ||  $post->post_parent ) {
 	?>
-	
+	<header class="<?php echo $page_id; ?> top reseller">
+		<div class="menu row">
+			<div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-small.png" /></a></div>
+			<li><p><?php echo the_title(); ?></p></li>
+			<li><a href="<?php echo home_url(); ?>">Bezoek de Orange Nano website</a></li>
+		</div>
+	</header>
 	<?php
 	} else {
 	?>
 	<header class="<?php echo $page_id; ?> top">
-		<div class="row menu">
+		<div class="menu row">
 			<div class="wrapper_button">
 				<a id="scrolldown" class="scrollbtn"> 
 					<span></span>
@@ -70,7 +76,7 @@
 		</div>
 	</header>
 
-	<div id="menu-small-nav">
+	<div class="menu-small-nav">
 		<?php wp_nav_menu( 'main_menu' ); ?>
 	</div>
 	<?php } ?>

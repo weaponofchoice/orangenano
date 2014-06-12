@@ -8425,26 +8425,24 @@ header .logo a {
 }
 /* line 12, ../sass/components/navigation/_menu.scss */
 header .menu {
-  width: 100%;
-  margin: 0;
-  display: inline;
+  margin: 0 auto;
 }
-/* line 18, ../sass/components/navigation/_menu.scss */
+/* line 15, ../sass/components/navigation/_menu.scss */
 header .menu li {
   display: inline-block;
   margin-right: 1em;
   vertical-align: middle;
 }
-/* line 23, ../sass/components/navigation/_menu.scss */
+/* line 20, ../sass/components/navigation/_menu.scss */
 header .menu li.menu-item-has-children {
   padding-bottom: 1em;
   bottom: -.5em;
 }
-/* line 30, ../sass/components/navigation/_menu.scss */
+/* line 27, ../sass/components/navigation/_menu.scss */
 header .menu li:last-child {
   float: right;
 }
-/* line 33, ../sass/components/navigation/_menu.scss */
+/* line 30, ../sass/components/navigation/_menu.scss */
 header .menu li:last-child a {
   font-family: 'proxima-nova',sans-serif;
   font-weight: 600;
@@ -8453,13 +8451,13 @@ header .menu li:last-child a {
   line-height: 3;
   white-space: nowrap;
 }
-/* line 43, ../sass/components/navigation/_menu.scss */
+/* line 40, ../sass/components/navigation/_menu.scss */
 header .menu li:hover .sub-menu {
   visibility: visible;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 56, ../sass/components/navigation/_menu.scss */
+  /* line 53, ../sass/components/navigation/_menu.scss */
   header .menu-navigation-container,
   header .menu-main-menu-container,
   header .logo {
@@ -8467,12 +8465,12 @@ header .menu li:hover .sub-menu {
   }
 }
 /* line 3, ../sass/components/navigation/_menu-small.scss */
-header .menu-small {
+.top .menu_small {
   display: none;
   float: left;
 }
 /* line 9, ../sass/components/navigation/_menu-small.scss */
-header .menu-small .hamburger {
+.top .menu_small .hamburger {
   width: 1.25rem;
   height: 1.25rem;
   float: right;
@@ -8480,7 +8478,7 @@ header .menu-small .hamburger {
   background: transparent;
 }
 /* line 17, ../sass/components/navigation/_menu-small.scss */
-header .menu-small .hamburger a {
+.top .menu_small .hamburger a {
   background: white;
   width: 150%;
   height: 1.25rem;
@@ -8547,11 +8545,11 @@ header .menu-small .hamburger a {
 
 @media only screen and (max-width: 64em) {
   /* line 79, ../sass/components/navigation/_menu-small.scss */
-  header .menu-small {
-    display: inline;
+  header .menu_small {
+    display: inline !important;
   }
   /* line 82, ../sass/components/navigation/_menu-small.scss */
-  header .menu-small .logo {
+  header .menu_small .logo {
     display: block;
   }
 }
@@ -8718,6 +8716,19 @@ a#toTop .scrollbtn.right,
 .link_on h2,
 .link_on p {
   margin-bottom: 0;
+}
+
+/* line 8, ../sass/components/navigation/_menu-reseller.scss */
+.reseller .menu li a, .reseller .menu li:last-child a,
+.reseller .menu li p {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  line-height: 2;
+  margin-bottom: 0;
+}
+/* line 16, ../sass/components/navigation/_menu-reseller.scss */
+.reseller .menu li:last-child a {
+  color: #f89c1c;
 }
 
 /* line 1, ../sass/components/blocks/_block.scss */

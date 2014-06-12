@@ -2,7 +2,7 @@
 var container, container_height, header, header_height;
 
 if ($('body').length > 0) {
-  header = $('#top');
+  header = $('.top');
   header_height = header.height() + 25;
   container = $('#container');
   container_height = container.height();

@@ -1,6 +1,6 @@
-header{
+.top{
 	//This menu appears when browser is under 1024px
-	.menu-small{
+	.menu_small{
 		display: none;
 		float: left;
 	
@@ -76,8 +76,8 @@ header{
 //Media queries
 @media #{$medium-down}{
 	header{
-		.menu-small{
-			display: inline;
+		.menu_small{
+			display: inline !important;
 			
 			.logo{
 				display: block;
