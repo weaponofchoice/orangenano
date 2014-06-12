@@ -11,8 +11,8 @@ a#toTop,
 .link_on{
 	//This makes sure all the elements(text, circle and arrow) turn orange at once
 	&:hover{
-		.scrollbtn{
-			&.scrollup{
+		.arrow{
+			&.up{
 				border: rem-calc(2) solid $orange;
 		
 				span{
@@ -23,58 +23,49 @@ a#toTop,
 		}
 	}
 	
-	.scrollbtn{
-		height: rem-calc(40);
+	.arrow{
 		width: rem-calc(40);
-		position: fixed;
+		height: rem-calc(40);
+		position: relative;
 		display: block;
+		float: right;
+		
 		cursor: pointer;
 		z-index: 10;
+		
+		top: rem-calc(5);
+		right: rem-calc(-20);
 		bottom: 2.5em;
 
 		border-radius: 100%;
-		border: none;
-
-		background: $gray-dark;
-		opacity: .85;
+		border: rem-calc(2) solid $white;
+		background: transparent;
 
 		span{
 			content: ' ';
-			cursor: pointer;
-			position: absolute;
-			top: 0;
-			right: rem-calc(14);
-			opacity: 1;
 			width: rem-calc(12);
 			height: rem-calc(12);
-			margin-top: rem-calc(13);
+			position: absolute;
+			
+			top: 0;
+			margin-top: rem-calc(15);
+			right: rem-calc(12);
+			
+			cursor: pointer;
+			opacity: 1;
+			
+			@include rotate(314deg);
 			background: transparent;
 			border: rem-calc(2) solid $white;
-			border-top: none;
-			border-right: none;
-			@include rotate(314deg);
+			border-bottom: none;
+			border-left: none;
 		}
 	
-		&.scrollup{
-			position: relative;
-			float: right;
-			right: rem-calc(-20);
-			top: rem-calc(5);
-			border: rem-calc(2) solid $white;
-		
-			background: transparent;
-		
-			span{
-				border: rem-calc(2) solid $white;
-				border-bottom: none;
-				border-left: none;
-				margin-top: rem-calc(15);
-				right: rem-calc(12);
-			}
+		&.up{
 		}
 		
 		&.right{
-			@extend .scrollup;
+			@extend .arrow;
 			@include rotate(90deg);
 			top: auto;
 			right: auto;
@@ -85,7 +76,7 @@ a#toTop,
 
 //Media queries
 @media #{$small-only}{
-	#scrollbtn{
+	.up{
 		display: none;
 	}
 }
