@@ -11,21 +11,21 @@
   	"components/master/_colors",
 	"components/master/_fonts",
 	"components/master/_typography",
-	"components/master/_touch";
+	"components/master/_touch",
+	"components/master/_global";
 
 // Elements
 @import
-	"components/_header",
-	"components/_footer",
-	"components/_general",
-	"components/_forms",
+	"components/global/_header",
+	"components/global/_footer",
+	"components/global/_forms",
 	
 	"components/navigation/_menu",
+	"components/navigation/_menu-sub",
 	"components/navigation/_menu-small",
-	"components/navigation/_sub-menu",
-	"components/navigation/_arrow",
-	"components/navigation/_link_on",
 	"components/navigation/_menu-reseller",
+	"components/navigation/_arrow",
+	"components/navigation/_link_orange",
 	
 	"components/blocks/_block",
 	"components/blocks/_block-accordion",
@@ -41,12 +41,12 @@
 	"components/blog/ssba",
 	"components/blog/_pagination",
 	
-	"components/_royalslider",
-	"components/_rs-default",
-	"components/_gallery",
+	"components/other/_royalslider",
+	"components/other/_rs-default",
+	"components/other/_gallery",
+	"components/other/_map",
 	
-	"components/_map",
-	"components/_contact";
+	"components/pages/_contact";
 
 // Pages
 //@import
