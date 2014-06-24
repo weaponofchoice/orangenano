@@ -24,7 +24,7 @@ var image = new google.maps.MarkerImage(
 			map.addMarker({
 				lat: 52.588056,
 				lng: 4.700614,
-				title: 'UFS',
+				title: 'Orange Nano',
 				icon: image
 			});
 		
