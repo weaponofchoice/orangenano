@@ -11,7 +11,7 @@ var image = new google.maps.MarkerImage(
 			//Gmaps options
 			map = new GMaps({
 				scrollwheel: false,
-				zoom: 17,
+				zoom: 15,
 				el: '#map',
 				lat: 52.588056,
 				lng: 4.700614,
