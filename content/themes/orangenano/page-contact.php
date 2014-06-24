@@ -12,7 +12,7 @@
 			
 		<?php endwhile; ?>
 	<?php endif; ?>
-	test
+	
 	<div id="map"></div>
 
 <?php endwhile; ?>
