@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	
-	<div id="post_intro" style="background:url('<?php echo home_url(); ?>/wordpress//media/uploads/2014/04/Orange-Nano-Pattern.jpg');">
+	<div id="post_intro" style="background:url('<?php echo bloginfo('template_directory'); ?>/img/Orange-Nano-Pattern.jpg');">
 		<div id="intro_text" class="medium-4 columns">
 			<h2>Orange Nano blog</h2>
 			<p>Ideeën en gedachten uit de krochten van ons gezamenlijke orange nano brein</p>
