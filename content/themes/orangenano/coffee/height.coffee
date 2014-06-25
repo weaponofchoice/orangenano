@@ -15,4 +15,3 @@ if $('body').length > 0
 			
 			# header.css "height", header_height
 			container.css "top", header_height
-	
