@@ -3,7 +3,7 @@
 				<div id="container-logo"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" /></div>
 				<ul>
 					<li class="medium-4 medium-offset-1 large-5 columns">
-						<p class="large-5 medium-12 columns">Vennewatersweg 2b<br />1852 PT Heiloo Nederland</p>
+						<p class="large-5 medium-12 columns">Vennewatersweg 2b<br />1852 PT Heiloo Nederland<br /><br /><a href="<?php bloginfo('template_directory'); ?>/files/AV Orange Nanotech B.V..pdf" target="blank">Algemene voorwaarden</a></p>
 						<p class="large-5 medium-12 columns">+31 88 4720180<br /><a href="mailto:info@orangenano.com">info@orangenano.com</a></p>
 					</li>
 					<li class="medium-6 medium-offset-1 large-5 columns">
