@@ -8,24 +8,24 @@
 		<?php while ( have_rows('page_layout') ) : the_row(); ?>
 			
 			<?php if ( get_row_layout() == 'block_text'): ?>
-				<?php include(locate_template('blocks/block-text.php')); ?>
+				<?php include(locate_template('blocks/block-text.php')); $i++; ?>
 			<?php elseif( get_row_layout() == 'gallery'): ?>
-				<?php include(locate_template('blocks/block-gallery.php')); ?>
+				<?php include(locate_template('blocks/block-gallery.php')); $i++; ?>
 			<?php elseif( get_row_layout() == 'block_image_left'): ?>
-				<?php include(locate_template('blocks/block-image-left.php')); ?>
+				<?php include(locate_template('blocks/block-image-left.php')); $i++; ?>
 			<?php elseif( get_row_layout() == 'block_image_right'): ?>
-				<?php include(locate_template('blocks/block-image-right.php')); ?>
+				<?php include(locate_template('blocks/block-image-right.php')); $i++; ?>
 			<?php elseif( get_row_layout() == 'block_textCentered'): ?>
-				<?php include(locate_template('blocks/block-textCentered.php')); ?>
+				<?php include(locate_template('blocks/block-textCentered.php')); $i++; ?>
 			<?php elseif( get_row_layout() == 'block_accordion'): ?>
-				<?php include(locate_template('blocks/block-accordion.php')); ?>
+				<?php include(locate_template('blocks/block-accordion.php')); $i++; ?>
 			<?php elseif( get_row_layout() == 'block_parallax'): ?>
 				<?php include(locate_template('blocks/block-parallax.php')); ?>
 			<?php elseif( get_row_layout() == 'block_icons'): ?>
-				<?php include(locate_template('blocks/block-icons.php')); ?>
+				<?php include(locate_template('blocks/block-icons.php')); $i++; ?>
 			<?php endif; ?>
 		
-		<?php $i++; endwhile; ?>
+		<?php endwhile; ?>
 	<?php endif; ?>
 
 <?php endwhile; ?>
