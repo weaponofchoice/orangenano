@@ -163,7 +163,6 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/vendor/jquery.royalslider.min.js', 'jquery', false, true );
 		wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/vendor/waypoints.min.js', 'jquery', false, true );
 		wp_enqueue_script( 'gmaps', get_template_directory_uri() . '/js/vendor/gmaps.0.4.8.js', 'jquery', false, true );
-		wp_enqueue_script( 'localScroll', get_template_directory_uri() . '/js/vendor/jquery.localScroll.min.js', 'jquery', false, true );
 		
 		wp_enqueue_script( 'init-imagescroll', get_template_directory_uri() . '/js/init-imageScroll.js', 'imagescroll', false, true );
 		wp_enqueue_script( 'init-royalslider', get_template_directory_uri() . '/js/init-royalSlider.js', 'royalslider', false, true );
@@ -177,7 +176,6 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'touch', get_template_directory_uri() . '/js/touch.js', 'jquery', false, true );
 		wp_enqueue_script( 'scrollbtn', get_template_directory_uri() . '/js/scrollbtn.js', 'jquery', false, true );
 		wp_enqueue_script( 'init-waypoints', get_template_directory_uri() . '/js/init-waypoints.js', 'waypoints', false, true );
-		wp_enqueue_script( 'init-localScroll', get_template_directory_uri() . '/js/init-localScroll.js', 'localScroll', false, true );
 		
 		// Classes
 		// For example:
