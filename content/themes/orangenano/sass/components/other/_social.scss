@@ -1,0 +1,24 @@
+//Social
+.social{
+	width: 36px;
+	height: 36px;
+	line-height: 2.5;
+	float: left;
+	margin-left: .5em;
+	
+	&.twitter{
+		background: url('../img/sprite_twitter.png');
+		
+		&:hover{
+			background-position: bottom center;
+		}
+	}
+	
+	&.facebook{
+		background: url('../img/sprite_facebook.png');
+		
+		&:hover{
+			background-position: bottom center;
+		}
+	}
+}

@@ -176,6 +176,7 @@ function enqueue_theme_scripts() {
 		wp_enqueue_script( 'touch', get_template_directory_uri() . '/js/touch.js', 'jquery', false, true );
 		wp_enqueue_script( 'scrollbtn', get_template_directory_uri() . '/js/scrollbtn.js', 'jquery', false, true );
 		wp_enqueue_script( 'init-waypoints', get_template_directory_uri() . '/js/init-waypoints.js', 'waypoints', false, true );
+		wp_enqueue_script( 'rollover', get_template_directory_uri() . '/js/rollover.js', 'jquery', false, true );
 		
 		// Classes
 		// For example:

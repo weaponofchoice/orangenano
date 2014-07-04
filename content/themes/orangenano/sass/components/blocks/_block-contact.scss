@@ -33,18 +33,21 @@
 			&:last-child{
 				float: right !important;
 				text-align: right;
-			
-				h3{
-					top: -.8em;
-				}
-			
-				.social{
-					margin-left: 1em;
-					top: .5em;
+				
+				.followus{
+					float: right;
 					
-					a{
-						img{
-							cursor: pointer;
+					h3{
+						float: left;
+						top: -.8em;
+					}
+					
+					.twitter,
+					.facebook{
+						background-position: bottom center;
+						
+						&:hover{
+							background-position: center center;
 						}
 					}
 				}

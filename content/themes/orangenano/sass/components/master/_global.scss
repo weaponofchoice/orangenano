@@ -1,3 +1,9 @@
+.rollover{
+	&:hover{
+		content: attr(data-hover);
+	}
+}
+
 .row{
 	max-width: rem-calc(1115);
 }

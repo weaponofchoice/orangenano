@@ -8242,12 +8242,17 @@ a:hover img, a:focus img {
   display: none;
 }
 
-/* line 1, ../sass/components/master/_global.scss */
+/* line 2, ../sass/components/master/_global.scss */
+.rollover:hover {
+  content: attr(data-hover);
+}
+
+/* line 7, ../sass/components/master/_global.scss */
 .row {
   max-width: 69.6875rem;
 }
 
-/* line 6, ../sass/components/master/_global.scss */
+/* line 12, ../sass/components/master/_global.scss */
 * {
   position: relative;
   margin: 0;
@@ -8262,13 +8267,13 @@ a:hover img, a:focus img {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
 }
-/* line 23, ../sass/components/master/_global.scss */
+/* line 29, ../sass/components/master/_global.scss */
 *::selection {
   background: #f89c1c;
   color: white;
 }
 
-/* line 31, ../sass/components/master/_global.scss */
+/* line 37, ../sass/components/master/_global.scss */
 header,
 body,
 #container {
@@ -8276,19 +8281,19 @@ body,
   margin: 0 auto;
 }
 
-/* line 36, ../sass/components/master/_global.scss */
+/* line 42, ../sass/components/master/_global.scss */
 body {
   background: #f1f2f2;
 }
 
-/* line 40, ../sass/components/master/_global.scss */
+/* line 46, ../sass/components/master/_global.scss */
 #container {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   top: 3.5em;
   background: white;
 }
 
-/* line 46, ../sass/components/master/_global.scss */
+/* line 52, ../sass/components/master/_global.scss */
 .imageHolder {
   max-width: 120rem !important;
   max-height: 37.5rem;
@@ -8298,7 +8303,7 @@ body {
 }
 
 @media only screen and (min-width: 120.063em) {
-  /* line 57, ../sass/components/master/_global.scss */
+  /* line 63, ../sass/components/master/_global.scss */
   #container > div:first-child {
     max-width: 1920px;
     right: 0;
@@ -8878,36 +8883,42 @@ a#toTop .link_on .right.arrow,
   text-align: right;
 }
 /* line 37, ../sass/components/blocks/_block-contact.scss */
-.block-contact ul li:last-child h3 {
+.block-contact ul li:last-child .followus {
+  float: right;
+}
+/* line 40, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul li:last-child .followus h3 {
+  float: left;
   top: -.8em;
 }
-/* line 41, ../sass/components/blocks/_block-contact.scss */
-.block-contact ul li:last-child .social {
-  margin-left: 1em;
-  top: .5em;
-}
 /* line 46, ../sass/components/blocks/_block-contact.scss */
-.block-contact ul li:last-child .social a img {
-  cursor: pointer;
+.block-contact ul li:last-child .followus .twitter,
+.block-contact ul li:last-child .followus .facebook {
+  background-position: bottom center;
 }
-/* line 52, ../sass/components/blocks/_block-contact.scss */
+/* line 49, ../sass/components/blocks/_block-contact.scss */
+.block-contact ul li:last-child .followus .twitter:hover,
+.block-contact ul li:last-child .followus .facebook:hover {
+  background-position: center center;
+}
+/* line 55, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form {
   width: 100%;
   height: 2.5rem;
 }
-/* line 57, ../sass/components/blocks/_block-contact.scss */
+/* line 60, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"],
 .block-contact ul li:last-child form button {
   height: 2.5rem;
   padding: .5em 1em;
   float: left;
 }
-/* line 63, ../sass/components/blocks/_block-contact.scss */
+/* line 66, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"] {
   width: 70%;
   color: black;
 }
-/* line 68, ../sass/components/blocks/_block-contact.scss */
+/* line 71, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form button {
   width: 30%;
   float: right;
@@ -8915,11 +8926,11 @@ a#toTop .link_on .right.arrow,
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 84, ../sass/components/blocks/_block-contact.scss */
+  /* line 87, ../sass/components/blocks/_block-contact.scss */
   .block-contact ul li:nth-child(2) {
     margin-top: 2em;
   }
-  /* line 89, ../sass/components/blocks/_block-contact.scss */
+  /* line 92, ../sass/components/blocks/_block-contact.scss */
   .block-contact ul li form button {
     font-size: .9em;
   }
@@ -9034,10 +9045,9 @@ a#toTop .link_on .right.arrow,
   position: relative;
   padding: 0;
   background: black;
-  max-width: 1920px;
 }
 
-/* line 15, ../sass/components/blocks/_block-parallax.scss */
+/* line 13, ../sass/components/blocks/_block-parallax.scss */
 .imageHolder h1 {
   width: 100%;
   position: absolute;
@@ -9047,20 +9057,20 @@ a#toTop .link_on .right.arrow,
   text-align: center;
 }
 
-/* line 27, ../sass/components/blocks/_block-parallax.scss */
+/* line 25, ../sass/components/blocks/_block-parallax.scss */
 .touch body .block-parallax {
   display: none;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 35, ../sass/components/blocks/_block-parallax.scss */
+  /* line 33, ../sass/components/blocks/_block-parallax.scss */
   .block-parallax,
   .imageHolder {
     height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 42, ../sass/components/blocks/_block-parallax.scss */
+  /* line 40, ../sass/components/blocks/_block-parallax.scss */
   .block-parallax,
   .imageHolder {
     height: 25rem !important;
@@ -9820,6 +9830,31 @@ img.rsImg {
 .gm-style label {
   width: auto;
   display: inline;
+}
+
+/* line 2, ../sass/components/other/_social.scss */
+.social {
+  width: 36px;
+  height: 36px;
+  line-height: 2.5;
+  float: left;
+  margin-left: .5em;
+}
+/* line 9, ../sass/components/other/_social.scss */
+.social.twitter {
+  background: url("../img/sprite_twitter.png");
+}
+/* line 12, ../sass/components/other/_social.scss */
+.social.twitter:hover {
+  background-position: bottom center;
+}
+/* line 17, ../sass/components/other/_social.scss */
+.social.facebook {
+  background: url("../img/sprite_facebook.png");
+}
+/* line 20, ../sass/components/other/_social.scss */
+.social.facebook:hover {
+  background-position: bottom center;
 }
 
 /* line 5, ../sass/components/pages/_contact.scss */
