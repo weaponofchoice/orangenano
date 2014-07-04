@@ -1,9 +1,12 @@
 //Social
-.social{
+.social,
+#ssba_twitter_share,
+#ssba_facebook_share{
 	width: 36px;
 	height: 36px;
-	line-height: 2.5;
 	float: left;
+	bottom: -9px;
+	margin-bottom: 0;
 	margin-left: .5em;
 	
 	&.twitter{
@@ -20,5 +23,33 @@
 		&:hover{
 			background-position: bottom center;
 		}
+	}
+}
+
+#ssba_twitter_share,
+#ssba_facebook_share{
+	float: none;
+	display: inline-block;
+	
+	img{
+		display: none;
+	}
+}
+
+#ssba_twitter_share{
+	background: url('../img/sprite_twitter.png');
+	background-position: center center;
+	
+	&:hover{
+		background-position: top center;
+	}
+}
+
+#ssba_facebook_share{
+	background: url('../img/sprite_facebook.png');
+	background-position: center center;
+	
+	&:hover{
+		background-position: top center;
 	}
 }

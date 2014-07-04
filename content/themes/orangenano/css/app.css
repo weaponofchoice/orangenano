@@ -9832,29 +9832,72 @@ img.rsImg {
   display: inline;
 }
 
-/* line 2, ../sass/components/other/_social.scss */
-.social {
+/* line 4, ../sass/components/other/_social.scss */
+.social,
+#ssba_twitter_share,
+#ssba_facebook_share {
   width: 36px;
   height: 36px;
-  line-height: 2.5;
   float: left;
+  bottom: -9px;
+  margin-bottom: 0;
   margin-left: .5em;
 }
-/* line 9, ../sass/components/other/_social.scss */
-.social.twitter {
+/* line 12, ../sass/components/other/_social.scss */
+.social.twitter,
+#ssba_twitter_share.twitter,
+#ssba_facebook_share.twitter {
   background: url("../img/sprite_twitter.png");
 }
-/* line 12, ../sass/components/other/_social.scss */
-.social.twitter:hover {
+/* line 15, ../sass/components/other/_social.scss */
+.social.twitter:hover,
+#ssba_twitter_share.twitter:hover,
+#ssba_facebook_share.twitter:hover {
   background-position: bottom center;
-}
-/* line 17, ../sass/components/other/_social.scss */
-.social.facebook {
-  background: url("../img/sprite_facebook.png");
 }
 /* line 20, ../sass/components/other/_social.scss */
-.social.facebook:hover {
+.social.facebook,
+#ssba_twitter_share.facebook,
+#ssba_facebook_share.facebook {
+  background: url("../img/sprite_facebook.png");
+}
+/* line 23, ../sass/components/other/_social.scss */
+.social.facebook:hover,
+#ssba_twitter_share.facebook:hover,
+#ssba_facebook_share.facebook:hover {
   background-position: bottom center;
+}
+
+/* line 30, ../sass/components/other/_social.scss */
+#ssba_twitter_share,
+#ssba_facebook_share {
+  float: none;
+  display: inline-block;
+}
+/* line 34, ../sass/components/other/_social.scss */
+#ssba_twitter_share img,
+#ssba_facebook_share img {
+  display: none;
+}
+
+/* line 39, ../sass/components/other/_social.scss */
+#ssba_twitter_share {
+  background: url("../img/sprite_twitter.png");
+  background-position: center center;
+}
+/* line 43, ../sass/components/other/_social.scss */
+#ssba_twitter_share:hover {
+  background-position: top center;
+}
+
+/* line 48, ../sass/components/other/_social.scss */
+#ssba_facebook_share {
+  background: url("../img/sprite_facebook.png");
+  background-position: center center;
+}
+/* line 52, ../sass/components/other/_social.scss */
+#ssba_facebook_share:hover {
+  background-position: top center;
 }
 
 /* line 5, ../sass/components/pages/_contact.scss */
