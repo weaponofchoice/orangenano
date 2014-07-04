@@ -8895,30 +8895,31 @@ a#toTop .link_on .right.arrow,
 .block-contact ul li:last-child .followus .twitter,
 .block-contact ul li:last-child .followus .facebook {
   background-position: bottom center;
+  bottom: 0;
 }
-/* line 49, ../sass/components/blocks/_block-contact.scss */
+/* line 50, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child .followus .twitter:hover,
 .block-contact ul li:last-child .followus .facebook:hover {
   background-position: center center;
 }
-/* line 55, ../sass/components/blocks/_block-contact.scss */
+/* line 56, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form {
   width: 100%;
   height: 2.5rem;
 }
-/* line 60, ../sass/components/blocks/_block-contact.scss */
+/* line 61, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"],
 .block-contact ul li:last-child form button {
   height: 2.5rem;
   padding: .5em 1em;
   float: left;
 }
-/* line 66, ../sass/components/blocks/_block-contact.scss */
+/* line 67, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form input[type="text"] {
   width: 70%;
   color: black;
 }
-/* line 71, ../sass/components/blocks/_block-contact.scss */
+/* line 72, ../sass/components/blocks/_block-contact.scss */
 .block-contact ul li:last-child form button {
   width: 30%;
   float: right;
@@ -8926,11 +8927,11 @@ a#toTop .link_on .right.arrow,
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 87, ../sass/components/blocks/_block-contact.scss */
+  /* line 88, ../sass/components/blocks/_block-contact.scss */
   .block-contact ul li:nth-child(2) {
     margin-top: 2em;
   }
-  /* line 92, ../sass/components/blocks/_block-contact.scss */
+  /* line 93, ../sass/components/blocks/_block-contact.scss */
   .block-contact ul li form button {
     font-size: .9em;
   }
