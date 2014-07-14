@@ -8559,7 +8559,7 @@ header .sub-menu li:last-child a {
 /* line 47, ../sass/components/navigation/_menu-small.scss */
 .menu-small-nav ul {
   margin: 0;
-  padding: 2.5em 0 1em;
+  padding: 4.5em 0 1em;
 }
 /* line 51, ../sass/components/navigation/_menu-small.scss */
 .menu-small-nav ul li {
@@ -9074,7 +9074,7 @@ a#toTop .link_on .right.arrow,
   /* line 40, ../sass/components/blocks/_block-parallax.scss */
   .block-parallax,
   .imageHolder {
-    height: 25rem !important;
+    height: 18.75rem !important;
   }
 }
 /* line 1, ../sass/components/blocks/_block-textCentered.scss */
