@@ -8277,7 +8277,7 @@ a:hover img, a:focus img {
 header,
 body,
 #container {
-  max-width: 120rem;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -8295,7 +8295,7 @@ body {
 
 /* line 52, ../sass/components/master/_global.scss */
 .imageHolder {
-  max-width: 120rem !important;
+  max-width: 1920px !important;
   max-height: 37.5rem;
   left: 0;
   right: 0;
@@ -9041,7 +9041,7 @@ a#toTop .link_on .right.arrow,
 }
 /* line 2, ../sass/components/blocks/_block-parallax.scss */
 .block.block-parallax {
-  height: 40%;
+  height: 600px;
   max-height: 34.375rem;
   position: relative;
   padding: 0;
@@ -9051,27 +9051,26 @@ a#toTop .link_on .right.arrow,
 /* line 13, ../sass/components/blocks/_block-parallax.scss */
 .imageHolder h1 {
   width: 100%;
-  position: absolute;
   top: 18.75rem;
   margin-top: -4.6875rem;
   color: white;
   text-align: center;
 }
 
-/* line 25, ../sass/components/blocks/_block-parallax.scss */
+/* line 24, ../sass/components/blocks/_block-parallax.scss */
 .touch body .block-parallax {
   display: none;
 }
 
 @media only screen and (max-width: 64em) {
-  /* line 33, ../sass/components/blocks/_block-parallax.scss */
+  /* line 32, ../sass/components/blocks/_block-parallax.scss */
   .block-parallax,
   .imageHolder {
     height: 37.5rem !important;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 40, ../sass/components/blocks/_block-parallax.scss */
+  /* line 39, ../sass/components/blocks/_block-parallax.scss */
   .block-parallax,
   .imageHolder {
     height: 18.75rem !important;

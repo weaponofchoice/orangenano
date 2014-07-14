@@ -1,6 +1,6 @@
 .block{ //Necessary to overwrite default background
 	&.block-parallax{
-		height: 40%;
+		height:600px;
 		max-height: rem-calc(550);
 		position: relative;
 		padding: 0;
@@ -12,7 +12,6 @@
 .imageHolder{
 	h1{
 		width: 100%;
-		position: absolute;
 		top: rem-calc(300);
 		margin-top: rem-calc(-75);
 		color: $white;

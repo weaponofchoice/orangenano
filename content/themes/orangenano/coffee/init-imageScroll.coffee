@@ -4,3 +4,4 @@ if $('.block-parallax').length > 0
 	parallax.imageScroll
 		container: '#container'
 		speed: 0.5
+		touch: false
